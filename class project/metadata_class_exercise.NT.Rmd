@@ -1,0 +1,198 @@
+---
+title: "Metadata"
+author: "Tennety"
+date: "2026-09-15"
+output: html_document
+---
+
+Class exercise to import your project metadata from the spreadsheet into R 
+
+--Create a folder called "class_project" in your code folder 
+
+--Save this file to the "class_project" folder 
+
+--Move your Nexis spreadsheet to the folder 
+
+--Create a project file on R Studio: File \| New Project \| \*\*\* select Existing folder \| "class_project" 
+
+--After project.Rproj launches, then launch this file, metadata.Rmd, and complete the tutorial
+
+**By doing this, you avoid the ring of hell where R can't find your data**
+
+#load tidyverse, janitor, rio
+
+```{r}
+
+library(tidyverse)
+library(janitor)
+library(rio)
+install.packages("readxl")
+library(readxl)
+
+```
+
+#Import your data
+
+```{r}
+
+data <- read_excel("results_list_for_long COVID.XLSX")
+View(data)
+
+```
+
+# Clean names
+
+```{r}
+data <- data |> 
+  clean_names()
+
+```
+
+# check data types
+```{r}
+glimpse(data)
+```
+
+
+Next Steps: Count years, and create a ggplot
+
+# Transform date into years. See tutorial
+```{r}
+
+data <- data |> 
+  mutate(year = year(published_date))
+
+```
+```{r}
+data |> 
+  count(year)  
+```
+```{r}
+data |> 
+  count(publication_4) |> 
+  arrange(desc(n))
+```
+```{r}
+data |> 
+  count(publication_location) |> 
+  arrange(desc(n))
+```
+```{r}
+data |> 
+  count(publication_type_17) |> 
+  arrange(desc(n))
+```
+```{r}
+data_big <- data |> 
+  mutate(length1 = as.numeric(length)) |> 
+  filter (length1 >= 2000)
+```
+
+
+# Create a ggplot
+```{r}
+data |> 
+  count(year) |> 
+   ggplot(aes(x = year, y = n,
+             fill = n)) +
+  geom_col(position = "dodge") + 
+  theme(legend.position = "none") +
+  scale_x_continuous(breaks=c(2015:2026)) + #fixes wonky x axis
+  labs(title = "Years for Long COVID Reporting",
+       subtitle = "Limited NexisUni Run",
+       caption = "Graphic by Niveda Tennety, 9-16-2026",
+       y="Number of Selected Articles",
+       x="Year")
+
+
+
+```
+
+#Count publications
+
+```{r}
+data |> 
+  count(publication_4) |> 
+  arrange(desc(n))
+```
+
+
+#Visualize publications
+
+```{r}
+data |> 
+  count(publication_4) |> 
+   #ggplot(aes(y = publication_4, x = n,
+             #fill = n)) +
+  ggplot(aes(y = reorder (publication_4, n),x = n,
+             fill = n)) +
+  geom_col(position = "dodge") + 
+  theme(legend.position = "none") +
+  labs(title = "Number of Articles by Publication",
+       subtitle = "Limited NexisUni Run",
+       caption = "Graphic by Niveda Tennety, 9-16-2026",
+       y="Publication",
+       x="Number of Selected Articles")
+```
+
+
+# NOTES ON FIXING COMPLEX Date COLUMN WITH HOURS AND MINUTES
+
+```{r}
+data_complex <- data |> 
+  mutate(date = as.Date(strptime(published_date, format = "%B %d, %Y %A")))
+```
+
+#Next, I will examine average article length for different publications. 
+
+#Reflection (code below): I found that CNN International and Fox News had the highest average length, but after looking at the table, I realized that this was not a useful statistic because the n value for each publication is so different. I have 33 articles from NYT but only 1 article or so from many sources, so this is not a valuable statistic. After looking at the table, and realizing that, I decided to not group by publication, and explore summaries overall of all the articles to get a sense of average length across all articles, for example. I thought this would be more valuable because rather than comparing publications in an unrigorous way (because of such stark differences in # of articles in each publication), I would be looking at the content as a whole. 
+
+```{r}
+glimpse(data)
+data <- data |> 
+  mutate(length1 = as.numeric(length))
+```
+
+
+```{r}
+data %>% 
+  select(publication_4, length1) %>% 
+  group_by(publication_4) %>% 
+  summarize(length1 = mean(length1, na.rm=TRUE)) |> 
+  arrange(desc(length1))
+```
+
+#Summary statistics
+#Reflection: The range of article length across this corpus is 280-6789 words. The median length is 1181 words, and the mean length is 1439 words. 
+```{r}
+summary(data$length1)
+```
+##I then looked up a framework on what constitutes short-form vs. long-form reporting. For my research project, I would vet the framework further, but just wanted to use one where I could practice R for the purpose of this class project. So, I chose the first framework that came up on a google search, which is the Nielsen Norman Group content strategy analysis. This search defines short-form articles as those with a word count of less than 1000 words, and long form articles as those with more than 1000 words. 
+
+#First, I wanted to understand the average article length for publications.  
+#Reflection: All publications except for 5 (Guardian, BI, USA Today, Axios, TOI) had average lengths above 1000. Because n values are low, this is also not a very meaningful statistic. 
+
+```{r}
+class(data$length)
+data$length <-as.numeric(data$length)
+```
+
+
+```{r}
+data %>% 
+  select(publication_4, length) %>% 
+ group_by(publication_4) %>% 
+  summarize(Total=n(),
+            Avg = mean(length, na.rm=TRUE)) %>% 
+  arrange(desc(Avg))
+```
+
+#Then, for New York Times coverage specifically, because it had the largest n value, I wanted to understand how many articles were short-form vs. long-form based on this framework. 
+#Answer: The new york times has 30 articles that are over 1000 words, and 3 articles that are less than 1000 words. 
+```{r}
+data |> 
+  filter(publication_4 == "The New York Times") |> 
+  filter (length>1000) |> 
+  count()
+```
+
