@@ -1,0 +1,93 @@
+---
+title: 'Homework: Basic R Proficiency'
+author: "Niveda Tennety"
+date: "2026-09-23"
+output: html_document
+---
+
+# Load libraries
+```{r}
+library(tidyverse)
+library(janitor)
+```
+
+#Import data
+```{r}
+mob_data <- rio::import("https://raw.githubusercontent.com/wellsdata/CompText_Jour/main/data/mob_analysis_data.csv") 
+```
+
+#Number of rows and columns in the dataset
+#Answer: There are 3836 rows and 7 columns
+```{r}
+nrow(mob_data)
+ncol(mob_data)
+```
+
+#count of the top 15 newspaper entries
+#Answer:
+<!-- The Birmingham age-herald (Birmingham, Ala...)	118			 -->
+<!-- The daily worker (Chicago, Ill.)	64			 -->
+<!-- The Topeka state journal (Topeka, Kansas)	63			 -->
+<!-- The sun (New York [N.Y.]) 1833-1916	50			 -->
+<!-- The Seattle post-intelligencer (Seattle, Wash. ...)	49			 -->
+<!-- The San Francisco call (San Francisco [...)	46			 -->
+<!-- The morning news (Savannah, Ga.)	40			 -->
+<!-- Los Angeles herald (Los Angeles [Calif.]) 1900-1911	37			 -->
+<!-- Watertown republican (Watertown, Wis.)	36 -->
+<!-- River Falls journal (River Falls, Pi...)	34			 -->
+<!-- Vernon County censor (Viroqua, Wis.)	30			 -->
+<!-- The Iola register (Iola, Allen Cou...)	29			 -->
+<!-- The Daily Ardmoreite (Ardmore, Okla.)	28			 -->
+<!-- The Salt Lake herald (Salt Lake City ...)	28 -->
+```{r}
+mob_data |> 
+  count(Newspaper) |> 
+  arrange(desc(n))
+```
+```{r}
+#Table counting different entries in the "keyword" column
+#Top 3 entries: "mob" is the value with the most entries (n=3273), followed by masked (n=158), mobs (n=96). 
+mob_data |> 
+  count(keyword) |> 
+  arrange(desc(n))
+```
+
+```{r}
+glimpse(mob_data)
+```
+#transform characteris into numbers for "Year" column
+```{r}
+mob_data <- mob_data |> 
+  mutate(Year = as.numeric(Year))
+```
+
+#Table that counts all specific articles by year
+#1946 is the year with the most articles (n=20).
+```{r}
+Years <- mob_data %>% 
+  group_by(Year) %>% 
+  count(Year) %>% 
+  arrange(desc(n))  
+head(Years)
+```
+
+#Graph - total entries per year
+```{r}
+mob_data %>% 
+ group_by(Year) %>%
+  count(Year) %>% 
+ggplot(aes(x = Year, y = n,
+             fill = n)) +
+  geom_col(position = "dodge") + 
+  theme(legend.position = "none") +
+#This is your title sequence
+  labs(title = "Number of entries per year",
+       subtitle = "Mob Analysis Data",
+       caption = "Graphic by Niveda Tennety, 9-26-2026",
+       y="Number of Calls",
+       x="Year")
+```
+#Summary of findings (Memo)
+#In summary, 1903 was the year with the most number of articles about mob lynching (n=246), followed by 1906 (n=207), 1901 (n=197), in the top 3 years with the most entries. In contrast, the three years with the least number of articles were 1944, 1947, and 1951 with only 1 article each. The magazine with the most number of entries across all years was The Birmingham-Age Herald with 118 entries. The three most common keywords used in articles were "mob" (n=3273), followed by masked (n=158), and then mobs (n=96). 
+#I am curious about why the some newspapers or magazines had significantly more entries than others. I assume that in some part, this might reflect the locations where lynchings are happening, but confounding variables could include the newspapers' willingness to report on the issue politically or ideologically, whether or not there is a beat reporter assigned to the topic, and whether a particular outlet is represented in the database from where articles were selected (data availability-related concerns). Because of these factors, I think that this question of whether or not more lynchings were happening in areas where there is more reporting of the lynching is still open. However, this data is useful as a starting point to further answer that question, by either expanding the search strategy (IN THE CASE the database used was limited in scope), or through triangulating with other historical, qualitative, and quantitative research methodologies. 
+#Looking at the frequency of keywords allows us to see the words most commonly used to report on mob lynching by these newspaper outlets. I am curious that "masked" came up 158 times across all articles. However, to understand the context in which keywords were used, my speculation is that authors would go to some individual articles, rather than looking at the congregated data. 
