@@ -1,0 +1,275 @@
+---
+title: "Text Compiler Assignment"
+author: "Niveda"
+date: "09-30-2026"
+output: html_document
+---
+
+#Jour 689: This code, largely written by the famous **Sean Mussenden**, takes separate text files and compiles them into a single dataframe for analysis.
+
+1)  Create a folder Week5_Text_Compiler
+2)  Copy your spreadsheet index and the folder of text files into Week5_Text_Compiler
+3)  Create an .Rproj file for Week5_Text_Compiler
+
+```{r}
+library(tidyverse)
+library(janitor)
+#install.packages("striprtf")
+library(striprtf)
+#install.packages("tidytext")
+library(tidytext)
+library(rio)
+```
+
+# Reformat .RTF files
+
+```{r}
+# Load required packages
+
+# Set the paths for your folders
+input_folder <- "./long_covid_rtf/"  # Replace with your input folder path
+output_folder <- "./long_covid_raw_text/" # Replace with your output folder path
+
+# Create output folder if it doesn't exist
+if (!dir.exists(output_folder)) {
+  dir.create(output_folder)
+}
+
+# Get a list of all .rtf files in the input folder
+rtf_files <- list.files(path = input_folder, pattern = "\\.RTF$", full.names = TRUE)
+
+# Convert each .rtf file to .txt
+for (file in rtf_files) {
+  # Extract the file name without extension
+  file_name <- tools::file_path_sans_ext(basename(file))
+  
+  # Read the RTF content
+  rtf_content <- read_rtf(file)
+  
+  # Create output file path
+  output_file <- file.path(output_folder, paste0(file_name, ".txt"))
+  
+  # Write the content to a .txt file
+  writeLines(rtf_content, output_file)
+  
+  # Print progress
+  cat("Converted:", file, "to", output_file, "\n")
+}
+
+cat("Conversion complete!\n")
+```
+
+# Raw text compiler
+
+```{r include=FALSE}
+#This creates an index with the file path to the stories. And then it compiles the stories into a dataframe
+#####################
+# Begin SM Code #####
+#####################
+
+###
+# List out text files that match pattern .txt, create DF
+###
+
+#Adjust thisline for your file name
+files <- list.files("./long_covid_raw_text", pattern="*.txt") %>% 
+  as.data.frame() |> 
+  rename(filename = 1) |> 
+  #create an matching file name
+  mutate(index = str_replace_all(filename, ".txt", "")) %>%
+  mutate(index = tolower(gsub("[[:punct:][:space:]|]", "", index))) |> 
+  mutate(index = tolower(index)) |> 
+  mutate(index = str_sub(index, 1, 25)) |> 
+  distinct(index, .keep_all = TRUE)
+
+
+#Join the file list to the index
+
+final_data <- rio::import("long_covid_results_list.XLSX") |> 
+  clean_names() |> 
+   #create an matching file name
+  mutate(index = tolower(gsub("[[:punct:][:space:]|]", "", title))) |> 
+  mutate(index = tolower(index)) |> 
+  mutate(index = str_sub(index, 1, 25)) |> 
+  distinct(index, .keep_all = TRUE)
+```
+
+### Check for duplicate entries
+
+```{r}
+
+final_data |> 
+  count(title) |> 
+  arrange(desc(n))
+```
+
+
+```{r}
+dupe_data <- rio::import("long_covid_results_list.XLSX") |> 
+  clean_names() |> 
+   #create an matching file name
+  mutate(index = tolower(gsub("[[:punct:][:space:]|]", "", title))) |> 
+  mutate(index = tolower(index)) |> 
+  mutate(index = str_sub(index, 1, 25))
+```
+#Counting duplicates
+```{r}
+dupe_data |> 
+  count(title) |> 
+  arrange(desc(n)) |> 
+  filter(n >1)
+
+```
+#Total duplicates
+```{r}
+dupe_data |> 
+  count(title) |> 
+  arrange(desc(n)) |> 
+  filter(n >1) |> 
+  summarize(sum(n))
+```
+
+
+#Create final index
+```{r}
+
+final_index <- final_data |> 
+  inner_join(files, c("index")) |> 
+#you need the actual hard-coded path on this line below to the text
+  mutate(filepath = paste0("./long_covid_raw_text/", filename))
+
+head(final_index)
+```
+
+#Fact Check
+
+```{r}
+
+anti_final_index <- final_data |> 
+  anti_join(files, c("index"))
+
+```
+
+#Checking for duplicates
+
+```{r}
+final_index |> 
+  count(title) |> 
+  arrange(desc(n))
+
+```
+
+#Text compiler
+
+```{r}
+###
+# Define function to loop through each text file 
+###
+
+create_article_text <- function(row_value) {
+  
+  #row_value is the single argument that is passed to the function
+  # Take each row of the dataframe
+  temp <- final_index %>%
+    slice(row_value)
+  
+  # Store the filename for  use in constructing articles dataframe
+  temp_filename <- temp$filename
+  
+  # Create a dataframe by reading in lines of a given textfile
+  # Add a filename column 
+  articles_df_temp <- read_lines(temp$filepath) %>%
+    as_tibble() %>%
+    mutate(filename = temp_filename)
+  
+  # Bind results to master articles_df
+  # <<- returns to global environment
+  articles_df <<- articles_df %>%
+    bind_rows(articles_df_temp)
+}
+
+###
+# Create elements needed to run function
+###
+
+# Create empty tibble to store results
+articles_df <- tibble()
+#running once to test
+#create_article_text(2) 
+# Create an array of numbers to loop through, from 1 to the number of rows in our index dataframe 
+row_values <- 1:nrow(final_index)
+
+###
+# Execute function using lapply
+# This loops through each row of the dataframe and append results to master file
+###
+
+lapply(row_values, create_article_text)
+
+###
+# Clean up articles_df and join to index dataframe
+###
+
+articles_df <- articles_df %>%
+  select(filename, sentence=value) %>%
+  inner_join(final_index)
+
+
+# write.csv(articles_df, "..articles_df.csv")
+
+```
+```{r}
+view(articles_df)
+```
+
+#Creating bigrams
+
+#checking names in long covid articles data frame
+```{r}
+names(articles_df)
+```
+
+#tokenize the sentence column
+```{r}
+long_covid_words <- articles_df %>%
+  unnest_tokens(word, sentence)
+```
+
+#Remove stopwords and count the words
+```{r}
+word_counts <- long_covid_words |> 
+  anti_join(stop_words) |> 
+  count(word, sort = TRUE)
+
+word_counts
+# Word Count
+#Top 10 words: covid is the word with the highest count (n=1122), followed by health (n=952), 90 (n=730), 78 (n=573), people (n=516), 89 (n=486), vaccine (n=477), vaccines (n=477), 19, (n=362), disease (n=349). 
+```
+#create bigrams
+#ANSWER: The top 10 bigrams were covid 19, public health, health care, 19 coronavirus, covid coronavirus, york times, language english, load date, publication type, and health departments. The next 10 were diseases disorders, infectious disease, rights reserved, disorders injuries, covid vaccine, video clip, usa 79, coronavirus vaccine, disease control, and disorders 90. 
+```{r}
+long_covid_bigrams <- articles_df |> 
+  unnest_tokens(bigram, sentence, token = "ngrams", n = 2)
+
+#Filter out stop words.
+
+bigrams1 <- articles_df %>%
+  unnest_tokens(bigram, sentence, token = "ngrams", n = 2) %>%
+  filter(!is.na(bigram)) |> 
+  separate(bigram, c("word1", "word2"), sep = " ")
+
+bigrams2 <- bigrams1 %>%
+  filter(!word1 %in% stop_words$word) %>%
+  filter(!word2 %in% stop_words$word) |> 
+  count(word1, word2, sort = TRUE)
+
+head(bigrams2, 100)
+```
+
+#MEMO
+
+#Summary of results: The top 10 words were covid with the highest count (n=1122), followed by health (n=952), 90 (n=730), 78 (n=573), people (n=516), 89 (n=486), vaccine (n=477), vaccines (n=477), 19, (n=362), disease (n=349). The top 10 bigrams were covid 19, public health, health care, 19 coronavirus, covid coronavirus, york times, language english, load date, publication type, and health departments. The next 10 were diseases disorders, infectious disease, rights reserved, disorders injuries, covid vaccine, video clip, usa 79, coronavirus vaccine, disease control, and disorders 90. 
+
+#Immediately, I noticed that just looking at word counts was not helpful because there were many irrelevant words that showed up. Foror example, many numbers without context were included as frequent words. Even with words like "people" and "disease" that head high frequencies in the data, I realized that it is hard to interpret much from these results because there is no context for how those words were used in a sentence.
+#The bigrams were helpful to see immediate context, but even then, I have a few more questions about how to interpret them. Many seemed nonsensical (i.e. "disorders 90" or "usa 79"). I wasn't sure what these meant, and was surprised to see as high of a frequency as I did for these bigrams in the data. Some bigrams were more expected as they are complete constructs that are constructed from 2 words (i.e. covid 19, public health, disease control, health departments and health care). The bigrams were significantly more helpful than looking at individual word counts to understand the specific construct that was being discussed in the articles.
+#There are some irrelevant words in the bigrams which indicate that the bigrams included metadata (likely at the top or bottom of articles). For example, words like "publication type" or "load date." In future assignments, these should be cleaned up. 

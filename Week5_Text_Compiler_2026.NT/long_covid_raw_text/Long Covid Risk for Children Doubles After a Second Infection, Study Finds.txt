@@ -1,0 +1,59 @@
+
+
+
+The New York Times 
+September 30, 2025 Tuesday 14:05 EST
+
+
+Copyright 2025 The New York Times Company All Rights Reserved
+Section: HEALTH
+Length: 926 words
+Byline: Pam Belluck, Pam Belluck is a health and science reporter for The Times, covering a range of subjects, including reproductive health, long Covid, brain science, neurological disorders, mental health and genetics.
+Highlight: The new research provides evidence that Covid reinfections can increase the risk of long-term health consequences.
+Body
+
+
+The new research provides evidence that Covid reinfections can increase the risk of long-term health consequences.
+Children and teenagers are twice as likely to develop long Covid after a second coronavirus infection as after an initial infection, a large  has found.
+The study, of nearly a half-million people under 21, published Tuesday in Lancet Infectious Diseases, provides evidence that Covid reinfections can increase the risk of long-term health consequences and contradicts the idea that being infected a second time might lead to a milder outcome, medical experts said.
+Dr. Laura Malone, director of the Pediatric Post-Covid-19 Rehabilitation Clinic at Kennedy Krieger Institute in Baltimore, who was not involved in the study, said the findings echo the experience of patients in her clinic.
+“Just because you got through your first infection and didn’t develop long Covid, it’s not that you are completely out of the woods,” she said.
+The study, conducted as part of the National Institutes of Health’s RECOVER Initiative, examined electronic medical records for about 465,000 young people at 40 children’s hospitals in the United States. They had either a first or a second coronavirus infection between Jan. 1, 2022, and Oct. 13, 2023. The study focused on the Omicron wave, but researchers said the conclusions are most likely relevant to more recent variants.
+The authors counted how many young people received a specific diagnostic code for long Covid that was added to the International Classification of Diseases in October 2021. The rate over a six-month period showed that 1,884 per million young people developed long Covid after two infections, twice the rate of 904 per million for young people with one infection.
+“Reinfection really increases the risk,” said Yong Chen, the study’s senior author, a professor of biostatistics at the University of Pennsylvania and director of the Penn Computing, Inference and Learning Lab. “Your body really has a memory system and is really going to be hurt from recurrent infection.”
+The study also found that tens of thousands of young people who did not receive a long Covid diagnosis were treated for conditions that can be symptoms of long Covid, including respiratory problems and abdominal pain. As a result, Dr. Chen said, the diagnostic code most likely captured only “a subset of the long Covid.”
+Studies of adults have found that they  of developing long Covid after being infected with the virus more than once.
+There are varying estimates of how many children and adolescents have had long Covid. The most conservative, by the , puts the number at about 1.3 percent of people under 18, or about one million American children. While there are fewer new cases of long Covid among both adults and children than at the pandemic’s height, doctors say they continue to see new patients.
+“We still do see a lot of individuals that have pretty severe impact on their daily functioning from long Covid, and these are new diagnoses that we’ve been seeing over the last couple of years,” Dr. Malone said.
+The study found that after a second infection, young people were 3.6 times as likely as those infected once to develop myocarditis, a type of heart inflammation that can be life-threatening. They were 2.8 times as likely to experience changes to taste and smell, 2.3 times as likely to develop blood clots, and nearly twice as likely to develop heart disease or kidney damage.
+Dr. Alexandra Yonts, director of the Pediatric Post Covid Program Clinic at Children’s National Hospital in Washington, D.C., who was not involved in the new study, said her clinic’s patients have experienced the “cumulative risk” of a second infection. Not only does she see new long Covid cases after reinfection, she said, but some patients “develop new symptoms after subsequent infections or worsening of their pre-existing long Covid symptoms.”
+People with long Covid after a second infection were more likely to have a history of chronic conditions. But many young long Covid patients have no preexisting medical conditions, doctors say.
+About three-quarters of the young people in the study were unvaccinated. Dr. Chen said that was partly because vaccines for their age groups were not widely available until mid-2021.
+The study was not designed to evaluate the effect of vaccines on long Covid, but it found that regardless of vaccination status, a second infection raised the long Covid risk. However, the most severe symptoms, like myocarditis, mostly occurred in young people who had not been vaccinated, Dr. Yonts said.
+Studies that have focused on the impact of immunization on long Covid, including in , have found that vaccines significantly reduce long Covid risk, partly because they prevent severe illness.
+Although Robert F. Kennedy Jr., the federal health secretary, has said healthy children do not need Covid shots, the study authors  and other medical experts said the evidence suggests otherwise.
+“Being vaccinated decreases your risk of subsequent infections and development of long Covid,” Dr. Yonts said, adding, “It gives your body a leg up on its immune response and preventing this aberrant, overactive immune response that we think causes a lot of these things.”
+PHOTO: Long Covid has affected at least 1.3 percent of people under 18, or about one million American children, according to the Centers for Disease Control and Prevention. (PHOTOGRAPH BY Maddie Malhotra for The New York Times FOR THE NEW YORK TIMES)
+Classification
+
+
+Language: ENGLISH
+
+Document-Type: News
+
+Publication-Type: Web Publication
+
+Subject: RESEARCH REPORTS (91%); COVID-19 CORONAVIRUS (78%); HEALTH CARE INFORMATION (73%); EPIDEMICS (78%); PHYSICIANS & SURGEONS (76%); RESEARCH INSTITUTES (78%); VIRUSES (90%); ADOLESCENTS & TEENS (90%); CORONAVIRUSES (90%); ELECTRONIC HEALTH RECORDS (52%); HEALTH DEPARTMENTS (73%); INFECTIOUS DISEASE (96%); MEDICAL RECORDS (73%); DISEASE AGENTS & VECTORS (89%); HEALTH CARE INFORMATION TECHNOLOGY (71%); PEDIATRICS (78%); WRITERS (76%); DISEASES & DISORDERS (89%); CHILDREN, ADOLESCENTS & TEENS (89%); COVID CORONAVIRUS (92%); COLLEGE & UNIVERSITY PROFESSORS (50%); EXPERIMENTATION & RESEARCH (90%); Coronavirus (2019-nCoV) (%); Long Covid (%); Disease Rates (%); Chronic Condition (Health) (%); Children and Childhood (%); Lancet Infectious Diseases, The (Journal) (%); your-feed-science (%); your-feed-healthcare (%)
+
+Company:  KENNEDY KRIEGER INSTITUTE INC (57%)
+
+Organization: NATIONAL INSTITUTES OF HEALTH (55%)
+
+Industry: HEALTH CARE INFORMATION (73%); PHYSICIANS & SURGEONS (76%); ELECTRONIC HEALTH RECORDS (52%); HEALTH DEPARTMENTS (73%); MEDICAL RECORDS (73%); HEALTH CARE INFORMATION TECHNOLOGY (71%); PEDIATRICS (78%); WRITERS (76%); HOSPITALS (70%); COLLEGE & UNIVERSITY PROFESSORS (50%)
+
+Geographic: PENNSYLVANIA, USA (75%); UNITED STATES (92%)
+
+Load-Date: October 1, 2025
+
+
+End of Document

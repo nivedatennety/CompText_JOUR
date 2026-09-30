@@ -1,0 +1,79 @@
+
+
+
+The New York Times 
+June 13, 2026 Saturday 18:04 EST
+
+
+Copyright 2026 The New York Times Company All Rights Reserved
+Section: OPINION
+Length: 1106 words
+Highlight: Readers react to a guest essay by a doctor who found ChatGPT useful in dealing with her own medical issues.
+Body
+
+
+Readers react to a guest essay by a doctor who found ChatGPT useful in dealing with her own medical issues.
+To the Editor:
+Re “” by Helen Ouyang (Opinion guest essay, May 27):
+Dr. Ouyang’s essay captures a reality many physicians are beginning to witness firsthand: Patients are turning to ChatGPT not only for information but also for something modern health care increasingly struggles to provide — time, responsiveness and a sense of being heard.
+Her essay is compelling because it recognizes that patients often seek more than medical facts; they seek interpretation, reassurance and guidance that feels personal. In that respect, artificial intelligence exposes a gap in our system that clinicians should take seriously.
+At the same time, enthusiasm for these tools requires caution.  evaluating ChatGPT on complex clinical cases found that while the model often generated relevant and understandable responses, it correctly answered only about half of diagnostic challenges and struggled with interpreting laboratory and imaging data. Its fluency can create an illusion of accuracy precisely when uncertainty matters most. This tension between emotional usefulness and clinical reliability deserves careful attention.
+The path forward is neither to dismiss A.I. nor to outsource clinical judgment to it. Rather, physicians should help patients use these tools wisely: as aids for preparing questions, clarifying instructions and organizing information — not as substitutes for diagnosis or individualized care.
+A.I. safety scholars have long warned that intelligent systems can produce unintended harm even when functioning as designed. Health care should heed that lesson.
+Vijay Rajput
+Fort Lauderdale, Fla.
+The writer is a doctor and a professor at Nova Southeastern University’s Dr. Kiran C. Patel College of Allopathic Medicine.
+To the Editor:
+Dr. Helen Ouyang’s experience with A.I. is much like mine. I was chided into using it about one year ago — and have never looked back. Today, as a forensic psychologist, I use it with every case. It quickly and accurately helps me arrange my findings in ways that would take me hours to do on my own. I also use it as a sounding board.
+In general, my experience has been that A.I. can do what I could do if I had many hours to do it . . . and were sitting in a world-class university library. Today, I would feel professionally and personally crippled without ChatGPT at my constant disposal.
+Joseph Nevotti
+Bellingham, Wash.
+To the Editor:
+The author makes an interesting point here regarding the attentiveness and unwavering positivity offered by ChatGPT in response to her questions about her own health and activities to improve her lab results. In other settings this attribute has been called sycophancy and is not typically a feature we want in either A.I. or our real human interactions. I personally don’t think it feels at all real.
+But, more important, she does not take into account how uploading her test results into ChatGPT makes those results now essentially publicly available (or at least to OpenAI). There is no HIPAA protection here, and who knows how that data could be used at some point? I would urge serious caution in using chatbots in that regard.
+Tanya Wahl
+Seattle
+The writer is a retired oncologist.
+To the Editor:
+Dr. Helen Ouyang’s guest essay about why patients are turning to ChatGPT resonated with me as a person with long Covid. I am fortunate to have found a handful of helpful medical professionals, but ChatGPT has been invaluable in providing me, and many other long-haulers, with information and insights.
+In our experience, many doctors have not bothered to learn even basic facts about long Covid, even though about 20 million to 40 million Americans (estimates vary widely) suffer from it. Long Covid’s symptoms can be debilitating, in some cases reducing patients’ quality of life more than cancer.
+Most long-haulers I know have found A.I. platforms to be helpful in navigating our complex illness. I’ve used A.I. to analyze test results and explore potential treatments. ChatGPT is capable of reading the thousands of papers and articles published on long Covid, while many doctors have not read a single one.
+Chelsea Rudman
+Mount Rainier, Md.
+To the Editor:
+Dr. Helen Ouyang recognized, as a patient, that ChatGPT was more helpful than her doctor had been. American health care emphasizes good communication in principle: The first American Medical Association principle of medical ethics calls for “providing competent medical care, with compassion and respect.” Sadly, this contrasts with the actual level of empathetic listening and compassion in practice.
+As a psychologist, I was employed for 17 years at a family medicine residency program to teach such skills. In a retreat with residents, I asked what their reactions would be to a patient who started crying at the start of a visit. A brave resident answered with a curse (and others chuckled in uncomfortable sympathy) and explained that he would immediately worry that her visit would take too long.
+Time can be an impediment to good communication, but so is lack of awareness. Dr. Ouyang benefited from ChatGPT’s “empathy,” but also realized from the experience that she could listen better to her patients.
+I urge physicians, broadly, to learn about and practice empathetic listening skills.
+Gerald Greenfield
+Madison, Wis.
+To the Editor:
+Having survived Stage 4 testicular cancer, I tend to panic about any medical issue. I recently turned to Microsoft Bing Copilot to ask about a gastrointestinal issue, and it truly walked me off a panic ledge. It broke down my symptoms in a rational, supportive and amazingly personal manner. It continually suggested consulting a medical professional while offering me many ways to cope with my fear and anxiety. Wow!
+Roger Merians
+Simi Valley, Calif.
+To the Editor:
+Dr. Helen Ouyang’s essay highlights the time pressure felt not only by today’s physicians but also by patients. Her doctor offered to meet with her to discuss her test results, but instead she turned to a chatbot.
+It is important that we consider what we are missing by replacing human contact with A.I. technology. The power of a patient-doctor relationship increases with time and with shared experiences. A perceived connection with a chatbot, however immediately supportive, is ephemeral. Each visit to your doctor allows him or her to get to know you better, which, in the long run, will benefit your medical care.
+Maury Martin
+New York
+The writer is a doctor with the Family Health Center of Harlem.
+This article appeared in print on page SR11.
+Classification
+
+
+Language: ENGLISH
+
+Document-Type: Letter
+
+Publication-Type: Web Publication
+
+Subject:  GENERATIVE AI (90%);  REPORTS  REVIEWS & SECTIONS (90%);  MEDICINE & HEALTH (90%);  CHATBOTS (90%);  PHYSICIANS & SURGEONS (90%);  LETTERS & COMMENTS (90%);  ARTIFICIAL INTELLIGENCE (89%);  PROFESSIONAL WORKERS (89%);  EXPERIMENTATION & RESEARCH (78%);  WRITERS (78%);  SAFETY (78%);  PSYCHOLOGY (78%);  LIBRARIES (74%);  SMART TECHNOLOGY (74%);  ACADEMIC LIBRARIES (73%);  ALTERNATIVE MEDICINE (73%);  EMOTIONS (66%);  COLLEGE & UNIVERSITY PROFESSORS (63%);  EDITORIALS & OPINIONS (57%);  FORENSICS (50%); PROFESSIONAL WORKERS (89%); REPORTS, REVIEWS & SECTIONS (99%); PHYSICIANS & SURGEONS (90%); PSYCHOLOGY (78%); SAFETY (78%); SMART TECHNOLOGY (74%); WRITERS (78%); EDITORIALS & OPINIONS (57%); FORENSICS (50%); ARTIFICIAL INTELLIGENCE (91%); LETTERS & COMMENTS (90%); ALTERNATIVE MEDICINE (73%); GENERATIVE AI (90%); CHATBOTS (91%); EMOTIONS (67%); MEDICINE & HEALTH (91%); LIBRARIES (74%); COLLEGE & UNIVERSITY PROFESSORS (64%); ACADEMIC LIBRARIES (64%); ChatGPT (%); Artificial Intelligence (%); Doctors (%); Medicine and Health (%); Tests (Medical) (%)
+
+Industry: PHYSICIANS & SURGEONS (90%); PSYCHOLOGY (78%); SMART TECHNOLOGY (74%); WRITERS (78%); ARTIFICIAL INTELLIGENCE (91%); ALTERNATIVE MEDICINE (73%); GENERATIVE AI (90%); CHATBOTS (91%); LIBRARIES (74%); COLLEGE & UNIVERSITY PROFESSORS (64%); ACADEMIC LIBRARIES (64%)
+
+Geographic:  FORT LAUDERDALE, FL, USA (53%); FORT LAUDERDALE, FL, USA (54%);  FLORIDA, USA (78%);  WASHINGTON, USA (51%); FLORIDA, USA (54%); WASHINGTON, USA (51%);  UNITED STATES (78%)
+
+Load-Date: June 16, 2026
+
+
+End of Document

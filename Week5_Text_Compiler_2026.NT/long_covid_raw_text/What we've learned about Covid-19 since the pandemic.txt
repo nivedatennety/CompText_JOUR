@@ -1,0 +1,101 @@
+
+
+
+CNN Wire
+August 4, 2026 Tuesday 10:00 AM GMT
+
+
+Copyright 2026 Cable News Network All Rights Reserved
+Length: 2382 words
+Byline: By Deidre McPhillips, CNN
+Dateline: (CNN) 
+Body
+
+
+             (CNN) - Covid-19 has killed more than a million people in the United States, but in an interview with CNN's Dana Bash on Sunday, US Department of Health and Human Services Secretary Robert F. Kennedy Jr. said that lockdowns were "the thing that did the most damage to our country."
+This assertion kicked off more than 20 minutes of contentious back-and-forth, in which Kennedy made a number of  about a range of topics including measles, autism and Lyme disease.
+"It's just fraught with misinformation. Lies," said Dr. Jake Scott, an infectious disease physician at Stanford who has made it his personal mission to fight back against false claims about vaccines. "You could write a book about that whole interview."
+The World Health Organization declared Covid-19 a pandemic more than six years ago, and the public health emergency ended in the US more than three years ago. But Covid-19 is still a politically charged topic, with long-lasting implications.
+On Sunday, Kennedy blamed Dr. Anthony Fauci, former director of the National Institute of Allergy and Infectious Diseases, for "mismanaging" the Covid-19 pandemic. And last week, Fauci was subpoenaed to testify to Congress about the national public health response - during which he  his Fifth Amendment right.
+Here's what we've learned - and how our understanding has evolved - since the earliest cases of the novel coronavirus were first reported.
+Covid-19 vaccines are effective against severe disease
+When Pfizer/BioNTech and Moderna received emergency use authorization for their Covid-19 vaccines from the US Food and Drug Administration in December 2020, data from clinical trials showed that both vaccines were more than 90% effective at preventing symptomatic disease for months.
+Over time - and particularly when the Delta variant became dominant in the summer of 2021 - so-called breakthrough infections started to become more common, with a rise in the number of vaccinated people who were testing positive. This raised questions about how well the vaccines prevent transmission and about how protection wanes over time.
+But Covid-19 vaccines have consistently proved to provide significant protection against severe disease, hospitalization and death.
+In a  published by the US Centers for Disease Control and Prevention in September 2021, early real-world data showed that two doses of the Moderna vaccine were 93% effective at preventing hospitalization among healthy adults, and the Pfizer/BioNTech vaccine was 88% effective. Another  published by the CDC in March 2022 showed that unvaccinated adults were 12 times more likely to be hospitalized than those who had received an initial series and booster dose of Covid-19 vaccine.
+As with flu vaccines, protection provided by Covid shots is greatest a few weeks after someone gets them, and vaccine formulations are updated each season to best respond to an evolving virus.
+More recent research suggests that Covid-19 vaccines have continued to show benefits, even as population immunity levels grow and the virus becomes less novel.
+Covid vaccines roughly halved the chances that a US adult would need to visit the emergency room or be hospitalized with their infections last fall and winter, one study found. But  in the CDC's own flagship journal, despite leading the research. It was instead published in JAMA Network Open, a peer-reviewed journal from the American Medical Association.
+Covid-19 vaccines are safe and serious adverse events are rare
+More than 700 million doses of Covid-19 vaccines have been administered in the US since they became available in late 2020, according to the . Mild side effects are common - including soreness at the injection site, headache and fatigue - but serious side effects have been generally rare.
+The shots were extensively tested for safety before they were authorized for emergency use, with the FDA requiring at least two months of follow-up safety data after vaccinating trial participants.
+Monitoring has continued long after the clinical trials - even after some vaccines received full FDA approval - to ensure that they continue to meet the FDA's standards for safety and effectiveness.
+Rare but serious adverse events that are being closely watched for include anaphylaxis, myocarditis and Guillain-Barre syndrome. Myocarditis, in particular, has been most typically seen in adolescent and young adult males within a week of their second mRNA Covid vaccine dose, but the CDC says that most patients respond well to medicine and rest and feel better quickly.
+This real-time safety monitoring and analysis led the FDA to  in May 2022, after reports of a rare and dangerous clotting condition called thrombosis with thrombocytopenia syndrome (TTS) among some people who got the vaccine. Doses of that vaccine are no longer available in the US.
+But Pfizer/BioNTech, Moderna and Novavax vaccines maintain broad approval or emergency use authorization in the US.
+"During the COVID-19 pandemic, COVID-19 vaccines underwent the most intensive safety analysis in U.S. history," the . "Everyone ages 6 months and older should get an updated COVID-19 vaccine."
+Children are less susceptible to severe outcomes - but aren't immune
+Risks from Covid-19 increase exponentially with age, and older adults have been disproportionately affected. Data published by the CDC shows that  of the Covid deaths between 2020 and 2023 were among adults 75 and older, and hospitalization rates among seniors were consistently higher than in other age groups.
+But children suffered the most severe outcomes from Covid, too. Nearly 1,700 children died from Covid-19 between 2020 and 2023, CDC data shows. The virus was involved with about 1 out of every 77 deaths among children in this time.
+The youngest children have been the most susceptible. In the 2021-22 respiratory virus season, more than 2 in every 1,000 children younger than 5 were hospitalized with Covid-19. And that rate stayed above 1 out of every 1,000 for the next two seasons, CDC  shows.
+Covid-19 vaccines were authorized for use in some children about a year after they were authorized for adults. For the youngest kids, it was nearly two years later.
+Although the need for immunity may not have been as immediately critical for children as it was for older adults, the vaccines still showed significant levels of protection for children.
+In the 2024-25 season, the latest Covid vaccines were about 76% effective in preventing emergency department and urgent care visits related to the virus among healthy children ages 9 months to 4 years, and they were about 56% effective among children ages 5 to 17 compared with those who did not receive an updated vaccine for the virus season, a CDC  said.
+Covid-19 vaccines were never broadly mandated for children. States typically decide which vaccines are required for school attendance, but Covid-19 vaccines are . The American Academy of Pediatrics recommends them for very young and immunocompromised children, and it says all children ages 2 to 18 "not included in the risk groups above whose parent or guardian desires their protection from COVID-19 should be offered a single dose of age-appropriate 2025-2026 COVID-19 vaccine."
+Masks can protect against respiratory diseases
+Wearing a mask can help prevent transmission of respiratory diseases like Covid-19 by offering a buffer against infectious particles, the .
+Protection works best when there are multiple layers: When sick people wear a mask, they spread fewer germs. And when others wear a mask, they are less likely to breathe in any infectious particles left in the air.
+Covid-19  as a disease with airborne transmission with the potential to spread beyond the 6-foot social distancing measure, especially in places with poor ventilation or around activities with heavy breathing. It also took time to understand evidence on how common it was for asymptomatic people to spread Covid-19. Growing knowledge around these and other factors would help refine masking recommendations from public health officials.
+CDC guidance on masking has evolved over time. Early recommendations suggested masking for specific groups and situations, which then shifted to universal recommendations and later to recommendations based on specific community risk criteria, including local transmission levels and hospital capacity.
+One  from early in the pandemic found that hospitalization rates fell in places where local leaders required mask use.
+Herd immunity for Covid-19 is complicated
+ is a public health concept that is achieved when a large enough share of a community becomes immune to a contagious disease that the disease can no longer spread easily. This community immunity can come from a combination of vaccination or prior illness, and it offers a shield of sorts for the more vulnerable members of society who can't protect themselves with vaccines.
+With a disease like measles, this concept is straightforward. Measles is highly contagious, but the measles-mumps-rubella (MMR) vaccine is highly effective, and protection generally lasts for life. If 95% of a community is vaccinated, it becomes extremely unlikely that measles will spread.
+Covid-19 wasn't so simple. Early in the pandemic, many scientists and much of the public focused on community protection through shutdowns and social distancing, and then by pinning their hopes on what many hoped would be lasting protection from vaccines or prior infection.
+In October 2020, just before Covid-19 vaccines became available in the US, Dr. Jay Bhattacharya - who is now director of the US National Institutes of Health and acting director of the CDC - and two colleagues published an open letter calling for a  to managing the risks of the pandemic.
+They suggested a concept of "focused protection," in which the most vulnerable stayed home but the majority of the population resumed normal life with an aim to obtain herd immunity through infection.
+The Great Barrington Declaration, as it was called, railed against the "irreparable damage" of Covid-19 lockdowns. Backlash was swift, with the director-general of the World Health Organization calling the idea of allowing a dangerous new virus to sweep through unprotected populations "."
+Shutdowns and school closures  to detrimental effects on mental health, obesity and social needs, such as child development, employment and access to food.  found lockdowns to be less important in mitigating Covid mortality than other efforts such as social distancing.
+The concept of herd immunity doesn't work for every disease, according to the . It is especially challenging when viruses change a lot in a short time and when the protection from an illness or vaccine doesn't last a long time, which is now known to be true of Covid.
+"Spread of the viruses that cause COVID-19, flu and RSV are examples of when herd immunity may not be a realistic goal. With this type of illness, the goal is to control and limit the spread of the virus," according to the Mayo Clinic.
+The  "the primary goal of the COVID-19 vaccination program is to prevent severe illness and death."
+The US had one of the worst death rates from Covid-19 and ICUs were often full
+On Sunday, Kennedy claimed that some intensive care units "were empty all over the country, including in New York at the height" of the Covid-19 pandemic. But federal data repeatedly illustrated the strain that Covid had on hospitals.
+At the end of 2020, hundreds of hospitals were at  and more than 90% of ICU beds were occupied in a third of all hospitals. By the start of 2022, 19 states had  in their ICUs.
+According to an  by emergency physician Dr. Jeremy Faust, there were typically about 1,600 ICU beds in New York City before the Covid-19 pandemic. But in April 2020, nearly 15,000 deaths citywide were among hospitalized or ER patients - significantly more than even the efforts hospitals made to increase capacity could handle.
+Overall, at least 1.2 million people in the US died from Covid-19, according to the  - representing more than 1 in every 7 Covid deaths worldwide, more than any other country.
+The US had one of the highest death rates from Covid-19, second only to Peru, according to .
+A key reason why the US fared so poorly with the pandemic is because the country lacked federal coordination in "every element of the response," said Dr. William Schaffner, professor of infectious diseases at Vanderbilt Health.
+States and communities took a wide range of approaches to masking, stay-at-home orders, vaccinations and more, coupled with "strikingly disjointed" communication from federal political and public health leaders, he said.
+This led to a "great divergence" in how the public understood how to approach Covid-19, and it "led to a great deal of confusion, distrust, uncertainty," Schaffner said.
+The US also has "great disparities in the access to medical care" at baseline, he said. And a vaccine rollout that was quickly politicized and promotion of unproven therapies like ivermectin complicated things even more.
+Covid-19 continues to affect Americans
+Covid-19 was the third leading cause of death in the US in 2020, and it remained in the top 10 until 2024.
+For many, Covid-19 feels like a cold or the flu. But hundreds of people in the US are still dying from Covid-19 each month.
+Millions of people in the US are also living with long Covid, a chronic condition with wide-ranging symptoms - including fatigue, difficulty breathing, neurological and digestive issues - that can persist months or years after a Covid-19 infection. Estimates vary, but one  suggests that 1 in 6 people who are infected with Covid-19 may develop the condition.
+CNN's Brenda Goodman and Elise Haulund contributed to this report.         
+             By Deidre McPhillips, CNN         
+TM & © 2026 Cable News Network, Inc., a Time Warner Company. All rights reserved.
+Classification
+
+
+Language: ENGLISH
+
+Publication-Type: Newswire
+
+Subject:  COVID-19 CORONAVIRUS (94%);  COVID CORONAVIRUS (93%);  INFECTIOUS DISEASE (92%);  PANDEMICS (91%);  PUBLIC HEALTH ADMINISTRATION (91%);  PUBLIC HEALTH (91%);  EPIDEMICS (90%);  DISEASES & DISORDERS (90%);  VACCINES (90%);  HEALTH DEPARTMENTS (90%);  INTERVIEWS (90%);  US FEDERAL GOVERNMENT (89%);  PHARMACEUTICALS INDUSTRY (89%);  COVID-19 CORONAVIRUS VACCINE (89%);  COMMUNICABLE DISEASE CONTROL (89%);  SUBPOENAS (87%);  NEGATIVE PERSONAL NEWS (78%);  DEATH & DYING (78%);  GOVERNMENT DEPARTMENTS & AUTHORITIES (78%);  MEASLES (78%);  MEDICAL RESEARCH (78%);  DISINFORMATION & MISINFORMATION (78%);  HEALTH MISINFORMATION (78%);  HEALTH CARE REGULATION & POLICY (78%);  ADULTS (78%);  SOCIAL SERVICES DEPARTMENTS (77%);  PREVENTION & WELLNESS (77%);  INTERNATIONAL ORGANIZATIONS & BODIES (77%);  FALSE STATEMENTS (75%);  EPIDEMIOLOGY (75%);  DRUG & MEDICAL DEVICES APPROVAL (74%);  INFLUENZA (74%);  ZOONOTIC DISEASES (73%);  VIRUSES (72%);  UNITED NATIONS INSTITUTIONS (72%);  CORONAVIRUSES (72%);  LYME DISEASE (70%);  ANTIVIRALS (69%);  INTERNATIONAL GOVERNMENTAL ORGANIZATIONS (68%);  CLINICAL TRIALS (68%);  ASSOCIATIONS & ORGANIZATIONS (68%);  TESTIMONY (65%);  AUTISM (55%); COVID-19 CORONAVIRUS (99%); ASSOCIATIONS & ORGANIZATIONS (68%); EPIDEMICS (90%); VIRUSES (72%); PANDEMICS (91%); CORONAVIRUSES (72%); INFLUENZA (74%); INFECTIOUS DISEASE (94%); SOCIAL SERVICES DEPARTMENTS (77%); VACCINES (90%); AUTISM (55%); DEATH & DYING (78%); UNITED NATIONS INSTITUTIONS (72%); MEDICAL RESEARCH (78%); EPIDEMIOLOGY (75%); COVID CORONAVIRUS (99%); ZOONOTIC DISEASES (73%); NEGATIVE PERSONAL NEWS (78%); US FEDERAL GOVERNMENT (89%); LYME DISEASE (70%); HEALTH CARE REGULATION & POLICY (78%); COVID-19 CORONAVIRUS VACCINE (89%); TESTIMONY (65%); GOVERNMENT DEPARTMENTS & AUTHORITIES (78%); ADULTS (78%); HEALTH MISINFORMATION (78%); DRUG & MEDICAL DEVICES APPROVAL (74%); PREVENTION & WELLNESS (77%); HEALTH DEPARTMENTS (90%); COMMUNICABLE DISEASE CONTROL (78%); INTERNATIONAL GOVERNMENTAL ORGANIZATIONS (68%); FALSE STATEMENTS (75%); INTERNATIONAL ORGANIZATIONS & BODIES (77%); DISINFORMATION & MISINFORMATION (78%); CLINICAL TRIALS (68%); SUBPOENAS (87%); INTERVIEWS (91%); PUBLIC HEALTH ADMINISTRATION (92%); DISEASES & DISORDERS (90%); MEASLES (78%); PUBLIC HEALTH (92%); covid 19 what we know now (%)
+
+Company:  PFIZER INC (56%)
+
+Ticker: PFZ (LSE) (56%); PFE (NYSE) (56%)
+
+Industry: NAICS325414 BIOLOGICAL PRODUCT (EXCEPT DIAGNOSTIC) MANUFACTURING (56%); NAICS325412 PHARMACEUTICAL PREPARATION MANUFACTURING (56%); NAICS325411 MEDICINAL & BOTANICAL MANUFACTURING (56%); SIC2836 BIOLOGICAL PRODUCTS, EXCEPT DIAGNOSTIC SUBSTANCES (56%); SIC2834 PHARMACEUTICAL PREPARATIONS (56%); SIC2833 MEDICINAL CHEMICALS & BOTANICAL PRODUCTS (56%); VACCINES (90%); EPIDEMIOLOGY (75%); HEALTH CARE REGULATION & POLICY (78%); ANTIVIRALS (69%); COVID-19 CORONAVIRUS VACCINE (89%); HEALTH MISINFORMATION (78%); DRUG & MEDICAL DEVICES APPROVAL (74%); HEALTH DEPARTMENTS (90%); CLINICAL TRIALS (68%); PHARMACEUTICALS INDUSTRY (89%)
+
+Person:  ROBERT F KENNEDY JR (92%);  ANTHONY FAUCI (79%); ANTHONY FAUCI (79%); ROBERT F KENNEDY JR (92%)
+
+Geographic:  UNITED STATES (96%); UNITED STATES (99%)
+
+Load-Date: August 4, 2026
+
+
+End of Document

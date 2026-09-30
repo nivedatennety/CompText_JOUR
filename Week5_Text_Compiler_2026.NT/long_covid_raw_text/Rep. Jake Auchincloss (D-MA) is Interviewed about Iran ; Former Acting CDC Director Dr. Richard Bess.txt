@@ -1,0 +1,174 @@
+
+
+
+CNN News Central
+August 11, 2026 Tuesday 08:30 AM EST
+
+
+Copyright 2026 Cable News Network, Inc. All Rights Reserved 
+Section: NEWS; International
+Length: 4465 words
+Byline: John Berman, Sara Sidner, Harry Enten, Jean Casarez, Bill Weir, Isabelle Chapman
+Guests: Jake Auchincloss, Richard Besser
+Highlight: Rep. Jake Auchincloss (D-MA) is interviewed about Iran and the Democratic Party. Dr. Richard Besser, former acting director of the CDC, is interviewed about the change in childhood vaccines. A look at the polls and what Americans think about A.I. and data centers. Lindsay Clancy's attorney challenges her psychiatrist over her mental health treatment. July was the single hottest month ever recorded in the United States, breaking records dating back to 1895. CNN is looking into why the FBI gunned down a Russian-born U.S. citizen with a high-level security clearance.
+Body
+
+
+[08:30:00]
+REP. JAKE AUCHINCLOSS (D-MA): Thanks for having me back on.
+I wasn't at the scene. I'm not aware of all the security details. I'm not going to second guess decisions made by the commander on that scene. But the whole episode just underscores how much he's lost control over the whole scenario in the Middle East. I mean this guy started an illegal war declaring regime change, and now he is the leader who's scrambling. We've got the Strait of Hormuz turned into an Iranian river. We have prices skyrocketing here. We have the Mecca pact now, which is introducing nuclear weapons, not getting rid of nuclear enrichment in the Middle East. So, the president has failed. And this embarrassing episode just highlights it.
+JOHN BERMAN, CNN ANCHOR: So, Congressman, you talked about the situation in Iran. President Trump now says he's low-keying negotiations with Iran. How much more successful do you think what he calls a low-key approach will be?
+AUCHINCLOSS: First of all, I don't know what that means. I mean, every 12 hours it's a roller coaster, which is no way to conduct sensitive diplomacy. He's lost control of the situation. That's what it comes down to is, he started an illegal war, didn't consult Congress, didn't consult his allies, didn't have a plan. And what's happened is now we're in an escalation ratchet in which the president is trying to vertically escalate, meaning put more and more effects on target, but we're running dangerously low on munitions. And then Iran is countering by horizontally escalating, meaning that it's bringing this war into the rest of the region by pulling in infrastructure in other countries, including the Strait into the escalation ratchet.
+Iran is winning that escalation ratchet such that the United States is now desperately trying just to get back to the status quo before the war started, which was a free and open Strait of Hormuz. I think this president will fail in that endeavor. I think Iran and Oman are likely to be able to toll the Strait of Hormuz. And the net effect for Americans is higher prices, less security.
+BERMAN: Congressman, primaries in six states today. I will note the Massachusetts primary is inexplicably, in September, a source of concern for people who have come from that state for generations. We'll leave that aside. But primaries in six states today. And I want to talk about your colleague to the south of New York, Alexandria Ocasio-Cortez, who has been speaking about Democrats and their positioning on wokeness.
+Listen.
+(BEGIN VIDEO CLIP)
+REP. ALEXANDRIA OCASIO-CORTEZ (D-NY): Francesca Hong has made clear her present stances to her electorate.
+JONATHAN KARL, ABC NEWS ANCHOR: Yes, she's moved away from a lot of that, but --
+OCASIO-CORTEZ: Right, she's moved away from it. And I have a local city councilman that has this saying, woke one was crazy.
+(END VIDEO CLIP)
+BERMAN: Woke one was crazy, Congressman. How much do you think Democrats need to account for so-called woke one?
+AUCHINCLOSS: So, my day one issue when I took office was reopening the schools. The schools had stayed closed for too long during Covid, contrary to both epidemiological guidance and what we knew was best for our kids' socio emotional and academic development. And to me, that school closure episode really was a crystallization of where the Democratic Party went off the rails. Number one, it was too focused on process, not on outcomes. And number two is, it adopted this condescending attitude towards parents who were very rightfully frustrated watching their kids miss out on milestones of their youth.
+And when I think about, you know, that whole era, woke one, the school closures, yes, Democrats need to account for that. But more importantly than accounting for it, whether it's the school closures or defund the police, it's have a better, proactive, positive agenda moving forward. OK, the schools were closed for too long. How do we fix that? I have legislation that would tax the social media corporations to invest in high dosage one-on-one tutoring and building 1,000 trade schools throughout the country. If they're going to put hundreds of billions of dollars behind artificial intelligence, they should put some money behind human intelligence too.
+BERMAN: So, OK, you clearly -- you ran on that. And it was one of the first issues you dealt with. To what extent, as you see Democrats winning nominations in Michigan, Abdul El-Sayed, you see Francesca Hong, who may or may not win the Democratic nomination for governor in Wisconsin, to what extent do you think have Democrats learned the lesson and how concerned are you maybe they have not?
+AUCHINCLOSS: There absolutely are candidates who are going to have to account for past statements.
+First of all, I just think, in general, like, going after holidays in America is a bad idea. People like holidays, right? July 4th, Thanksgiving, love both those days. They're great days. We should celebrate the greatness of this country.
+I will also note that the Republican Party has a real problem with sacred days on the calendar too. Election Day. OK. This president tried to steal a free and fair election, and Republicans went mute. And in fact, a majority of Republican primaries in 2026 have been won by election deniers.
+[08:35:02]
+So, we need to stop attacking sacred days on the calendar, celebrate this country's greatness, and also talk about how we are going to expand freedom and equality and opportunity so that the next 250 years are even greater.
+BERMAN: Congressman Jake Auchincloss from Massachusetts, coming out in favor of Thanksgiving, the Fourth of July and Election Day, all in one interview. Controversial.
+SARA SIDNER, CNN ANCHOR: Very.
+BERMAN: But taking a stand this morning. Thanks so much for being with us.
+Sara.
+SIDNER: John makes us all laugh. That witty guy. All right, we're lucky.
+All right, this morning, medical groups are pushing back hard and doctors are saying more children could get sick after President Trump signed a new executive order aimed at overhauling U.S. vaccine policy. The president is pushing to pare down the number of vaccines that are recommended for all children from 18 to 11. In his announcement, Trump made numerous false claims about vaccines and autism.
+Here's some of what he said.
+(BEGIN VIDEO CLIP)
+DONALD TRUMP, PRESIDENT OF THE UNITED STATES: For a long and far too long, a long period of time, America's recommended more childhood vaccines than any peer nation, and even twice as many doses as some European countries, and even more than that.
+Effective immediately, my administration is recognizing gold standard childhood vaccine recommendations for only 11 core vaccinations.
+You know, the expression is, we have really no choice. And nothing bad can happen from what we're doing. Nothing bad can happen.
+(END VIDEO CLIP)
+SIDNER: Joining me now is Dr. Richard Besser, former acting director of the CDC.
+Let's start where the president ended in that sound. He said nothing bad can happen. Is he right?
+DR. RICHARD BESSER, FORMER ACTING DIRECTOR, CDC: You know, Sara, I practiced pediatrics for more than 30 years, and nothing I did as a pediatrician had more proven value than making sure that my patients were vaccinated fully and on time. And that required a lot of time talking to parents, listening to their questions, answering their questions. So, when you have the president of the United States, who has absolutely no medical or scientific background, putting out an executive order that changes the well-constructed evidence-based vaccine schedule, instilling fear in people, something really, really bad can happen. Parents who want to do the right thing may make the wrong choice for their children, and that can be devastating.
+SIDNER: Has there been any change in any of the research, any of the sort of medical efficacy, anything that has changed in order that the president can hang his hat on, or is the only change that has happened is that his HHS secretary is skeptical of vaccines?
+BESSER: Well, you know, we have an HHS secretary, RFK Jr., who is one of the nation's leading anti-vaccine advocates. He tried to put in this schedule back in January. He issued it from the department. He didn't go through the process that Congress put in place to ensure that our vaccine recommendations are solid, our evidence-based, that our vaccines are safe.
+So, he launched this in January. It was challenged in the court by the American Academy of Pediatrics, I'm a member, as well as other groups. And a judge said, no, you can't do this.
+So, this is another attempt to put in the secretary's anti-vaccine agenda. I expect that the courts won't accept it. But that doesn't mean there won't be damage. Because whenever you politicize these decisions and take them away from well thought decisions and conversations that parents have with their doctors, with their nurses, with their pharmacists, you're going to -- you're going to get into a situation where children suffer.
+SIDNER: Yes. What is interesting is that the president is putting these out as a directive, and not once I -- did I hear him say, you know, talk to your doctor, because the ultimate thing is for you to spend time with your doctor, to talk it through with a medical professional who went to school and practices. He's just making these claims.
+I do want to read one of them that really stood out to me and was shocking, frankly. He said, "I've seen proof of where they have a vaccination that looks like the size of a bottle of soda poured into a little child's body, and bad things happen in many cases. In too many cases."
+Have you ever seen a size of a bottle being poured into a child when it comes to the MMR vaccine, which is what he was referring to?
+BESSER: Yes, this is -- this is yet another one of the president's lies. You know, the amount of material that you inject with a vaccine is a fraction of a -- of a teaspoon. So, where he's coming up with these ideas, it's utter nonsense, and it will instill fear.
+[08:40:01]
+You know, he's -- he called for dividing the measles, mumps, rubella shot into three separate shots.
+SIDNER: Right.
+BESSER: There's no health benefit in doing that. And it's going to require parents to take off three days from work instead of just one. A lot of people don't have personal time. You know, when you take your child to the doctor, you're taking time off work. A lot of people then aren't earning income for that.
+If there's a health benefit, that's a different question. But this is a vaccine that we've been giving since the 1970s. Highly effective and safe. As a pediatrician, I loved when we were able to give combined vaccines because, you know, I've yet to meet a child who really likes to get a vaccine. And so, if you can reduce the number, and parents as well don't like to give their kids a lot of shots. So, if you can reduce the number by combining and ensuring that they're still safe and effective, that's a real win.
+SIDNER: I do have to ask you lastly, ask you, I'm sorry about this, just a few seconds more. Just quickly, does it exist right now where you can get those shots separately? Because, like you said, since the 70s, this has been a cocktail that has been given to children and has been incredibly effective. It is only now when people aren't taking it that we're seeing a huge explosion of measles. It has been deadly in some states, like Texas. So, do these individual shots exist right now?
+BESSER: Yes, so, they don't exist in this country. They would have to be licensed. They're available in some other countries. So, they would have to go through licensure in the U.S. And your point is a good one. At a time when we are seeing -- in the past 18 months we saw more measles cases than we saw in the previous 25 years combined. What you want to see is a president coming on TV and saying, if you haven't had your child vaccinated against measles, go out and do it right now, because this is spreading around our country and there's something you can do to keep your child safe. Instead, he's instilling more fear than -- and that will lead some people to do the wrong thing for the children's health.
+SIDNER: Dr. Richard Besser, it is good to have you to give us a science-based evidence for these particular shots. Thank you so much. I do appreciate your time this morning.
+John.
+BERMAN: All right, there was a headline in "The New York Times" this week, quote, "as voters grow anxious over A.I., Trump shrugs off the concern."
+Now, A.I., artificial intelligence and data centers, they've absolutely become a campaign issue over the last several months. CNN chief data analyst Hary Enten joins us now.
+You know, you hear this debate.
+HARRY ENTEN, CNN CHIEF DATA ANALYST: Yes.
+BERMAN: And I'm putting debate in question mark -- sorry, you know, quotation marks here because actually the politics of this, where people stand, is pretty clear.
+ENTEN: Yes, there is no debate when it comes to where people stand on A.I. and data centers and, simply put, it's electoral poison at this point. You rarely see this type of agreement. Oppose building A.I. data centers in your area. It includes 70 percent overall.
+But look at this. On the lower end of the spectrum, you still get three in five Republicans, you get more than three in five in urban areas, 63 percent. And then what's really interesting is you might expect, hey, Democrats in rural areas, rural folks, they don't necessarily see it the same way always when it comes to issues. But on this, they do. Seventy-five percent in the rural areas and 76 of Democrats. You see across the board clear position, which is, the vast majority of Americans and voters are against building A.I. data centers. And that's why I said at the top, it's, simply put, electoral poison at this point when it comes to the politics of it. It is very clear people are against it.
+BERMAN: Yes, I'm not talking about the facts here, whether it's a good idea or a bad idea.
+ENTEN: No.
+BERMAN: Just, this is how people feel about it. And it's pretty clear, and you don't see agreement like this on many issues.
+ENTEN: Right.
+BERMAN: So on, you know, these data centers, if they are going to be built, how do people want to see it done?
+ENTEN: You know, one of the key nuggets that those who want the data centers to be built will say is, we have to stay ahead of China when it comes to tech, right? So, there's a great poll question that essentially formulated this, right? Americans on building A.I. data centers. Slowly to address local concerns, of which there have been many, or quickly to maintain a tech edge over, you know, folks like -- places in China. And on this one, it is a four to one clear blowout. I mean we're talking about 78 percent of Americans, voters say slowly to address local concerns. Just one in five, 21 percent, say quickly to maintain the edge over China.
+And again, what we see is across all of the different political and demographic groups, everyone agrees that they should be built slowly to address local concerns. And so, when we start off at the top saying, hey, there is this debate, there really isn't much of a debate when it comes to the politics of it. The vast majority of Americans in basically every single camp are in agreement on this, they want it to be slowly to address those local concerns.
+BERMAN: And credit where credit is due, I think this question is actually phrased really well here.
+ENTEN: Yes.
+BERMAN: And lets people come down on a side here with advantages potentially for both sides.
+How do people view the impact of artificial intelligence in general right now?
+[08:45:01]
+ENTEN: Yes, I think this is part of a larger debate, Johnny B. And it's, you know, it's just, look at this, say A.I. development is bad for society. Again, what you see is clear majorities across the board, groups that don't normally agree on anything agree on this one, 63 percent of Republicans, 74 percent of Democrats, 75 percent of independents and 70 percent, as I come over to Johnny's side of the board over there overall say A.I. development is bad for society. Again, the electoral -- the electoral politics of this are very, very clear, A.I. and data centers are, simply put, electoral poison at this point.
+BERMAN: It will be notable to watch how candidates deal with this heading into November and beyond that.
+ENTEN: Yes.
+BERMAN: It really will be.
+Harry Enten, thank you very much.
+ENTEN: Thank you, Johnny B.
+BERMAN: Sara.
+SIDNER: It's a big deal because it's not going away as well.
+All right, next hour, testimony is expected to resume in the murder trial of Lindsay Clancy, the Massachusetts mother accused of strangling her three young children. This morning, a nurse practitioner expected to take the stand. It comes after an explosive day in court Monday as Clancy's attorney grilled the psychiatrist who treated her 14 times, including the day before the killings.
+CNN's Jean Casarez has all the details.
+(BEGIN VIDEOTAPE)
+JEAN CASAREZ, CNN CORRESPONDENT: Actual medical providers of Lindsay Clancy continue to take the stand. We believe this morning will be cross-examination of a nurse practitioner. She was the last witness yesterday. But it was that cross-examination of Jennifer Tufts, really the primary psychiatrist for Lindsay Clancy, on cross-examination, just as we thought, it was extremely aggressive. Kevin Reddington began by saying, you were a doctor for just one month before you treated a very serious case with Lindsay Clancy. He then focused on the telehealth visits that every single one of the 14 visits were telehealth. The camera. And why didn't you treat her in person? You couldn't see her body movements. You couldn't really see her demeanor. And this is a mental health issue. She said that she didn't think it was necessary.
+He then went on, why didn't you have her write in a diary? Why didn't you do a blood test? Why didn't you contact her parents? And why didn't you contact her husband? Well, Jennifer Tufts said that she's an adult, number one. A blood test should be done by a primary care physician. I did not need to do that.
+But then it came to the point about the medications and the medications she was on. And Lindsay Clancy had gone to a lot of providers on her own. She wasn't directed to do that. And all these medications started building up.
+Right before a November 2, 2022, appointment, here is what Reddington asked and the response by Jennifer Tufts about Lindsay Clancy's condition.
+KEVIN REDDINGTON, LINDSAY CLANCY'S ATTORNEY: At this point, prior to the next appointment, which was November 2nd, she had gotten significantly worse, even after all this medication that you had been prescribing, right?
+Did you make a note that she was telling you that she had depression and that she was crying, had more anxiety, insomnia had increased, brain fog and worrying about suicide.
+JENNIFER TUFTS, LINDSAY CLANCY'S PSYCHIATRIST: In the couple weeks after starting those medicines, I don't recall that the symptoms were significantly exacerbated.
+CASAREZ: And the prosecution's case in chief continues today.
+(END VIDEOTAPE)
+SIDNER: Our thanks to Jean Casarez.
+Now, up ahead, a former flight attendant pleads guilty for pretending to be a pilot in order to get hundreds of free flights. How many years that he might see now, instead of flying, behind bars.
+And a semitruck runs off the road, barrels through multiple backyards, before ending up here. The latest on the condition of the folks involved in this accident, ahead.
+(COMMERCIAL BREAK)
+[08:5310] BERMAN: It is official and historic. The National Oceanic and Atmospheric Administration confirmed that July was the single hottest month ever recorded in the United States, breaking records dating back to 1895. Relentless heat domes driven by human-caused climate change blanketed the country, setting more than 600 high temperature records.
+CNN chief climate correspondent Bill Weir is here.
+Bill, we did it.
+BILL WEIR, CNN CHIEF CLIMATE CORRESPONDENT: We did it. It's not one to be proud of, unfortunately. And it's deadly and it's costly and it's just beginning, right?
+So, here's the numbers. July, typically the hottest month of the year across most of the United States. This one, 3.3 degrees hotter than the 20th century average. So, July 2026 will go down, the average temperature, 76.9 degrees Fahrenheit. Again, a fever of 3.3 degrees will make you really sick. This earth fever, as we've got, is shattering records. More than 600 heat records. That's both for maximum and minimum. Overnight, hot temperatures were set. Only less than 50, fewer than 50 cold records. And on a planet in balance, those numbers should even out most years.
+Top five warmest Julys for 13 states that we know of right now. And of course, the cause of all of this is climate change due to fossil fuel pollution blanketing the earth right now. We have a series of these heat domes, which is directly related to that. As the jet stream breaks down, you get these lobes of heat that come down. And then, of course, we've got the intensifying super El Nino in the Pacific, John, which is kind of like having a fever and then going into a sauna. You know, that's a natural phenomenon. But earth is already so overheated based on and we're at just about 1.5 degrees of global warming. You know, where the countries agreed, this is the limit to stop. But this could be one of the coolest Julys now the rest of our lives.
+BERMAN: I've got to say that, you know, the Fourth of July heat wave that we saw. Then all the smoke that was over everywhere.
+[08:55:01]
+You knew this was going to be an extraordinary month, record setting.
+And it's not just about health, right? There's actual -- if you want this to be about dollars and cents, this costs.
+WEIR: Absolutely. The two biggest reservoirs in the United States, Lake Mead and Lake Powell, are at historic lows. And those don't only keep 40 million people alive, they create hydropower, electricity, for hundreds of thousands of homes. So, that will get more expensive.
+Data centers take water to cool, right, you know? And chip factories take water to make those chips. And most of our vegetables are grown in Arizona in the wintertime, which gets -- is at the end of the junior rights water holders, and they're facing steep cuts as a result of this. So, the trickle-down effect of this, we're going to feel it physically, economically.
+BERMAN: All right, Bill Weir, grim stuff there. Thank you very much.
+Sara.
+SIDNER: At least you both look good.
+All right.
+BERMAN: All right. On the other hand.
+SIDNER: In other news, all right, this is on our radar for you this morning, a family in Oklahoma City had a terrifying wake-up call when a semitruck plowed right into their home. The truck veered off an expressway, drove through several backyards before crashing into the home yesterday. Two adults and a child were inside that home when it happened. Fire officials say somehow they weren't hurt. The crash did send the truck driver to the hospital and triggered a gas leak, forcing nearby residents to have to evacuate the area. Look at the status of that truck. Good grief.
+All right, deputies in L.A. County arrested a 27-year-old man at Kim Kardashian's home they say as he was burglarizing the place. Investigators say he broke in Sunday and was seen loading items into a car. Kardashian and her kids are not living at the home because it's being renovated at the moment. She did not comment on this particular incident.
+And a former flight attendant from Canada has pleaded guilty in U.S. federal court to wire fraud for pretending to be a pilot. The U.S. attorney's office in Hawaii says this man, Dallas Pokornik, used a fake employee I.D. card and experienced as a, well, he pretended to be a pilot, but as an attendant. He did that because he wanted to get hundreds of free flights on three different airlines. And he did it over the course of four years. He even gained access to the jump seat and cockpits. He posted pictures of his fake high-flying lifestyle on Facebook for all to see. Wonder how he got busted. Prosecutors say he now faces up to 20 years in prison. There is no flying in his future, John.
+BERMAN: All right, new this morning, a CNN investigation. A Russian- born American citizen shot and killed by the FBI hundreds of miles from his home. And the agency will not officially say why.
+So, CNN's Isabelle Chapman has spent more than a year trying to figure out whether he was a civilian or a spy. She's with us now.
+Welcome to CNN NEWS CENTRAL.
+ISABELLE CHAPMAN, CNN REPORTER AND PRODUCER: Thank you for having me.
+BERMAN: What did you find out?
+CHAPMAN: So, FBI shootings are rare. I wanted to figure out what had happened, and the FBI wasn't saying anything about this particular one. All I knew that this -- was that this man, Ilya Beloozerov, was a Russian immigrant with one of the highest levels of security clearances. And he was killed hundreds of miles away from his home. And so, it made me wonder, did the FBI think he was a spy?
+I started calling relatives, coworkers, anyone I could think of who knew him. And that's when I learned that he'd been working for a satellite imaging company on a contract with the Department of Defense.
+We obtained Ilya's bank records, passports, court documents, and we tried to piece together you know, what happened. In the final weeks of his life, he had drained his bank accounts, signed over power of attorney to his teenage son, and he vanished. His son told me -- he said things took a turn a few weeks before Ilya died, Beloozerov died. He took his dad to the airport. He had been planning to fly to eastern Europe. And you can listen to what happened next.
+(BEGIN VIDEO CLIP)
+UNIDENTIFIED MALE, ILYA BELOOZEROV'S SON: I came home and he's in the driveway with all his luggage. And I'm like, dad, what are you doing here? And that's when he started telling me that he got interrogated by the FBI. He told me that he's in trouble. That he has to go. And he started packing up all of his stuff. He thought that the FBI were coming to arrest him. I asked him, so what exactly were they asking you about? And he said, and I'm quoting him, something to do with Ukraine and a laptop.
+(END VIDEO CLIP)
+BERMAN: All right, and that's his son. So, do you know where he went when he disappeared?
+CHAPMAN: I do. I actually met and spoke with a husband and wife who spent the final days of Ilya's life with him. They said that Ilya offered them $30,000 to take him to the border. It was a life-changing amount of money for them. They had been living in their truck. But they never made it to the border. The morning they had planned to set out, he was shot and killed by federal agents in a parking lot in Mississippi.
+[09:00:07]
+(BEGIN VIDEO CLIP)
+KENNON GREEN, SPENT BELOOZEROV'S LAST DAYS WITH HIM: When we walked out the next morning, I opened the back
+Classification
+
+
+Language: ENGLISH
+
+Document-Type: SHOW
+
+Publication-Type: Transcript
+
+Transcript: 081104CN.V19
+
+Subject:  MENTAL HEALTH PRACTICE (91%);  MENTAL HEALTH (90%);  VACCINES (90%);  LAW ENFORCEMENT (90%);  PSYCHIATRY (90%);  LEGISLATIVE BODIES (89%);  CAMPAIGNS & ELECTIONS (89%);  POLITICAL PARTIES (86%);  VOTERS & VOTING (84%);  PHYSICIANS & SURGEONS (79%);  WEAPONS & ARMS (77%);  PRICE INCREASES (74%);  PRICE CHANGES (74%);  INTERIM MANAGEMENT (73%);  NUCLEAR WEAPONS (70%);  PRICES (69%);  MILITARY WEAPONS (54%); CAMPAIGNS & ELECTIONS (89%); INTERIM MANAGEMENT (73%); VOTERS & VOTING (84%); PHYSICIANS & SURGEONS (60%); PRICE CHANGES (74%); LAW ENFORCEMENT (90%); VACCINES (90%); WEAPONS & ARMS (77%); PRICE INCREASES (74%); PSYCHIATRY (90%); POLITICAL PARTIES (86%); NUCLEAR WEAPONS (70%); PRICES (69%); MILITARY WEAPONS (54%); MENTAL HEALTH PRACTICE (96%); MENTAL HEALTH (90%); LEGISLATIVE BODIES (89%); Jake Auchincloss (%); President Trump (%); Iran (%); Democratic Party (%); Richard Besser (%); CDC (%); Children (%); Health and Medicine (%); A.I. (%); Artificial Intelligence (%); Polls (%); Murder (%); Trials (%); Lindsay Clancy (%); Environment (%); FBI (%); Ilya Beloozerov (%)
+
+Organization: FEDERAL BUREAU OF INVESTIGATION (93%)
+
+Industry: PHYSICIANS & SURGEONS (60%); PRICE CHANGES (74%); VACCINES (90%); PRICE INCREASES (74%); PSYCHIATRY (90%); NUCLEAR WEAPONS (70%); MILITARY WEAPONS (54%); MENTAL HEALTH PRACTICE (96%)
+
+Person:  JAKE AUCHINCLOSS (93%);  ALEXANDRIA OCASIO-CORTEZ (92%);  DONALD TRUMP (90%); DONALD TRUMP (90%); JAKE AUCHINCLOSS (99%); ALEXANDRIA OCASIO-CORTEZ (92%)
+
+Geographic:  MASSACHUSETTS, USA (95%); MASSACHUSETTS, USA (99%);  UNITED STATES (95%);  IRAN (94%);  MIDDLE EAST (93%);  OMAN (79%); MIDDLE EAST (93%); UNITED STATES (94%); IRAN (94%); OMAN (79%)
+
+Load-Date: August 11, 2026
+
+
+End of Document

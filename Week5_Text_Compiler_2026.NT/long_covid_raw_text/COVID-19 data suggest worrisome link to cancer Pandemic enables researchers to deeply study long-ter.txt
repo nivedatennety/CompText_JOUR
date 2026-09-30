@@ -1,0 +1,70 @@
+
+
+
+Los Angeles Times
+June 15, 2026 Monday
+Final Edition
+
+
+Copyright 2026 Los Angeles Times All Rights Reserved
+Section: MAIN NEWS; Science Desk; Part A; Pg. 1
+Length: 1251 words
+Byline: Corinne Purtill
+Body
+
+
+In early 2022, around the time the Omicron variant started driving a new surge in COVID-19 cases, researchers at James DeGregori's University of Colorado Anschutz lab noticed something unusual: When lab mice with dormant breast cancer cells were infected with either influenza or SARS-CoV-2, the animals were significantly more likely to develop aggressive lung tumors.
+What's true for a mouse isn't always true for a human. But when the team examined healthcare databases, they were surprised to find that something similar appeared to be going on in the human population.
+Analysis of records from the U.K. Biobank showed that cancer survivors who contracted COVID in 2020 -- when the virus was new and no vaccine was available -- were significantly more likely to die of recurring cancer than patients who didn't get the virus, particularly within the year after their COVID infection.
+Analysis of a separate U.S. breast cancer database found that breast cancer patients in remission who got COVID were significantly more likely to develop metastatic lung tumors than patients who did not contract the virus.
+The University of Colorado researchers couldn't analyze influenza's effects as thoroughly -- most flu infections don't make it into medical charts, as patients often ride out routine cases at home. They also weren't able to take into account whether the severity of a patient's COVID infection influenced the likelihood of a cancer recurrence. But COVID's novelty gave the team the data it needed to track the effects of viral inflammation on cancer recurrence. Their results were published last year in the journal Nature.
+"When [cancer] comes back, it comes back with a fury," DeGregori said. "We think that these virus infections can be almost like fuel for the fire."
+Unwelcome as COVID's emergence was, the sheer scale of its spread has vastly deepened science's understanding of the ways that viruses can continue to affect a human body long after the initial illness has passed.
+Scientists need a critical mass of data to be able to identify statistically significant patterns.
+In the case of a global pandemic "where the whole population gets infected, basically you have a denominator of 7 billion people," said Dr. Stanley Perlman, a University of Iowa microbiologist who studies coronaviruses.
+The rapid increase in patients suffering from long COVID supercharged research on post-viral syndromes -- the complex collection of lingering symptoms doctors have long observed in some patients infected with pneumonia, flu or other viruses.
+Now, as more years of post-pandemic data have accumulated, scientists are also able to look more closely at the complicated relationship between COVID and cancer, a disease that takes significantly longer to make itself known.
+"This is something that merits more attention," said Dr. Aditya Bardia, director of Translational Research Integration at the UCLA Health Jonsson Comprehensive Cancer Center.
+Bardia's lab has also observed associations between COVID infection and breast cancer recurrence; that research has not yet been submitted for peer review.
+There isn't sufficient evidence to indicate that COVID is an oncogenic, or cancer-causing, virus, a half-dozen researchers contacted for this article said. The virus has some significant structural differences from known oncogenic viruses such as human papilloma virus, which is linked to cervical cancer, and hepatitis B and C, which are associated with liver cancer.
+But the pandemic has left some evidence that viral infection may play a role in reawakening dormant cancer cells present in a patient's body before infection.
+"COVID and influenza do not cause cancer under themselves, but if you have cancer and you have dormant cancer cells that are normally under control by your immune system, getting a severe case of COVID can help reactivate those existing cancers," said Dr. Patrick Moore, a virologist and epidemiologist at the University of Pittsburgh.
+A sharp increase in metastatic breast cancer cases in the pandemic's early years was largely attributed to care delayed by pandemic restrictions, rather than a real increase in incidence.
+More recent work suggests that "it's not just the logistics of the pandemic, but it's really something inherent to infection" behind the association with cancer recurrence, said Melanie Ott, director of the Gladstone Institute of Virology and a professor of medicine at UC San Francisco.
+The effect isn't specific to COVID, as DeGregori's Nature paper shows, Ott pointed out. One of the body's natural defense mechanisms against a virus such as COVID or influenza is the release of cytokines, proteins that act as chemical messengers helping to coordinate the immune system's response.
+But in some cases of severe infection, the immune system can overcorrect and send out an excess amount of these proteins, a serious and potentially fatal reaction called a cytokine storm.
+Research in the early months of the pandemic showed that patients with severe COVID who died or required hospitalization were much more likely to have runaway levels of cytokines, including a particular protein called interleukin-6, or IL-6.
+Chronically high IL-6 levels have also been linked to recurrence and metastasis of multiple types of cancer.
+DeGregori's team found that breast cancer cells in mice whose dormant cancers returned after a COVID infection reactivated in response to high levels of IL-6.
+Their research could not prove that the same biological process happens in humans, DeGregori said. But the fact that a review of real-life patient data showed a high correlation between COVID infection and cancer recurrence makes him think they are on to something.
+It's not a settled question, even among the paper's authors. Dr. Doug Wallace, director of the Center for Mitochondrial and Epigenomic Medicine at Children's Hospital of Philadelphia and a co-author on the Nature paper, said he has a "slightly different interpretation" of the data.
+IL-6 also inhibits mitochondria, the parts of a cell that generate energy. Wallace thinks that this suppression of the cells' powerhouses is actually what's encouraging cancer growth. (Mitochondrial dysfunction is also a prime suspect in the cause of long COVID.)
+Other viruses shut down mitochondrial function too, Wallace said. SARS-CoV-2 seems to be particularly good at it, which could be the reason an infection leads to the lingering misery of long COVID in some people or an unexpected recurrence of cancer in others.
+Researchers stressed that this area of study is still in its early days, and there is no definitive causal link between COVID infection and cancer recurrence.
+"It's fair to say that [COVID infection] could be added to the long list of theoretical reasons that cancer might be more likely to come back, [but] I'm on the skeptical side of all things. Prove it to me," said Dr. Eric Winer, director of the Yale Cancer Center. "This is one where I'd say, interesting finding, let's look more."
+The evidence to date suggests simply that the question is worthy of more study, researchers said. If there is any action people with vulnerable immune systems should take as a result, it's to continue reasonable precautions against viral infections of all kinds.
+"There's a very, very, very compelling reason for those patients who have chronic diseases to avoid getting a severe case of influenza or COVID or respiratory syncytial [virus] -- all of these diseases for which good, safe, effective vaccines exist," Moore said.
+
+Graphic
+
+ 
+PHOTO: SOME SURVIVORS of breast cancer saw aggressive recurrence after COVID-19.  PHOTOGRAPHER:Jay L. Clendenin Los Angeles Times 
+Classification
+
+
+Language: ENGLISH
+
+Publication-Type: Newspaper
+
+Subject:  COVID CORONAVIRUS (95%);  COVID-19 CORONAVIRUS (94%);  CANCER (93%);  INFECTIOUS DISEASE (92%);  EPIDEMICS (90%);  ANIMAL EXPERIMENTS (90%);  BREAST CANCER (90%);  INFLUENZA (90%);  PUBLIC HEALTH (90%);  HEALTH CARE INFORMATION (90%);  TUMORS (90%);  RODENTS (90%);  PANDEMICS (89%);  DISEASES & DISORDERS (89%);  SCIENCE NEWS (89%);  SCIENCE & TECHNOLOGY (89%);  CORONAVIRUSES (89%);  RESPIRATORY DISORDERS & INJURIES (89%);  LONG COVID (78%);  CANCER REGISTRIES (78%);  RESEARCH REPORTS (78%);  ZOONOTIC DISEASES (78%);  LUNG CANCER (77%);  VIRUSES (77%);  MICROBIOLOGY (77%);  PATHOLOGY (77%);  SARS (77%);  PNEUMONIA (76%);  VACCINES (73%);  POPULATION & DEMOGRAPHICS (58%); ANIMAL EXPERIMENTS (90%); COVID-19 CORONAVIRUS (99%); TUMORS (90%); CANCER (94%); HEALTH CARE INFORMATION (91%); EPIDEMICS (90%); LUNG CANCER (77%); MICROBIOLOGY (77%); VIRUSES (77%); LONG COVID (78%); PANDEMICS (89%); CORONAVIRUSES (89%); INFLUENZA (90%); INFECTIOUS DISEASE (94%); VACCINES (73%); PNEUMONIA (76%); COVID CORONAVIRUS (99%); ZOONOTIC DISEASES (78%); BREAST CANCER (90%); RESEARCH REPORTS (78%); SARS (77%); PATHOLOGY (77%); CANCER REGISTRIES (78%); SCIENCE & TECHNOLOGY (89%); DISEASES & DISORDERS (89%); RESPIRATORY DISORDERS & INJURIES (89%); PUBLIC HEALTH (90%); POPULATION & DEMOGRAPHICS (58%); RODENTS (91%); BREAST CANCER (%); COVID 19 (VIRUS) (%); PATIENTS (%); DEATH (%); MEDICAL RESEARCH (%)
+
+Organization: UNIVERSITY OF COLORADO (91%)
+
+Industry: HEALTH CARE INFORMATION (91%); VACCINES (73%); PATHOLOGY (77%); CANCER REGISTRIES (78%)
+
+Geographic:  IOWA, USA (79%); IOWA, USA (79%);  UNITED STATES (79%);  UNITED KINGDOM (57%); UNITED KINGDOM (57%)
+
+Load-Date: June 15, 2026
+
+
+End of Document

@@ -1,0 +1,58 @@
+
+
+
+Axios
+August 4, 2025 Monday 10:20 AM EST
+
+
+Delivered by Newstex LLC. All Rights Reserved.
+Copyright 2025 Axios 
+Length: 421 words
+Byline: Steph Solis
+Body
+
+
+August 4th, 2025 (   - Delivered by   )
+A team of MIT researchers is exploring the depths of our consciousness - with help from ultrasounds  
+Why it matters: The experiments could one day help scientists find non-invasive ways to treat depression, PTSD, brain tumors and other conditions.
+Driving the news: MIT Lincoln Labs, a U.S. Department of Defense-funded research and development center in Lexington, recently received a low-intensity focused ultrasound from the company Openwater - the latest tool of its kind it'll use in its  
+Lincoln Labs and labs on campus plan to launch experiments in the next year using the device on humans to analyze which neurons fire to stimulate vision and, ultimately, pain, pending university approval, says Daniel Freeman, a research scientist at Lincoln Labs.
+The intrigue: There's the goal to analyze how it could help understand or treat PTSD and mood disorders in veterans, and then there's the existential question that stumps neuroscientists - how does our human experience arise from brain activity?
+"I mean, some matter moves around in your head, and you feel something," Freeman tells Axios. "That remains a total mystery, and it's barely being studied."
+How it works: The Openwater device goes on someone's head like a headband, and the device directs the sound beams to hit a specific part of the brain.
+It's not the only transcranial focused ultrasound around, but it has a unique design and an ease with which the software processes MRI scans to direct the beams to the right spot.
+Zoom out: Transcranial ultrasounds have already been found to reduce micro clots in long-COVID patients (per an Openwater experiment) and even opiate addiction cravings.
+Openwater's leaders foresee the device one day being used by doctors to inject treatments into specific areas of the brain without surgery or using sound beams to treat certain brain conditions.
+What they're saying: "It's a great way to non-invasively aim this beam deep into the brain to affect research or even for medical treatments," says Scott Smith, vice president of community development at Openwater.
+What's next: Lincoln Labs plans to start with healthy subjects in its experiments with the Openwater device, and their findings may have larger implications for people with mood disorders or other conditions, including veterans with PTSD.
+Lincoln Labs and other labs on campus will soon work together more closely on consciousness research.
+
+
+Notes
+
+The views expressed in any and all content distributed by Newstex and its re-distributors (collectively, the "Newstex Authoritative Content") are solely those of the respective author(s) and not necessarily the views of Newstex or its re-distributors. Stories from such authors are provided "AS IS," with no warranties, and confer no rights. The material and information provided in Newstex Authoritative Content are for general information only and should not, in any respect, be relied on as professional advice. Newstex Authoritative Content is not "read and approved" before it is posted. Accordingly, neither Newstex nor its re-distributors make any claims, promises or guarantees about the accuracy, completeness, or adequacy of the information contained therein or linked to from such content, nor do they take responsibility for any aspect of such content. The Newstex Authoritative Content shall be construed as author-based content and commentary. Accordingly, no warranties or other guarantees are offered as to the quality of the opinions, commentary or anything else appearing in such Newstex Authoritative Content. Newstex and its re-distributors expressly reserve the right to delete stories at its and their sole discretion.
+Classification
+
+
+Language: English
+
+Publication-Type: Web Publication
+
+Journal Code: 10009544
+
+Subject: DIAGNOSTIC IMAGING (78%); MENTAL ILLNESS (90%); POST TRAUMATIC STRESS DISORDER (90%); DEFENSE RESEARCH (73%); NEUROLOGICAL DISORDERS & INJURIES (77%); RESEARCH & DEVELOPMENT (78%); TUMORS (78%); BRAIN (90%); MEDICAL ULTRASOUND (89%); RESEARCH INSTITUTES (78%); ADDICTION (62%); MEDICAL TREATMENTS & PROCEDURES (72%); BEHAVIOR DISORDERS (73%); LONG COVID (50%); OPIATES & OPIOIDS (69%); NARCOTICS (69%); DEFENSE DEPARTMENTS (56%); SCIENCE & TECHNOLOGY (77%); SUBSTANCE ABUSE (72%); DEPRESSION (72%); GOVERNMENT BODIES & OFFICES (76%); COVID CORONAVIRUS (72%); NEUROSCIENCE (77%); EXPERIMENTATION & RESEARCH (78%)
+
+Company:  BEAM GLOBAL (62%)
+
+Organization: US DEPARTMENT OF DEFENSE (57%)
+
+Ticker: BEEM (NASDAQ) (62%)
+
+Industry: NAICS541512 COMPUTER SYSTEMS DESIGN SERVICES (62%); SIC4931 ELECTRIC & OTHER SERVICES COMBINED (62%); DIAGNOSTIC IMAGING (78%); DEFENSE RESEARCH (73%); MEDICAL ULTRASOUND (89%); OPIATES & OPIOIDS (69%); NARCOTICS (69%); DEFENSE DEPARTMENTS (56%)
+
+Geographic: UNITED STATES (99%)
+
+Load-Date: August 4, 2025
+
+
+End of Document

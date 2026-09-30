@@ -1,0 +1,74 @@
+
+
+
+The New York Times 
+January 3, 2026 Saturday 00:16 EST
+
+
+Copyright 2026 The New York Times Company All Rights Reserved
+Section: HEALTH
+Length: 1411 words
+Byline: Paula Span
+Highlight: Many shots seem to have “off-target” benefits, such as lowering the risk of dementia, studies have found.
+Body
+
+
+Many shots seem to have “off-target” benefits, such as lowering the risk of dementia, studies have found.
+Let’s be clear. The primary reason to be vaccinated against shingles is that two shots provide  against a painful, blistering disease that a third of Americans will suffer in their lifetimes, one that can cause lingering nerve pain and other nasty long-term consequences.
+The most important reason for older adults to be vaccinated against the respiratory infection R.S.V. is that their  by almost 70 percent in the year they get the shot, and by nearly 60 percent over two years.
+And the main reason to roll up a sleeve for an annual flu shot is that when people do get infected, it also reliably reduces the severity of illness, though its effectiveness varies by how well scientists have predicted which strain of influenza shows up.
+But other reasons for older people to be vaccinated are also emerging. They are known, in doctor-speak, as off-target benefits, meaning that the shots do good things beyond preventing the diseases they were designed to avert.
+The list of off-target benefits is lengthening as “the research has accumulated and accelerated over the last 10 years,” said Dr. William Schaffner, an infectious disease specialist at Vanderbilt University Medical Center.
+Some of these protections have been established by years of data; others are the subjects of more recent research, and the payoff is not yet as clear. The R.S.V. vaccine, for example, became available only in 2023.
+Still, the findings “are really very consistent,” said Dr. Stefania Maggi, a geriatrician and senior fellow at the Institute of Neuroscience at the National Research Council in Padua, Italy.
+She is the lead author of , published in the British journal Age and Ageing, that found reduced risks of dementia after vaccination for an array of diseases. Given those “downstream effects,” she said, vaccines “are key tools to promote healthy aging and prevent physical and cognitive decline.”
+Yet too many older adults, whose weakening immune systems and high rates of chronic illness put them at higher risk of infectious disease, have not taken advantage of vaccination.
+The  in mid-December that about 37 percent of older adults had not yet received a flu shot. Only 42 percent have ever been vaccinated against R.S.V., and fewer than a third received the most recent Covid vaccine.
+The C.D.C. recommends the one-and-done pneumococcal vaccine for adults 50 and older. An  in the American Journal of Preventive Medicine, however, estimated that from 2022, when new guidelines were issued, through 2024, only about 12 percent of those 67 to 74 received it, and about 8 percent of those over 75.
+The strongest evidence for off-target benefits, dating back 25 years, shows reduced cardiovascular risk following flu shots.
+Healthy older adults vaccinated against flu have substantially , as well as for pneumonia and other respiratory infections. Vaccination against influenza has also been associated with  and .
+Moreover, many of these studies predate the more potent flu vaccines now recommended for older adults.
+Could R.S.V. vaccine, protective against another respiratory illness, have similar cardiovascular effects? A recent large  found a nearly 10 percent decline in cardiorespiratory hospitalizations — involving the heart and lungs — among the vaccinated versus a control group, a significant decrease. 
+Lowered rates of cardiovascular hospitalizations and stroke did not reach statistical significance, however. That may reflect a short follow-up period or inadequate diagnostic testing, cautioned Dr. Helen Chu, an infectious disease specialist at the University of Washington and co-author of an  in JAMA.
+“I don’t think R.S.V. behaves differently from flu,” Dr. Chu said. “It’s just too early to have the information for R.S.V., but I think it will show the same effect, maybe even more so.”
+Vaccination against still another dangerous respiratory disease, Covid-19, has been linked to a , with its damaging effects on physical and mental health.
+Probably the most provocative findings concern vaccination against shingles, a.k.a. herpes zoster. Researchers made headlines last year when they documented an association between shingles vaccination and lower rates of dementia — even with the less effective vaccine that has since been replaced by Shingrix, approved in 2017.
+Nearly all studies of off-target benefits are observational, since scientists cannot ethically refuse a safe, effective vaccine to a control group who could then become infected with the disease.
+That means such studies are subject to “healthy volunteer bias,” because vaccinated patients may also practice other healthy habits, differentiating them from those not vaccinated.
+Although researchers try to control for a variety of potentially confounding differences, from age and sex to health and education, “we can only say there’s a strong association, not a cause and effect,” Dr. Maggi said.
+But Stanford researchers seized on  in 2013, when the first shingles vaccine, Zostavax, became available to older people who had not yet turned 80. Anyone who had was ineligible.
+Over seven years, dementia rates in participants who had been eligible for vaccination declined by 20 percent — even though only half had actually received the vaccine — compared with those who narrowly missed the cutoff.
+“There are no reasons people born one week before were different from those born a few days later,” Dr. Maggi said. Studies  and  have also found reductions in the odds of dementia following shingles shots.
+In fact, in the  Dr. Maggi and her team published, several other childhood and adult vaccinations appear to have such effects. “We now know that many infections are associated with the onset of dementia, both Alzheimer’s and vascular,” she said.
+In 21 studies involving more than 104 million participants in Europe, Asia and North America, vaccination against shingles was associated with a 24 percent reduction in the risk of developing dementia. Flu vaccination was linked to a 13 percent reduction. Those vaccinated for pneumococcal infection had a 36 percent reduction in Alzheimer’s risk.
+The Tdap vaccine against tetanus, diphtheria and pertussis (whooping cough) is recommended for adults every 10 years, with vaccination among older adults often prompted by the birth of a grandchild, who cannot be fully vaccinated for months. It was associated with a one-third decline in dementia.
+Other researchers are investigating the effects of  and of .
+What causes such vaccine bonuses? Most hypotheses focus on the inflammation that arises when the immune system mobilizes to fight off an infection. “You have damage to the surrounding environment” in the body, “and that takes time to calm down,” Dr. Chu said.
+The effects of inflammation can far outlast the initial illness. It may allow other infections to take hold, or cause heart attacks and strokes when clots form in narrowed blood vessels. “If you prevent the infection, you prevent this other damage,” Dr. Chu said.
+Hospitalization itself, during which older patients can become deconditioned or develop delirium, is a risk factor for dementia, among other health problems. Vaccines that reduce hospitalization might therefore delay or ward off cognitive decline.
+Health officials in the Trump administration  more than adult ones, but their vocal opposition may be contributing to inadequate vaccination among older Americans, too.
+Many will not only miss out on the emerging off-target benefits, but will remain vulnerable to the diseases the vaccines prevent or diminish.
+“The current national policy on vaccination is at best uncertain, and in instances appears anti-vaccine,” said Dr. Schaffner, a former member of the C.D.C.’s Advisory Committee on Immunization Practices. “All of us in public health are very, very distressed.”
+The New Old Age is produced through a partnership with .
+This article appeared in print on page D3.
+Classification
+
+
+Language: ENGLISH
+
+Document-Type: News
+
+Publication-Type: Web Publication
+
+Subject:  VACCINES (93%);  DISEASES & DISORDERS (90%);  INFLUENZA (90%);  INFECTIOUS DISEASE (90%);  SENIOR CITIZENS (90%);  DEMENTIA (90%);  VACCINATION & IMMUNIZATION (89%);  PREVENTION & WELLNESS (89%);  ADULTS (89%);  COMMUNICABLE DISEASE CONTROL (89%);  EXPERIMENTATION & RESEARCH (78%);  AGING (78%);  PUBLIC HEALTH (78%);  CHRONIC DISEASES (78%);  NEUROSCIENCE (78%);  ELDER HEALTH (78%);  NEUROLOGICAL DISORDERS & INJURIES (78%);  ACADEMIC MEDICAL CENTERS (78%);  SHINGLES (77%);  DISEASE IMMUNITY (77%);  GERIATRICS (75%);  PUBLIC HEALTH ADMINISTRATION (74%);  HEALTH DEPARTMENTS (72%);  COVID CORONAVIRUS (72%);  COVID-19 CORONAVIRUS VACCINE (72%);  BACTERIA (72%);  RESPIRATORY DISORDERS & INJURIES (72%);  PHYSICIANS & SURGEONS (66%);  WRITERS (62%); CHRONIC DISEASES (78%); NEUROLOGICAL DISORDERS & INJURIES (78%); COVID-19 CORONAVIRUS VACCINE (72%); ELDER HEALTH (78%); DEMENTIA (91%); ADULTS (89%); PHYSICIANS & SURGEONS (67%); VACCINATION & IMMUNIZATION (89%); PREVENTION & WELLNESS (77%); INFLUENZA (90%); COMMUNICABLE DISEASE CONTROL (89%); INFECTIOUS DISEASE (90%); VACCINES (97%); BACTERIA (72%); SHINGLES (90%); WRITERS (63%); AGING (78%); DISEASES & DISORDERS (90%); CARDIOVASCULAR DISEASE (73%); RESPIRATORY DISORDERS & INJURIES (73%); GERIATRICS (76%); COVID CORONAVIRUS (72%); DISEASE IMMUNITY (77%); NEUROSCIENCE (78%); EXPERIMENTATION & RESEARCH (78%); SENIOR CITIZENS (91%); Vaccination and Immunization (%); Age, Chronological (%); Elderly (%); Preventive Medicine (%); Research (%); Heart (%); Dementia (%); Coronavirus (2019-nCoV) (%); Stroke (%); Disease Rates (%); Alzheimer&#39;s Disease (%); Influenza (%); Respiratory Syncytial Virus (RSV) (%); Shingles (Disease) (%); Age and Ageing (Journal) (%)
+
+Organization: VANDERBILT UNIVERSITY (54%)
+
+Industry: COVID-19 CORONAVIRUS VACCINE (72%); PHYSICIANS & SURGEONS (67%); VACCINATION & IMMUNIZATION (89%); ACADEMIC MEDICAL CENTERS (78%); VACCINES (97%); WRITERS (63%); GERIATRICS (76%)
+
+Geographic:  UNITED STATES (91%);  ITALY (53%); ITALY (53%); UNITED STATES (91%)
+
+Load-Date: January 6, 2026
+
+
+End of Document

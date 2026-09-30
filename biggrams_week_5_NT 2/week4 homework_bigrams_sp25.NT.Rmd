@@ -1,0 +1,95 @@
+---
+title: "Week 4 Bigrams Homework"
+author: "Niveda Tennety"
+date: '2026-09-26'
+output: html_document
+---
+
+# Jour 689 Spring 2025:
+
+In this exercise, you will import the Nexis spreadsheet and create bigrams from the headlines
+
+Setup. These instructions are important. Follow them carefully
+
+1) Create a new folder called "bigrams_week_5" in your class folder
+2) Copy this file to "bigrams_week_5"
+3) Copy your spreadsheet to "bigrams_week_5"
+4) Create an .Rproj file that points to "bigrams_week_5"
+
+```{r}
+#load tidyverse, tidytext, rio, janitor libraries
+install.packages("tidytext")
+library(tidyverse)
+library(tidytext)
+library(rio)
+library(janitor)
+
+```
+
+```{r}
+#Import spreadsheet using rio::import and clean the names
+
+
+long_covid_data <- rio::import("~/Documents/GitHub/CompText_JOUR/biggrams_week_5_NT/results_list_for_long COVID.XLSX") 
+
+```
+
+
+```{r}
+names(long_covid_data)
+```
+# Tokenize the hlead column
+
+Copy the code from the in-class bigrams exercise and tokenize just the hlead column from your dataframe
+
+Hint: you're changing just one variable
+
+```{r}
+long_covid_words <- long_covid_data %>%
+  unnest_tokens(word, Hlead)
+```
+
+#Remove stopwords and count the words
+```{r}
+word_counts <- long_covid_words |> 
+  anti_join(stop_words) |> 
+  count(word, sort = TRUE)
+
+word_counts
+# Word Count
+#Top 10 words: covid is the word with the highest count (n=154), followed by health (n=73), vaccine (n=69), people (n=43), 19 (n=42), vaccines (n=38), time (n=33), disease (n=31), symptoms, (n=28), risk (n=23).  
+
+```
+
+# Create Bigrams
+
+```{r}
+
+long_covid_bigrams <- long_covid_data |> 
+  unnest_tokens(bigram, Hlead, token = "ngrams", n = 2)
+
+#Filter out stop words.
+#the top bigrams that came up: covid 19, covid vaccine, covid vaccines, kennedy jr, disease control, public health, human services, secretary robert
+
+bigrams1 <- long_covid_data %>%
+  unnest_tokens(bigram, Hlead, token = "ngrams", n = 2) %>%
+  filter(!is.na(bigram)) |> 
+  separate(bigram, c("word1", "word2"), sep = " ")
+
+bigrams2 <- bigrams1 %>%
+  filter(!word1 %in% stop_words$word) %>%
+  filter(!word2 %in% stop_words$word) |> 
+  count(word1, word2, sort = TRUE)
+
+head(bigrams2, 100)
+
+
+
+```
+
+
+# Write 250 words about what your learned analyzing the list of tokens and bigrams. Include questions about the process and any difficulties you encountered.
+
+# Summary of results: Top 10 words: covid is the word with the highest count (n=154), followed by health (n=73), vaccine (n=69), people (n=43), 19 (n=42), vaccines (n=38), time (n=33), disease (n=31), symptoms, (n=28), risk (n=23). The top 8 bigrams that came up: covid 19, covid vaccine, covid vaccines, kennedy jr, disease control, public health, human services, secretary robert
+# To summarize my search strategy, I selected the 100 most recent articles reporting on long-COVID from the top 50 newspapers in the country as of August 2026. Looking at both the tokenized word frequences and bigrams, it seems that vaccines are a dominant topic, commonly reported on, in these articles at long COVID. Given that "people" is a frequently occurring word (n=43), as well as bigram mentions of "public health," it seems that articles are commonly discussing people and social or public-health related aspects of COVID. This stuck out to me because in the top 8 bigram entries especially (looking at this metric because we can see a bit more context), there does not seem to be heavily scientific jargon represented. We do see "brain research" as the 13th most common bigram, indicating that there is journalistic reporting of scientific research on long COVID as well. The first bigram to come up when ordered by frequency indicating a specific symptom was "creatinine levels." I don't think we can infer much from this about frequency of issue given the relatively small number of articles selected, but broadly it seems as if specific clinical concepts appear less frequently in thes earch results than broader terms related to vaccines, public health, specific people like RFK Jr, or politics. From this analysis, I became curious whether mainstream coverage on long COVID focuses more on broader public-health and political dimensions of COVID-19, and if there is specific attention on scientific, clinical, or symptomatic details. I am curious, later on when I do a comparative analysis with articles from counterpublic sources, if these distributions will look any different.
+#One difficulty I encountered looking at the example code is, in the tidytext package, was distinguishing between names of data frames or columns and parts of the commands themselves. I found it confusing to understand the role of "word," for example. After spending some time, I learned that "word" refers to the column created when the text is tokenized, and I don't have to create that myself.

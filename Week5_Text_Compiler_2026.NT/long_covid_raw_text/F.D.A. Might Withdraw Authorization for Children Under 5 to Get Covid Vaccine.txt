@@ -1,0 +1,75 @@
+
+
+
+The New York Times
+August 13, 2025 Wednesday
+Late Edition - Final
+
+
+Copyright 2025 The New York Times Company
+Section: Section A; Column 0; National Desk; Pg. 13
+Length: 1021 words
+Byline: By Apoorva Mandavilli
+Body
+
+
+Under Robert F. Kennedy Jr., federal officials may withdraw an endorsement for the vaccine in younger children.
+This fall, it may not be possible for many parents to have a healthy child under age 5 immunized against Covid. 
+  Pfizer's vaccine has long been available to these children under so-called emergency use authorization. But the Food and Drug Administration is considering discontinuing the authorization for that age group, according to an email sent by the Centers for Disease Control and Prevention to state and local health departments.
+  Pfizer confirmed the possibility on Monday evening and said that the company was ''currently in discussions with the agency on potential paths forward.'' For children 5 to 11 years old, the Pfizer vaccine is expected to be approved and available, according to the C.D.C.'s email, which was reviewed by The New York Times.
+  In July, the F.D.A. granted full approval to Moderna's Covid vaccine for children -- but only for those who have health conditions that may put them at increased risk should they become infected. Novavax's Covid vaccine has never been available for children under 12.
+  The upshot is that if the F.D.A. does not renew Pfizer's authorization for children 6 months to 4 years, or fully approve the vaccine, healthy children in that age group will have no officially sanctioned options -- although doctors may still choose to provide the vaccine ''off label.''
+  That the F.D.A. might rescind the authorization was first reported by The Guardian.
+  ''Unfortunately, this leaves one of the vulnerable groups, specifically healthy children less than 2 years old, without access to a safe vaccine that's known to prevent hospitalization and death,'' said Dr. Lakshmi Panagiotakopoulos, who oversaw the C.D.C.'s work group on the Covid vaccine before she resigned in June.
+  The risk of severe illness and hospitalization among children under 1 who are infected with the coronavirus is comparable to that among adults 65 and older. That's why experts have said that a child's first exposure should be through a vaccine, rather than infection.
+  A late-summer Covid wave is moving across the nation, even as children are preparing to return to school. Fortunately, hospitalization rates remain low.
+  In May, Robert F. Kennedy Jr., the health secretary, announced that Covid vaccines would no longer be offered to healthy children or pregnant women. Mr. Kennedy has called the Pfizer and Moderna vaccines dangerous. In May 2021, in the thick of the pandemic, he filed a petition with the F.D.A. demanding that the agency revoke authorization for the shots.
+  The C.D.C., which typically makes such recommendations, later walked back the secretary's statement, saying that healthy children could get the shot if a doctor agreed that it was needed.
+  Moderna told the C.D.C. it was ramping up supplies of its vaccine for the fall, according to the agency's email. But it is not approved for healthy children, and if the F.D.A. rescinds authorization for children under 5, parents of healthy children will find themselves with no options.
+  Andrew Nixon, a spokesman for the Department of Health and Human Services, declined to comment on potential regulatory changes and said any reports before an official statement should be treated as ''speculation.''
+  ''The Covid-19 pandemic ended with the expiration of the federal public health emergency in May 2023,'' Mr. Nixon said.
+  But public health experts noted that the coronavirus is still a threat, even for otherwise healthy children under 2. Among children ages 6 months to 2 years who were hospitalized with Covid from October 2022 to April 2024, more than half had no underlying medical conditions, according to data from the C.D.C.
+  The vaccines have also been shown to offer modest protection against long Covid in some children.
+  The effects are already becoming apparent. Providers have stopped ordering last year's shot, as they often do at this time of the year. Normally by this point, there would be a clear plan for the 2025-26 season.
+  Leanne Cronic-Powell, 36, a lawyer for a software company in Medford, Mass., called four clinics but could not find one that could offer the Covid vaccine to her daughter later this month.
+  Anticipating that the shots might be difficult to find in the fall, Ms. Cronic-Powell had opted to have her 8-month-old daughter, Ripley, immunized in June, soon after she was eligible. Ripley has received two of the three Pfizer doses in the primary series but cannot receive the third, which is due on Aug. 22.
+  ''I'm really frustrated,'' she said. ''It feels like we're being thwarted at every turn.''
+  The Massachusetts Department of Public Health, when Ms. Cronic-Powell turned to it for guidance, was not any wiser.
+  ''At this time, sadly, there is not much more we can do to help as we do not have any further information from the C.D.C./F.D.A.,'' a representative told her in an email on Monday viewed by The Times.
+  The path to a Covid vaccine may not be much smoother even for children at high risk.
+  About half of American children receive their shots through the Vaccines for Children program, which provides them free of cost. But providers who are enrolled in the program are not required to carry Covid vaccines.
+  ''Providers already don't order a lot of Covid vaccine, so this is going to very much complicate things,'' said Claire Hannan, executive director of the Association of Immunization Managers, which represents state and local officials.
+  If providers decide not to carry the Covid shots, ''it's going to be hard to find even if you're high risk,'' Ms. Hannan said.
+  States placed orders for Covid vaccines earlier in the year. If the Pfizer vaccine is not approved for young children, she said, the orders for Pfizer will all need to be changed to Moderna. ''That's also a potential for a hot mess,'' she added.
+  Pending F.D.A. approval of the new formulation for fall, Moderna plans to increase its vaccine supply for children under 12, according to the C.D.C.'s email to states.
+  Christina Jewett contributed reporting.Christina Jewett contributed reporting.
+
+
+
+Graphic
+
+ 
+PHOTO: Experts fear changes that Health Secretary Robert F. Kennedy Jr. has hinted at could jeopardize the manufacturing of vaccines. (PHOTOGRAPH BY PETE KIEHART FOR THE NEW YORK TIMES) This article appeared in print on page A13.               
+Classification
+
+
+Language: ENGLISH
+
+Publication-Type: Newspaper
+
+Subject: WOMEN'S HEALTH (73%); PETITIONS (50%); COVID-19 CORONAVIRUS VACCINE (93%); EPIDEMICS (78%); ADULTS (73%); VIRUSES (73%); CHILDREN'S HEALTH (89%); DRUG & MEDICAL DEVICES APPROVAL (90%); PANDEMICS (78%); CORONAVIRUSES (72%); PREVENTION & WELLNESS (78%); HEALTH DEPARTMENTS (90%); INFECTIOUS DISEASE (89%); DRUG SAFETY (78%); VACCINES (91%); VULNERABLE ADULTS (75%); PREGNANCY & CHILDBIRTH (73%); DEMOGRAPHIC GROUPS (78%); PUBLIC HEALTH ADMINISTRATION (90%); DISEASES & DISORDERS (89%); RESIGNATIONS (68%); GOVERNMENT BODIES & OFFICES (90%); CHILDREN, ADOLESCENTS & TEENS (91%); PUBLIC HEALTH (89%); COVID CORONAVIRUS (96%); MEDICINE & HEALTH (77%); GOVERNMENT ADVISORS & MINISTERS (60%); APPROVALS (78%); PUBLIC OFFICIALS (78%)
+
+Company:  PFIZER INC (92%)
+
+Organization: FOOD & DRUG ADMINISTRATION (94%); CENTERS FOR DISEASE CONTROL & PREVENTION (57%)
+
+Ticker: PFZ (LSE) (92%); PFE (NYSE) (92%)
+
+Industry: NAICS325414 BIOLOGICAL PRODUCT (EXCEPT DIAGNOSTIC) MANUFACTURING (92%); NAICS325412 PHARMACEUTICAL PREPARATION MANUFACTURING (92%); NAICS325411 MEDICINAL & BOTANICAL MANUFACTURING (92%); SIC2836 BIOLOGICAL PRODUCTS, EXCEPT DIAGNOSTIC SUBSTANCES (92%); SIC2834 PHARMACEUTICAL PREPARATIONS (92%); SIC2833 MEDICINAL CHEMICALS & BOTANICAL PRODUCTS (92%); COVID-19 CORONAVIRUS VACCINE (93%); DRUG & MEDICAL DEVICES APPROVAL (90%); HEALTH DEPARTMENTS (90%); DRUG SAFETY (78%); VACCINES (91%); PEDIATRIC DRUGS (91%); OFF LABEL DRUG USE (77%)
+
+Person: ROBERT F KENNEDY JR (96%)
+
+Load-Date: August 13, 2025
+
+
+End of Document

@@ -1,0 +1,69 @@
+
+
+
+The New York Times 
+June 8, 2026 Monday 00:07 EST
+
+
+Copyright 2026 The New York Times Company All Rights Reserved
+Section: WELL
+Length: 1213 words
+Byline: Dani Blum, Dani Blum is a health reporter for The Times.
+Highlight: The widespread use of drugs like Ozempic is giving scientists a clearer picture than ever of their effects.
+Body
+
+
+The widespread use of drugs like Ozempic is giving scientists a clearer picture than ever of their effects.
+Tens of millions of people around the world are now taking drugs like Ozempic — a kind of real-time experiment that offers far more data than a carefully controlled clinical trial can.
+Thanks to the rapid uptake of the drugs, we now have a clearer picture than ever of their effects, and the challenges that come with taking them.
+“Usually when a new medicine happens, we have time to learn how to use it,” Dr. Melanie Jay, director of the N.Y.U. Langone Comprehensive Program on Obesity, said in an interview Sunday at an American Diabetes Association conference in New Orleans.
+But with GLP-1 drugs, she said, “everyone is kind of iterating in real time.”
+Here’s what we’ve learned in the process.
+They can treat much more than just diabetes or obesity.
+While these drugs were first approved to treat diabetes, and then obesity, some of them have now been approved to  and to treat   and .
+At least some of these benefits stem from weight loss itself. But researchers increasingly believe the drugs provide benefits that are .
+A leading theory is that these drugs tamp down high levels of inflammation, which is tied to 
+Scientists are also studying the potential for these drugs to treat , including  and substance use disorders. Emerging evidence has suggested that people on these drugs  , and are less likely to develop , although scientists want more, and larger, trials before drawing conclusions.
+You regain weight if you stop taking them — but not necessarily all of it.
+In clinical trials of injectable drugs currently on the market, people lost around 15 to 20 percent of their body weight, on average, after about 72 weeks. Some real-world studies back up those numbers, but other research suggests people tend to lose less weight. (The average weight loss in some real-world trials can range between about 8 and 17 percent, depending on the drug and the study.) The discrepancy between these numbers and the data from clinical trials is at least partly because many people stop taking the drugs, sometimes because of side effects or costs.
+Many people who stop taking these drugs will regain  of the weight they’ve lost, but some people have been able to sustain weight loss. One analysis of  found that over half of those who took semaglutide — the substance in Wegovy — or tirzepatide — the compound in Zepbound — kept at least some weight off or even lost additional weight two years after stopping.
+Hamlet Gasoyan, who studies these drugs at the Center for Value-Based Care Research at the Cleveland Clinic, said patients going off the drugs often turn to other methods to keep the weight off. Those can include intense exercise regimens, bariatric surgery or other medications, whether those are older weight loss drugs or cheaper  of new ones.
+They don’t work equally well for everyone.
+We now know that about one in 10 people on the drugs are what scientists call ” who lose less than 5 percent of their body weight. And a small portion of people who take weight-loss drugs are “super-responders” who lose a lot of weight in a short amount of time. (It isn’t clear how common super-responders are.)
+Scientists think that genetics, as well as how much pleasure people naturally derive from eating, may play a role in these differing responses.
+They can have unexpected downsides. (Ozempic breath, anyone?)
+Many people on these medications experience side effects that have been reported in clinical trials: nausea, fatigue and digestive issues like vomiting and diarrhea.
+But as more people have taken the drugs, all sorts of other, less common concerns have cropped up. Some of these, like “Ozempic breath” (caused, in part, by dehydration from patients with dampened appetites drinking less) or “” (when losing fat leaves you looking hollowed out) have become topics of conversation on social media.
+Dr. Scott Hagan, an associate professor of medicine at the University of Washington who studies obesity, has had patients complain that their hair is falling out. (It’s possible that this is a result of losing a large amount of weight, quickly; people with anorexia also often lose some hair.)
+Some of the issues that have emerged are more serious.   studies have tied the use of these medications with a slightly increased risk of developing a very rare eye condition, though it isn’t clear yet whether GLP-1s directly cause that condition. Doctors have also seen the drugs dial down appetite so extremely that some patients develop . And the drugs have also been linked with a slight increase in risk for pancreatitis, though that remains extremely rare.
+Patients also frequently  on the medications. Many young, healthy patients have been able to recover muscle, or preserve it in the first place, by strength training and eating plenty of protein, doctors said. But they have seen older adults become more frail on these medications, making them more prone to falls.
+The “right dose” is up for debate.
+Patients taking these drugs start at the lowest dose and then typically titrate up over the course of months. Typically, the higher the dose, the more weight patients lose, and the lower their blood sugar drops.
+“We’re in this murky territory when there’s lots of different doses to choose from, and the highest one might put someone at a weight that may not be good for them long-term,” Dr. Hagan said. Keeping patients on too high a dose can suppress their appetite to unhealthy levels, leading to nutritional deficiencies, and cause excessive weight loss that reduces bone density, leads to hormonal imbalances and raises the risk of gallstones.
+They affect more than just your body.
+As the drugs have become more popular, more anecdotes have emerged about the subtle ways they affect people’s personal lives and mental health. For example, many people say the drugs have changed their  — in some cases, by making them feel more desirable, and in other cases, by dimming their libido. Some have said they feel more confident and are able to exercise and move around more easily.
+The idea that the drugs might diminish pleasure, or even joy, in some patients has shown up in other ways, too.
+Marie Spreckley, a researcher at the University of Cambridge studying these medications, said some patients have said they feel emotionally flatter without the delight they once found in food, and less connected to the social element of eating. She said that those experiences warrant further research. Other people have said their personality felt duller on the medications, or that they felt more lethargic.
+It’s been less than a decade since Ozempic hit the market. As more people take weight-loss drugs, and researchers continue to study them, we’ll learn more about how these medications may change our health and the way we feel and live.
+This article appeared in print on page D6.
+Classification
+
+
+Language: ENGLISH
+
+Document-Type: News
+
+Publication-Type: Web Publication
+
+Subject:  DISEASES & DISORDERS (90%);  DIABETES TREATMENT (90%);  OBESITY (90%);  DIABETES (90%);  WEIGHT LOSS DRUGS (90%);  GLP-1 DRUGS (90%);  DIETING (90%);  SUBSTANCE ABUSE (89%);  CLINICAL TRIALS (89%);  MEDICAL RESEARCH (78%);  MEDICINE & HEALTH (77%);  INTERVIEWS (75%);  SLEEP DISORDERS (72%);  HEART DISEASE (71%);  CARDIOVASCULAR DISEASE (71%);  CONFERENCES & CONVENTIONS (69%);  COVID CORONAVIRUS (67%);  APPROVALS (67%);  LIVER DISEASE (65%);  KIDNEY DISEASE (65%); DIABETES (88%); CONFERENCES & CONVENTIONS (69%); SURGERY & TRANSPLANTATION (72%); OBESITY (91%); GLP-1 DRUGS (90%); WEIGHT LOSS DRUGS (90%); DIABETES TREATMENT (91%); BARIATRICS (74%); CLINICAL TRIALS (89%); SUBSTANCE ABUSE TREATMENT (90%); INTERVIEWS (75%); MEDICAL RESEARCH (78%); DISEASES & DISORDERS (90%); SUBSTANCE ABUSE (78%); DIETING (89%); EXERCISE & FITNESS (66%); APPROVALS (67%); GLP-1 RAs (Drug) (%); Research (%); Weight (%); Obesity (%); Clinical Trials (%); Diabetes (%); Chronic Condition (Health) (%); internal-open-access-from-nl (%)
+
+Organization: AMERICAN DIABETES ASSOCIATION (56%)
+
+Industry: GLP-1 DRUGS (90%); WEIGHT LOSS DRUGS (90%); ACADEMIC MEDICAL CENTERS (77%); BARIATRICS (74%); CLINICAL TRIALS (89%); PHARMACEUTICALS PRODUCT DEVELOPMENT (89%)
+
+Geographic:  NEW ORLEANS, LA, USA (76%); NEW ORLEANS, LA, USA (79%); CLEVELAND, OH, USA (65%);  LOUISIANA, USA (76%); LOUISIANA, USA (71%);  UNITED STATES (76%)
+
+Load-Date: June 16, 2026
+
+
+End of Document

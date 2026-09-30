@@ -1,0 +1,89 @@
+
+
+
+The New York Times
+April 7, 2026 Tuesday
+Late Edition - Final
+
+
+Copyright 2026 The New York Times Company
+Section: Section D; Column 0; Science Desk; Pg. 6
+Length: 1676 words
+Byline: By Maggie Astor
+Body
+
+
+Some women with complex chronic illnesses are using chatbots to search for diagnoses or relief from their symptoms.
+When Margie Smith got sick in 2022, she sought help from a parade of specialists. 
+  She saw an allergist for an intractable cough; three pulmonologists for the cough and breathlessness; an ear, nose and throat doctor for severe acid reflux; a cardiologist after she almost passed out while exercising. She got the sense that most were siloed in their specialties and couldn't assemble the full puzzle.
+  Eventually, Ms. Smith, 70, of Swannanoa, N.C., turned to the A.I. chatbot Claude. Through lengthy chats, as well as a Facebook group, she concluded that she had long Covid and it was causing dysautonomia -- a condition, common in post-viral syndromes, in which the body struggles to regulate functions like pulse, blood pressure, digestion and temperature.
+  Ms. Smith now goes to appointments with A.I. suggestions in hand, and she chooses providers in part based on whether they are receptive to its role in her decision-making. She said a combination of recommendations from doctors and from Claude had made her symptoms manageable.
+  ''The medical system really failed me,'' she said. ''Is it a good thing to be depending on A.I. for medical advice? I don't think so. But it's the option that's available.''
+  More people are asking chatbots for health advice: A third of adults use them for that purpose, according to a poll released in March.
+  Reporting by The New York Times suggests that one notable subset are women with complex chronic illnesses, which are often poorly understood. It can take years to receive a diagnosis, much less relief. That is partly because symptoms span multiple specialties. But also, many of these illnesses -- like long Covid and autoimmune diseases -- disproportionately affect women, and doctors are more likely to minimize or delay treating women's symptoms.
+  Hundreds of people responded to a request last fall to discuss how they were using A.I. for their health. Since then, The Times has conducted dozens of interviews about patterns that emerged.
+  The women interviewed for this article said they knew chatbots often provided misinformation, and some had encountered serious errors. Most said they would rather rely on doctors, but felt they couldn't.
+  ''There are a lot of problems'' with using chatbots for medical advice, said James Landay, a co-director of Stanford University's Institute for Human-Centered A.I. ''But I think we also have to admit that there's a reason people are doing this.''
+  Old pattern, new technology
+  Patients have long self-diagnosed through forums, social media, Google and WebMD. It's easy to find patients who were dismissed by doctors, did their own research and were proven right -- as well as patients who pursued unapproved treatment plans and were catastrophically wrong.
+  So in some ways, using A.I. to compensate for health care failures is a new version of an old story, said Dr. John J. Whyte, the chief executive of the American Medical Association. But the nature of the technology makes it both more powerful and more risky.
+  Chatbots often invite people to describe their medical histories in detail, including by uploading test results. And they can offer responses that feel personalized, comprehensive and authoritative, even when they aren't.
+  Some start-ups are testing specialized A.I. products to help diagnose illnesses. But general-purpose chatbots ''have not been thoroughly evaluated'' for personalized diagnoses and can err in significant ways, said Dr. Danielle Bitterman, the clinical lead for data science and A.I. at Mass General Brigham.
+  A.I. models can draw from both high- and low-quality sources, or hallucinate. Users won't always get citations unless they ask, and it takes scientific literacy to determine whether those sources are reputable and support the chatbot's claims.
+  Chatbots can sometimes diagnose tough cases. Take Patty Costello, a user experience researcher in Idaho.
+  More than a decade ago, Ms. Costello woke up feeling off. She would have flares of nausea, diarrhea, heartburn and fatigue for days or weeks at a time, with respites but no long-term improvement. She saw numerous doctors who ordered a variety of tests, several of which showed signs of inflammation, but none brought a diagnosis. The flares grew more frequent.
+  ''This is ruining my life,'' she told ChatGPT last year, describing her symptoms and overall health, and mentioning the inflammation.
+  As one of nine possible diagnoses, the chatbot listed mast cell activation syndrome, in which mast cells -- a part of the immune system -- flag incorrectly that there is something dangerous in the body, causing allergic reactions with no clear trigger. Ms. Costello said that everything she read about the disease seemed to click with her symptoms.
+  She went to an allergist with the suggestion and received an MCAS diagnosis. With medication, she estimates she's about 80 percent better.
+  Ms. Costello is not alone in finding a diagnosis through A.I., but her experience isn't the norm.
+  A study published in February found that, when people without medical training were given detailed scenarios and told to use chatbots to identify a diagnosis and determine next steps, they reached the correct answers less than half the time.
+  Dr. Whyte said some patients had come to him scared of a grave illness that didn't fit their symptoms, and he knew of others who had accepted false reassurance from a chatbot and not gotten checked for something serious. And while none of the patients interviewed for this article said they had been harmed, other doctors have reported seeing patients who consumed dangerous substances or refused treatment for life-threatening conditions.
+  A spokeswoman for OpenAI, which makes ChatGPT, referred to an earlier statement from Karan Singhal, who leads the company's health team. (The Times has sued OpenAI, claiming copyright infringement; OpenAI has denied the claims.) Mr. Singhal said the February study's design didn't match how people used chatbots in the real world. The company also noted that its models had become more advanced over time, while emphasizing that they are still ''not a substitute for professional medical advice.''
+  Anthropic, which makes Claude, did not respond to a request for comment.
+  Scientific literacy and skepticism
+  It is perhaps unsurprising that many of the success stories shared with The Times came from people with medical expertise.
+  Caroline Gamwell, 31, is a pelvic floor physical therapist in Denver. She has training in anatomy and physiology and regularly sees patients with chronic pain.
+  Her own pain began when she was a teenager. She felt spasms along her spine and through her torso and pelvis, like ''everything twisting in on itself,'' she said. When she had sex, it felt like sandpaper.
+  At 17, she was told she had anxiety; in college, fibromyalgia; in graduate school, chronic fatigue syndrome plus psychosomatic symptoms; then back to fibromyalgia. But she had seen fibromyalgia in her patients and didn't think the diagnosis fit.
+  In October 2025, she described her symptoms to ChatGPT using precise medical terminology, and asked for 10 possible diagnoses. Her expertise enabled her to reject many of its suggestions. Over more than 12,000 words, she pushed back on implausible diagnoses and explored ones that felt reasonable.
+  One of ChatGPT's suggestions was pelvic congestion syndrome, a vascular disease. Ms. Gamwell sought a procedure that confirmed it. She had surgery in January and is now symptom-free.
+  ''I've been wanting so badly to send a message to my primary care, but I haven't yet, to kind of be like: 'I told you so,''' she said. '''You were going to have me live the rest of my life in this chronic pain.'''
+  She recognized that many users couldn't have prompted ChatGPT and assessed its responses as she had. How many people, she asked, would have realized that several of the suggestions made no sense?
+  Living with chronic symptoms
+  Beyond diagnosis, many people use chatbots to try to manage chronic conditions.
+  Deborah Holcomb, 62, a former electrical engineer in San Diego, has myalgic encephalomyelitis/chronic fatigue syndrome and can move around for about 30 minutes a day. She finds chatbots invaluable for identifying symptom patterns and exploring treatment options, though she doesn't make major changes without consulting a doctor.
+  But while chatbots are trained in part on the best evidence about ME/CFS, they are also trained on pseudoscientific ideas that spread among desperate patients, she noted, and on popular misconceptions.
+  Ms. Holcomb was alarmed when ChatGPT suggested ''regular exercise,'' because exercise intolerance is a hallmark of ME/CFS, and even mild activity can worsen symptoms. But, she added, some doctors make the same recommendation.
+  Samantha Allen Wright, 36, an English professor in Oskaloosa, Iowa, has used ChatGPT to look for information about managing migraines and a type of dysautonomia called POTS. She said she had been struck by its uneven performance.
+  ChatGPT has been more helpful than any provider she has seen, she said, in suggesting dietary changes for POTS that consider her preferences, frequent nausea and migraines.
+  At the same time, ''it often interprets lab results wrong by overanalyzing minor discrepancies,'' she said. For instance, it latched onto a triglyceride number that her doctor assured her was fine. And when she had gastrointestinal symptoms after starting a new medication, it falsely assured her they were common, citing a study.
+  When Ms. Wright asked ChatGPT for the study, it admitted there wasn't one. Her doctor said her experience wasn't normal and took her off the medication.
+  Like Ms. Gamwell, Ms. Wright has relevant expertise. She isn't a medical professional, but her research focuses on illness and disability. She knows how to critically review evidence.
+  Without that, she said, ''how would I know if it were telling me the right thing?''
+
+
+
+Graphic
+
+ 
+PHOTOS: Margie Smith, who used Claude to get to the bottom of her spectrum of symptoms. (PHOTOGRAPH BY KAOLY GUTIERREZ FOR THE NEW YORK TIMES)
+ Caroline Gamwell, a pelvic floor physical therapist, who used ChatGPT to diagnose herself. (PHOTOGRAPH BY JOANNA KULESZA FOR THE NEW YORK TIMES) This article appeared in print on page D6.               
+Classification
+
+
+Language: ENGLISH
+
+Publication-Type: Newspaper
+
+Subject:  ARTIFICIAL INTELLIGENCE (90%);  DISEASES & DISORDERS (90%);  CHATBOTS (90%);  PHYSICIANS & SURGEONS (90%);  CHRONIC DISEASES (90%);  INTERVIEWS (88%);  COVID CORONAVIRUS (78%);  IMMUNOLOGY (77%);  IMMUNE SYSTEM DISORDERS (73%);  AUTOIMMUNE DISORDERS (73%);  CARDIOLOGY (72%);  POLLS & SURVEYS (71%);  SOCIAL MEDIA (69%);  DISINFORMATION & MISINFORMATION (69%);  TECHNOLOGY (50%); CHRONIC DISEASES (90%); IMMUNOLOGY (77%); PHYSICIANS & SURGEONS (90%); TECHNOLOGY (50%); DISINFORMATION & MISINFORMATION (69%); CARDIOLOGY (72%); INTERVIEWS (88%); AUTOIMMUNE DISORDERS (73%); SOCIAL MEDIA (69%); DISEASES & DISORDERS (90%); POLLS & SURVEYS (71%); ARTIFICIAL INTELLIGENCE (91%); CHATBOTS (93%); COVID CORONAVIRUS (78%); IMMUNE SYSTEM DISORDERS (73%)
+
+Company:  GOOGLE LLC (58%);  META PLATFORMS INC (57%)
+
+Ticker: META (NASDAQ) (57%)
+
+Industry: NAICS519290 WEB SEARCH PORTALS AND ALL OTHER INFORMATION SERVICES (58%); NAICS516210 MEDIA STREAMING DIST SVCS, SOCIAL NETWORKS, AND OTHER MEDIA NETWORKS AND CONTENT PROVIDERS (57%); SIC7374 COMPUTER PROCESSING & DATA PREPARATION & PROCESSING SERVICES (57%); IMMUNOLOGY (77%); PHYSICIANS & SURGEONS (90%); CARDIOLOGY (72%); SOCIAL MEDIA (69%); ARTIFICIAL INTELLIGENCE (91%); CHATBOTS (93%)
+
+Load-Date: April 7, 2026
+
+
+End of Document
