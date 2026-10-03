@@ -1,0 +1,91 @@
+---
+title: "Assignment 1: R Proficiency"
+author: "Niveda Tennety"
+date: "2026-09-30"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(janitor)
+#install.packages("striprtf")
+#install.packages("tidytext")
+library(tidytext)
+```
+#import data and clean names
+```{r}
+Black_news_data <- read_csv("https://raw.githubusercontent.com/wellsdata/CompText_Jour/main/data/blackindex_master.csv") |> 
+  clean_names()
+```
+#view document
+```{r}
+view(Black_news_data)
+```
+
+
+#see cleaned names in document
+```{r}
+names(Black_news_data)
+```
+
+#number of rows and columns in dataset
+#1803 rows, 30 columns in dataset
+```{r}
+nrow(Black_news_data)
+ncol(Black_news_data)
+```
+
+#number of rows and columns in sentence format
+```{r}
+print(paste0("This dataset has ", nrow(Black_news_data), " rows and ", ncol(Black_news_data), " columns. Each row in this dataset appears to describe a single article that appeared in newspaper between ", min(Black_news_data$year), " and ", max(Black_news_data$year), ". The articles appear to have been sourced from several historical newspaper databases and archives."))
+```
+
+#count of top 20 newspaper_city entries. Filter out the NA values.
+#Pittsburgh has the most entries (n=151), followed by Chicago (n=147).  
+```{r}
+Black_news_data %>%
+  filter(!is.na(newspaper_city)) |> 
+  count(newspaper_city) %>%
+  slice_max(order_by = n, n = 20)
+```
+#Check names
+```{r}
+names(Black_news_data)
+```
+
+#count of all entries by year
+#1920 was the year with the most number of articles (n=127), followed by 1919 (n=108), and then 1946 (n=92). The years with the fewest number of articles recorded had only 1 article per year. 
+```{r}
+Black_news_data |> 
+  distinct(file_name, .keep_all = TRUE) |> 
+  count(year) |> 
+  arrange(desc(n))
+```
+
+#ggplot chart that shows total entries by year
+```{r}
+Black_news_data %>%
+  count(year) %>%
+  arrange(desc(n)) %>%
+  ggplot(aes(x = year, y = n,
+             fill = n)) +
+  geom_col(position = "dodge") +
+  theme(legend.position = "none") +
+  labs(
+    title = "Total Newspaper Entries by Year",
+    y = "Number of Entries",
+    x = "Year",
+    caption = "Graphic by Niveda Tennety, Oct 3 2026"
+  )
+```
+
+#MEMO
+
+#Instructions: Armed with your data analysis, write a 250 word memo at the end of the R markdown document that summarizes your findings. Use this opportunity to ask questions or note any major flaws in the data.
+
+#Summary of findings: 
+#There are 1803 rows and 30 columns in the dataset. Each row in this dataset appears to describe a single article that appeared in newspaper between 1850 and 2002. The articles appear to have been sourced from several historical newspaper databases and archives. There are entries from a total of 12 cities. Pittsburgh has the most entries (n=151), followed by Chicago (n=147). #1920 was the year with the most number of articles (n=127), followed by 1919 (n=108), and then 1946 (n=92). The years with the fewest number of articles recorded had only 1 article per year. 
+
+#Reflections and Questions: 
+#I am curious about the distribution of articles by city. Pittsburgh, Chicago, and then Atlanta having the most number of articles could suggest that there are more historic Black newspapers in cities as opposed to less populated areas. Interestingly, Norfolk, VA has the 4th highest number of newspaper entries, which is a significantly smaller city than the other major cities. I think, given that I do not know too much about the selection strategy for compiling this corpus, it isn't possible to make these conclusions strongly. I am curious about how papers were looked for and included in this corpus. I am also curious about the broader landscape: distribution of historic Black newspaper organizations across the country. 
+#Visually, seems that there is a concentration of articles between the late 1800s and 1950, with a peak around the late 1910s/1920s. This does not look like there is a single peak. Rather, there are multiple peaks, and years with high number of entries immediately followed by years with lower counts. I am not sure if this reflects particular historical contexts or patterns in the digitization/ indexing of the newspapers. 
