@@ -1,0 +1,412 @@
+---
+title: "Topic Modeling Homework"
+author: "Niveda Tennety"
+date: '2026-11-11'
+output: html_document
+
+
+###### MEMO LINK BELOW
+
+########### MEMO LINK (GDOC): https://docs.google.com/document/d/1PkIw8XWhhO7kNFgpoFC2eSS-k8gPivhsNLFBVx0ezx4/edit?tab=t.0
+---
+
+
+#--------------------------------------------- \# Mainstream Papers Topic Modeling #---------------------------------------------
+
+This notebook will import 11,194 text files and related metadata files and execute basic topic modeling with LADAL Method I've adapted this LADAL tutorial for the lynching research: <https://ladal.edu.au/tutorials/topic/topic.html>
+
+Load up the packages if you haven't already....
+
+```{r}
+# install.packages("here")
+# install.packages("tidytext")
+# install.packages("quanteda")
+# install.packages("tm")
+# install.packages("topicmodels")
+# install.packages("reshape2")
+# install.packages("ggplot2")
+# install.packages("wordcloud")
+# install.packages("pals")
+# install.packages("SnowballC")
+# install.packages("lda")
+# install.packages("ldatuning")
+# install.packages("kableExtra")
+# install.packages("DT")
+# install.packages("flextable")
+# install.packages("remotes")
+# remotes::install_github("rlesur/klippy")
+# install.packages("rio")
+# install.packages("readtext")
+# install.packages("formattable")
+
+```
+
+```{r include=FALSE}
+# set options
+options(stringsAsFactors = F)         # no automatic data transformation
+options("scipen" = 100, "digits" = 4) # suppress math annotation
+# load packages
+here::here()
+library(tidyverse)
+library(tidytext)
+library(rio)
+library(readtext)
+#topic modeling
+library(quanteda)
+library(tm)
+library(topicmodels)
+library(lda)
+library(ldatuning)
+# from tutorial packages
+library(DT)
+library(knitr) 
+library(kableExtra) 
+library(reshape2)
+library(ggplot2)
+library(wordcloud)
+library(pals)
+library(SnowballC)
+library(flextable)
+
+```
+
+### Import Data
+
+```{r include=FALSE}
+#import 11,194 text files that were compiled into a df  
+covid <- rio::import("articles_df.xlsx") 
+
+```
+
+# Topic Modeling Predmoninantly White-Owned Papers
+
+### Process into corpus object
+
+```{r}
+textdata <- covid %>% 
+  select(filename, sentence, published_date) %>% 
+  as.data.frame() %>% 
+  rename(doc_id = filename, text= sentence) |> 
+  mutate(year=year(published_date))
+```
+
+### Remove stopwords, clean corpus
+
+```{r}
+# 1. Define standard stopwords
+english_stopwords <- stopwords("en")
+
+# 2. Build corpus
+corpus <- Corpus(DataframeSource(textdata))
+
+# 3. Clean in correct sequence
+processedCorpus <- tm_map(corpus, content_transformer(tolower))
+processedCorpus <- tm_map(processedCorpus, removePunctuation, preserve_intra_word_dashes = TRUE)
+processedCorpus <- tm_map(processedCorpus, removeNumbers)
+
+# Remove stopwords BEFORE stemming
+processedCorpus <- tm_map(processedCorpus, removeWords, english_stopwords)
+
+# Stem documents after removing stopwords
+processedCorpus <- tm_map(processedCorpus, stemDocument, language = "en")
+processedCorpus <- tm_map(processedCorpus, stripWhitespace)
+```
+
+```{r tm3a}
+#DTM: rows correspond to the documents in the corpus. Columns correspond to the terms in the documents. Cells correspond to the weights of the terms. (Girder)
+# compute document term matrix with terms >= minimumFrequency
+minimumFrequency <- 5
+DTM <- DocumentTermMatrix(processedCorpus, control = list(bounds = list(global = c(minimumFrequency, Inf))))
+# have a look at the number of documents and terms in the matrix
+dim(DTM)
+# due to vocabulary pruning, we have empty rows in our DTM
+# LDA does not like this. So we remove those docs from the
+# DTM and the metadata
+sel_idx <- slam::row_sums(DTM) > 0
+DTM <- DTM[sel_idx, ]
+textdata <- textdata[sel_idx, ]
+#5 term minimum[1] 1387 3019
+#5 term minimum[1] 308597 10339
+
+```
+
+## Topic proportions over time {.unnumbered}
+
+We examine topics in the data over time by aggregating mean topic proportions per decade. These aggregated topic proportions can then be visualized, e.g. as a bar plot.
+
+```{r}
+# append decade information for aggregation
+#textdata$decade <- paste0(substr(textdata$year, 0, 3), "0")
+```
+
+Articles per decade
+
+```{r}
+#install.packages("formattable")
+articles_years <- textdata %>% 
+  distinct(doc_id, .keep_all=TRUE) %>% 
+  count(year) %>% 
+  mutate(pct_total= (n/sum(n))) %>% 
+  mutate(pct_total= formattable::percent(pct_total)) %>% 
+  #mutate(pct_total = round(pct_total, 1)) %>% 
+  arrange(desc(year))
+
+library(kableExtra)
+articles_years %>%
+  kbl(caption = "COVID Articles by Year (n=9,589, 10/23/2024)", font_size = 30) %>%
+  kable_classic(full_width = F, html_font = "Cambria") %>% 
+  column_spec(1, bold = T, border_right = T) %>%
+  column_spec(2, width = "5em") %>% 
+  column_spec(3, width = "5em", background = "yellow") 
+
+
+
+#Fact check 9589 articles
+#sum(articles_decades$n)
+```
+
+```{r tm12}
+# number of topics
+# K <- 20
+K <- 6
+# set random number generator seed
+set.seed(9161)
+#Latent Dirichlet Allocation, LDA
+topicModel2 <- LDA(DTM, K, method="Gibbs", control=list(iter = 500, verbose = 25, alpha = 0.2))
+tmResult <- posterior(topicModel2)
+theta <- tmResult$topics
+beta <- tmResult$terms
+topicNames <- apply(terms(topicModel2, 10), 2, paste, collapse = " ")  # reset topicnames
+```
+
+### Mean topic proportions per decade
+
+```{r}
+# Step 1: Check dimensions
+n_theta <- nrow(theta)
+n_textdata <- length(textdata$year)
+
+cat("Number of rows in theta: ", n_theta, "\n")
+cat("Number of documents in textdata: ", n_textdata, "\n")
+
+# Check if textdata contains all the documents in theta
+common_ids <- intersect(rownames(theta), textdata$doc_id) # Assuming textdata has a 'doc_id' column
+
+# Filter textdata to include only the documents present in theta
+textdata_filtered <- textdata[textdata$doc_id %in% common_ids, ]
+
+# Check dimensions after filtering
+n_textdata_filtered <- nrow(textdata_filtered)
+cat("Number of documents in filtered textdata: ", n_textdata_filtered, "\n")
+
+# Ensure the lengths match now
+if (n_theta != n_textdata_filtered) {
+  stop("The number of rows in 'theta' still does not match the length of 'textdata_filtered$decade'.")
+}
+
+# Align rownames of theta with filtered textdata
+theta_aligned <- theta[rownames(theta) %in% textdata_filtered$doc_id, ]
+
+# Optional: Verify the order of documents
+if (!all(rownames(theta_aligned) == textdata_filtered$doc_id)) {
+  # If the order doesn't match, reorder one to match the other
+  textdata_filtered <- textdata_filtered[match(rownames(theta_aligned), textdata_filtered$doc_id), ]
+}
+
+# Ensure they are now aligned and can be combined
+if (!all(rownames(theta_aligned) == textdata_filtered$doc_id)) {
+  stop("The document IDs still do not match. Please check the data alignment.")
+}
+
+# Step 2: Combine data
+topic_data <- data.frame(theta_aligned, year = textdata_filtered$year)
+
+# Step 3: Aggregate data
+topic_proportion_per_year <- aggregate(. ~ year, data = topic_data, FUN = mean)
+
+
+# get mean topic proportions per decade
+# topic_proportion_per_decade <- aggregate(theta, by = list(decade = textdata$decade), mean)
+# set topic names to aggregated columns
+colnames(topic_proportion_per_year)[2:(K+1)] <- topicNames
+# reshape data frame
+vizDataFrame <- melt(topic_proportion_per_year, id.vars = "year")
+```
+
+#Examine topic names
+
+```{r}
+#enframe(): Converts a named list into a dataframe.
+topics <- enframe(topicNames, name = "number", value = "text") %>% 
+  unnest(cols = c(text)) 
+  
+topics
+```
+
+### Review the topics and determine a 1-2 word label after reading the source documents.
+
+```{r}
+
+#Topic 1	state say kennedi know usa just unit word dont think
+
+theta2 <- as.data.frame(theta)
+# 
+# topic1 <- theta2 %>% 
+#   rownames_to_column(var = "file") |> # putting the rownames into a new column called file
+#   mutate(file = str_remove(file, "^X"),  # Remove leading 'X'
+#          line = str_extract(file, "(?<=\\.txt)\\.\\d+")) |>   # Extract number after .txt
+#   mutate(file = str_remove(file, "\\.\\d+$")) |> 
+#   rename(topic1 = '1') |> # looking at first topic: ounti citi night mile jail day town morn march juli
+#   top_n(20, topic1) |> 
+#   arrange(desc(topic1)) |>  
+#   select(file, line, topic1) 
+
+
+```
+
+
+```{r}
+
+#add categories
+
+#vizDataFrame <- vizDataFrame %>% 
+  #mutate(category = case_when(
+   # str_detect(variable, "state say kennedi know usa just unit word dont think") ~ "negro_crime",
+    #str_detect(variable, "vaccin covid peopl said get shot children covid- recommend health") ~ "critizing_lynching",
+    #str_detect(variable, "said year like “ one time work book run feel") ~ "negro_lynching",
+    #str_detect(variable, "health diseas vaccin public coronavirus disord depart covid care drug") ~ "legal",
+    #str_detect(variable, "time end new right york document reserv copyright classif language english") ~ "lynch_mob",
+    #str_detect(variable, "can symptom research patient said long covid peopl medic like") ~ "attack_body",
+    #))
+
+
+```
+
+```{r}
+vizDataFrame <- vizDataFrame %>% 
+  mutate(category = case_when(
+    str_detect(variable, "state say kennedi know usa just unit word dont think") ~ "placeholder1",
+    str_detect(variable, "vaccin covid peopl said get shot children covid- recommend health") ~ "placeholder2",
+    str_detect(variable, "said year like “ one time work book run feel") ~ "placeholder3",
+    str_detect(variable, "health diseas vaccin public coronavirus disord depart covid care drug") ~ "placeholder4",
+    str_detect(variable, "time end new right york document reserv copyright classif language english") ~ "placeholder5",
+    str_detect(variable, "can symptom research patient said long covid peopl medic like") ~ "placeholder6",
+    ))
+```
+
+# Fact Check and Validate Topics
+
+#Topic 1: political or governmental discussion "state say kennedi know usa just unit word dont think" Topic 2: COVID-19 vaccination and public response "vaccin covid peopl said get shot children covid- recommend health" Topic 3: N/A "said year like “ one time work book run feel" Topic 4: Public health, disease, and medical institutions (N/A) "health diseas vaccin public coronavirus disord depart covid care drug" Topic 5: Copyright notices, website information (N/A) "time end new right york document reserv copyright classif language english" Topic 6: Medical research, symptoms, disease mechanisms "can symptom research patient said long covid peopl medic like"
+
+### for placeholder1
+
+```{r}
+theta2 <- as.data.frame(theta)
+
+political_government_disc_NA <- theta2 %>% 
+  #renaming for a general topic
+  rename(political_government_disc_NA = '1') %>% 
+  top_n(20, political_government_disc_NA) %>%
+  arrange(desc(political_government_disc_NA)) %>% 
+  select(political_government_disc_NA)
+
+# Apply rownames_to_column
+political_government_disc_NA <- tibble::rownames_to_column(political_government_disc_NA , "story_id") 
+
+political_government_disc_NA$story_id <- gsub("X", "", political_government_disc_NA$story_id)
+
+head(political_government_disc_NA$story_id, 20)
+#Checks out
+
+
+```
+
+### Topic 4:  Public health, disease, and medical institutions (N/A)
+
+```{r}
+theta2 <- as.data.frame(theta)
+
+PH_disease_inst_NA <- theta2 %>% 
+  #renaming for a general topic
+  rename(PH_disease_inst_NA = '4') %>% 
+  top_n(20, PH_disease_inst_NA ) %>%
+  arrange(desc(PH_disease_inst_NA )) %>% 
+  select(PH_disease_inst_NA )
+
+# Apply rownames_to_column
+PH_disease_inst_NA  <- tibble::rownames_to_column(PH_disease_inst_NA , "story_id") 
+
+PH_disease_inst_NA $story_id <- gsub("X", "", PH_disease_inst_NA $story_id)
+
+head(PH_disease_inst_NA$story_id, 20)
+#Checks out
+
+
+```
+
+### Topic 3: General Narrative / Personal Experiences (N/A)
+
+```{r}
+theta2 <- as.data.frame(theta)
+
+general_narrative_NA <- theta2 %>% 
+  #renaming for a general topic
+  rename(general_narrative_NA = '3') %>% 
+  top_n(20, general_narrative_NA) %>%
+  arrange(desc(general_narrative_NA)) %>% 
+  select(general_narrative_NA)
+
+# Apply rownames_to_column
+general_narrative_NA <- tibble::rownames_to_column(general_narrative_NA, "story_id") 
+
+general_narrative_NA$story_id <- gsub("X", "", general_narrative_NA$story_id)
+
+head(general_narrative_NA$story_id, 20)
+#Checks out
+
+```
+
+#### Topic 2: COVID-19 Vaccination and Public Response
+
+```{r}
+theta2 <- as.data.frame(theta)
+
+covid_vaccination <- theta2 %>% 
+  #renaming for a general topic
+  rename(covid_vaccination = '2') %>% 
+  top_n(20, covid_vaccination) %>%
+  arrange(desc(covid_vaccination)) %>% 
+  select(covid_vaccination)
+
+# Apply rownames_to_column
+covid_vaccination <- tibble::rownames_to_column(covid_vaccination, "story_id") 
+
+covid_vaccination$story_id <- gsub("X", "", covid_vaccination$story_id)
+
+head(covid_vaccination$story_id, 20)
+#Checks out
+
+
+```
+
+#Figure 15: COVID-19 topic proportions by year
+
+```{r}
+# plot topic proportions per year as bar plot
+ggplot(vizDataFrame, aes(x=year, y=value, fill=variable)) + 
+  geom_bar(stat = "identity") + ylab("proportion") + 
+  scale_fill_manual(values = paste0(alphabet(20), "FF"), name = "year") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+   scale_fill_manual(values=c("#9933FF",
+                              "#33FFFF",
+                              "red",
+                              "yellow",
+                              "darkblue",
+                              "green"))+
+  labs(title = "Topics in COVID-19 News Coverage",
+       subtitle = "Six probable topics in COVID-19 news articles",
+       caption = "Aggregate mean topic proportions per year")
+
+# ggsave(here::here("../lynching_press/output_images_tables/Article_Images/Figure_15_white_topics_oct_19_2024.png"),device = "png",width=9,height=6, dpi=800)
+```
+

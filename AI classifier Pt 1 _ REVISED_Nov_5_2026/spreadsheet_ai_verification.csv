@@ -1,0 +1,24 @@
+"","filename","category","ai_correct","ai_wrong","unsure","notes"
+"1","Beijing denies coercive birth control measures in Xinjiang after China's US Embassy claimed such pol.txt","counter;women"," "," "," "," "
+"2","China Is Forcing Birth Control On Muslim Women in Xinjiang.txt","counter;women"," "," "," "," "
+"3","China counters Uighur criticism with explicit attacks on women witnesses.txt","counter;women"," "," "," "," "
+"4","China denies coercive birth control measures in Xinjiang.txt","counter;women"," "," "," "," "
+"5","China releases details of female Uighurs' fertility"," sexual relations and STDs in bid to discredit t.txt,counter"," "," "," "," "
+"6","Familiar names frequent behind lies of ' Xinjiang women being raped'.txt","counter;women"," "," "," "," "
+"7","How China is breaking apart a people The campaign of repression against the Uyghurs has entered a ne.txt","counter"," "," "," "," "
+"8","How women in Xinjiang shatter restraints"," become vibrant community members.txt,counter;women"," "," "," "," "
+"9","To reduce birth in Xinjiang "," China attacks Muslims.txt,counter;women"," "," "," "," "
+"10","Twitter deletes China embassy’s tweet claiming ‘emancipation’ of Uighur women.txt","counter;women"," "," "," "," "
+"11","Twitter removes China US embassy post saying Uighur women no longer 'baby-making machines'.txt","counter;women"," "," "," "," "
+"12","",NA,NA,NA,NA,NA
+"13","If an article contains two or more mentions of any of the
+following terms, classify it as 'women':",NA,NA,NA,NA,NA
+"14","- Xinjiang women",NA,NA,NA,NA,NA
+"15","- Uyghur women",NA,NA,NA,NA,NA
+"16","- Muslim women",NA,NA,NA,NA,NA
+"17","If an article contains two or more mentions of any of the
+following terms, classify it as 'counter':",NA,NA,NA,NA,NA
+"18","- terror*",NA,NA,NA,NA,NA
+"19","- extrem*",NA,NA,NA,NA,NA
+"20","- radical*",NA,NA,NA,NA,NA
+"21","An article can belong to both categories.",NA,NA,NA,NA,NA

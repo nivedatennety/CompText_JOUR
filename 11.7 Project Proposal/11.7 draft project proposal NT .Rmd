@@ -1,0 +1,170 @@
+---
+title: "11.7 Draft Project Proposal"
+author: "Niveda Tennety"
+date: "2026-11-07"
+output: html_document
+---
+
+###### LINK TO DRAFT PROJECT PROPOSAL: https://docs.google.com/document/d/1FW6Zy3woo9ayBEO0wNBm-7ZtZG0Z0J6dmTJ5REVRTCU/edit?tab=t.0
+
+#Install packages
+```{r}
+#install.packages("readtext")
+#install.packages("tidytext")
+#install.packages("readxl")
+library(quanteda)
+library(readtext)
+library(tidyverse)
+library(tidytext)
+library(rio)
+library(janitor)
+```
+
+#Import your article text dataframe
+```{r}
+articles <- rio::import("articles_df.xlsx") 
+```
+
+#### PART 1: CORPUS EXPLORATION
+
+## Metadata analysis
+```{r}
+articles_data <- rio::import("results_list_for_long COVID.XLSX")
+View(data)
+```
+#clean names
+```{r}
+articles_data <- articles_data |> 
+  clean_names()
+```
+
+## Outlet counts
+# Top 5: 33 articles from NYT, 9 from axios, 9 from USA today online, 7 LA times, 6 Business Insider
+```{r}
+outlet_counts <- articles_data |> 
+  group_by(publication_4) |> 
+  summarise(
+    article_count = n()
+  ) |> 
+  arrange(desc(article_count))
+
+View(outlet_counts)
+```
+
+## Bar graph of outlet counts
+```{r}
+ggplot(outlet_counts, aes(x = reorder(publication_4, article_count),
+                          y = article_count)) +
+  geom_col() +
+  coord_flip() +
+  labs(
+    title = "Distribution of Articles by Publication",
+    x = "Publication",
+    y = "Number of Articles"
+  ) +
+  theme_minimal()
+```
+
+
+## Most Frequent Words
+#Tokenize "sentence" column
+```{r}
+long_covid_words <- articles %>%
+  unnest_tokens(word, sentence)
+```
+
+#Remove stopwords and count the words
+#Top 20 words: covid, health, 90, 78, people, 89, vaccine, vaccines, 19, disease, public, time, 77, dr, coronavirus, medical, children, care, disorders
+```{r}
+word_counts <- long_covid_words |> 
+  anti_join(stop_words) |> 
+  count(word, sort = TRUE)
+
+word_counts
+```
+
+#### PART 2: BIGRAMS
+
+#Create Bigrams
+#POTENTIALLY Relevant Bigrams to Semetko & Valkenberg's framework on media frames (2000): 
+#Conflict frame:
+#Economic consequences frame:
+#Human interest frame: mental health, pregnant women
+#Attribution of responsibility frame: federal government, health administration, authoritative content, kennedy jr, regulation policy, president trump, drug administration, Secretary Robert
+#Morality frame
+#Other: disease control, vaccine policy
+```{r}
+long_covid_bigrams <- articles |> 
+  unnest_tokens(bigram, sentence, token = "ngrams", n = 2)
+
+#Filter out stop words.
+#the top bigrams that came up: covid 19, covid vaccine, covid vaccines, kennedy jr, disease control, public health, human services, secretary robert
+
+bigrams1 <- articles %>%
+  unnest_tokens(bigram, sentence, token = "ngrams", n = 2) %>%
+  filter(!is.na(bigram)) |> 
+  separate(bigram, c("word1", "word2"), sep = " ")
+
+bigrams2 <- bigrams1 %>%
+  filter(!word1 %in% stop_words$word) %>%
+  filter(!word2 %in% stop_words$word) |> 
+  count(word1, word2, sort = TRUE)
+
+head(bigrams2, 100)
+```
+
+#### PART 3: KEYWORD IN CONTEXT (KWIC) SEARCH: Institutional Expertise Category Keyword Search
+#817 sentences mention at least one of the search terms in my keyword dictionary, while 5239 sentences do not mention institutional expertise. There were 1975 missing sentences, likely because the sentence field was missing. 13.29% of sentences mentioned institutional expertise, while 86.71% of sentences did not. 
+```{r}
+institutional_expertise <- long_covid |>
+  mutate(
+    institutional_public_health = if_else(
+      str_detect(
+        sentence,
+        regex(
+          "CDC|Centers for Disease Control and Prevention|NIH|National Institutes of Health|WHO|World Health Organization|HHS|Department of Health and Human Services|health administration|kennedy jr|president trump|drug administration|secretary robert|federal government",
+          ignore_case = TRUE
+        )
+      ),
+      "Institutional expertise",
+      "No institutional expertise"
+    )
+  )
+```
+
+
+```{r}
+institutional_expertise |>
+  count(institutional_public_health)
+```
+
+#### PART 4: SHORT SENTIMENT ANALYSIS
+#Filter sentences that mention institutional expertise
+```{r}
+institutional_sentences <- institutional_expertise |>
+  filter(institutional_public_health == "Institutional expertise") |>
+  filter(!is.na(sentence), sentence != "") |>
+  mutate(id = row_number()) |>
+  select(id, text = sentence)
+```
+
+#Calculate sentiment for each sentence
+```{r}
+institutional_sentiment <- institutional_sentences |>
+  get_sentences() |>
+  sentiment()
+
+head(institutional_sentiment)
+```
+#Summarize sentiment scores
+#The minimum sentiment score for sentences mentioning institutional expertise is -1.881, while the maximum is 1.421. The median sentiment score is 0 with a standard deviation of 0.310. 
+```{r}
+institutional_sentiment |>
+  summarise(
+    minimum = min(sentiment, na.rm = TRUE),
+    maximum = max(sentiment, na.rm = TRUE),
+    median = median(sentiment, na.rm = TRUE),
+    standard_deviation = sd(sentiment, na.rm = TRUE)
+  )
+```
+

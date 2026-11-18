@@ -1,0 +1,7 @@
+"","filename","category","path","ai_correct","ai_wrong","unsure","notes"
+"1","batch1_2_page0.txt","vietnam","./perspective_extracted/batch1_2_page0.txt"," "," "," "," "
+"2","batch1_3_page0.txt","nixon;vietnam","./perspective_extracted/batch1_3_page0.txt"," "," "," "," "
+"3","",NA,NA,NA,NA,NA,NA
+"4","Prompt instructions:",NA,NA,NA,NA,NA,NA
+"5","1. 2 + mentions of Richard Nixon = 'nixon'",NA,NA,NA,NA,NA,NA
+"6","2. 2 + Mentions the Vietnam War = 'vietnam'",NA,NA,NA,NA,NA,NA

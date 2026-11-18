@@ -1,0 +1,155 @@
+---
+title: "Content analysis Homework"
+author: "Niveda Tennety"
+date: "2026-10-23"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(janitor)
+```
+
+```{r}
+#import df created from sequence below
+
+long_covid <- rio::import("articles_df.xlsx") 
+```
+```{r}
+view(long_covid)
+```
+
+#Research question #1: What percentage of the coverage discusses the most commonly reported long COVID symptoms: fatigue, brain fog, and post-exertional malaise (PEM)? (according to CDC.gov source: https://www.cdc.gov/long-covid/signs-symptoms/index.html)
+#Codebook (most commonly reported Long COVID symptoms) I identified sentences mentioning at least one long COVID symptom from a predefined list of the top 3 most commonly reported symptoms by CDC.GOV. Sentences were coded as containing the most commonly-reported symptoms if they matched at least one of the symptom-related keywords or phrases in the code. 
+
+#% of coverage that discusses the most commonly reported long COVID symptoms (fatigue, brain fog, post-exertional malaise):
+```{r}
+covid_symptoms <- long_covid |>
+  mutate(
+    # Check each condition independently
+   drawer1 = if_else(str_detect(sentence, regex("Long Covid", ignore_case = TRUE)), "LongCovid", NA_character_),
+    drawer2 = if_else(str_detect(sentence, regex("brain fog|fatigue|post-exertional malaise", ignore_case = TRUE)), "Symptoms", NA_character_)
+  ) %>%
+  # Combine non-NA terms into a single string separated by commas
+  unite("category", drawer1, drawer2, sep = ", ", na.rm = TRUE)
+```
+
+```{r}
+covid_symptoms |> 
+  count(category)
+```
+#Interpretation
+#7798 sentences contain neither "long covid" nor any of the listed symptoms. 182 sentences contain "long covid' but none of the listed symptoms. 8 sentences contain both "long covid" and at least one listed symptom. 41 sentences contain at least one listed symptom, but not "long covid." 
+#Of 8031 total sentences, the total number of sentences mentioning at least one symptom is 49 (8+41). Therefore, 0.61% of sentences mention at least one of the symptoms detected by my code. 
+
+#Research question 2
+#What percentage of the coverage discusses other commonly reported symptoms of long COVID?
+#Other reported long covid symptoms: I identified sentences mentioning at least one long COVID symptom other than the three most commonly reported symptomsfrom a predefined list by CDC.GOV. Sentences were coded as containing symptoms if they matched at least one of the symptom-related keywords or phrases in the code. 
+```{r}
+other_covid_symptoms <- long_covid |>
+  mutate(
+    # Check each condition independently
+   drawer1 = if_else(str_detect(sentence, regex("Long Covid", ignore_case = TRUE)), "LongCovid", NA_character_),
+    drawer2 = if_else(str_detect(sentence, regex("difficulty breathing|shortness of breath|coughing|chest pain|palpitations|headaches|sleep problems|dizziness|lightheadedness|pins-and-needs|change in smell| depression| anxiety|diarrhea|stomach pain|constipation|joint pain|rash|menstrual cycles", ignore_case = TRUE)), "Symptoms", NA_character_)
+  ) %>%
+  # Combine non-NA terms into a single string separated by commas
+  unite("category", drawer1, drawer2, sep = ", ", na.rm = TRUE)
+```
+
+```{r}
+other_covid_symptoms |> 
+  count(category)
+```
+#Interpretation
+#7756 sentences contain neither "long COVID" nor any of the listed symptoms. 182 sentences contain "long COVID" but none of the listed symptoms. 8 sentences contain both "long covid" and at least one listed symptom. 85 sentences contain at least one listed symptom, but not "long COVID."
+#Of 8031 total sentences, the total number of sentences mentioning at least one symptom other than the 3 most commonly reported symptoms is 93. Therefore, 1.16% of sentences mention at least one of the other commonly reported symptoms detected by my code. 
+
+
+
+#Research question 3: 
+#How does coverage in my dataset represent long COVID, particularly its symptoms and the sentiment associated with discussing them? Specifically, how frequently do sentences discussing long COVID symptoms receive negative, neutral, or positive sentiment scores?
+
+#Codebook (categories I operationalized in my code):
+#Long COVID symptoms: I identified sentences mentioning at least one long COVID symptom from a predefined list by CDC.GOV. Sentences were coded as containing symptoms if they matched at least one of the symptom-related keywords or phrases in the code. 
+#Sentiment associated with mentions of symptoms: I filtered for sentences containing at least one symptom. These sentences were analyzed using the sentimentr package in R. Scores were categorized as negative (below 0), neutral (equal to 0), or positive (above 0). 
+
+
+#Include all COVID symptoms
+```{r}
+all_covid_symptoms <- long_covid |>
+  mutate(
+    # Check each condition independently
+   drawer1 = if_else(str_detect(sentence, regex("Long Covid", ignore_case = TRUE)), "LongCovid", NA_character_),
+    drawer2 = if_else(str_detect(sentence, regex("fatigue|brain fog|post-exertional malaise|difficulty breathing|shortness of breath|coughing|chest pain|palpitations|headaches|sleep problems|dizziness|lightheadedness|pins-and-needles|change in smell| depression| anxiety|diarrhea|stomach pain|constipation|joint pain|rash|menstrual cycles", ignore_case = TRUE)), "Symptoms", NA_character_)
+  ) %>%
+  # Combine non-NA terms into a single string separated by commas
+  unite("category", drawer1, drawer2, sep = ", ", na.rm = TRUE)
+```
+
+```{r}
+all_covid_symptoms |> 
+  count(category)
+```
+#Interpretation at this point
+#7735 sentences contain neither "long covid" nor any of the listed symptoms. 180 sentences contain "long covid" but none of the listed symptoms. 10 sentences contain both "long covid" and at least one listed symptom. 106 sentences contain at least one listed symptom, but not "long covid."
+#Of 8031 total sentences, the total number of sentences mentioning at least one listed symptom is 116. Therefore, 1.44% of sentences mention at least one of the symptoms detected by my code. 
+
+#Calculate sentiment scores for each sentence that contains a symptom, and identify the minimum, maximum, median, and standard deviation (for my own understanding)
+
+```{r}
+library(tidyverse)
+library(sentimentr)
+```
+
+```{r}
+#filter sentences that mention symptoms
+symptom_sentences <- all_covid_symptoms |> 
+  filter(str_detect(category, "Symptoms")) |> 
+  filter (!is.na(sentence), sentence != "") |> 
+  mutate(id = row_number()) |>
+  select(id, text = sentence)
+
+#calculate sentiment for each sentence
+symptom_sentiment <- symptom_sentences |>
+  get_sentences() |>
+  sentiment()
+
+head(symptom_sentiment)
+```
+
+#summarize sentiment scores
+```{r}
+
+#summarize sentiment scores
+symptom_sentiment |>
+  summarise(
+    minimum = min(sentiment, na.rm = TRUE),
+    maximum = max(sentiment, na.rm = TRUE),
+    median = median(sentiment, na.rm = TRUE),
+    standard_deviation = sd(sentiment, na.rm = TRUE)
+  )
+```
+#ANS: The most negative-scoring sentence has a sentiment score of -1.44. The most positive-scoring sentence has a positive sentiment score of 0.61. The media sentiment score of all reported long COVID symptoms is -0.18. The standard deviation is 0.43. 
+
+#Categorize sentiment scores (RQ ANSWER) -- uses case_when
+#AI disclosure: I used chatGPT. The prompt I inputted is: what is the syntax using case_when to categorize sentiment scores for each sentence containing a long COVID symptom. I understand now how to use case when now to bucket numerical scores into categorical grades or ratings. In the Dugin example, case_when is being used to classify sentences into thematic categories based on keywords?
+```{r}
+symptom_sentiment <- symptom_sentiment |>
+  mutate(
+    sentiment_category = case_when(
+      sentiment < 0 ~ "Negative",
+      sentiment == 0 ~ "Neutral",
+      sentiment > 0 ~ "Positive",
+      TRUE ~ NA_character_
+    )
+  )
+```
+
+```{r}
+symptom_sentiment |>
+  count(sentiment_category)
+```
+
+#Interpretation
+#154 sentences containing a long covid symptom (63.1% of all sentences containing a symptom) are given a negative sentiment score, 19 sentences (7.8%) a neutral score, and 71 sentences (29.1%) a positive score. Negative sentiment scores were therefore the most common among sentences mentioning symptoms. 
+#Caveat, sentiment scores were assigned by sentimentr, not manually coded. From my previous example with using sentimentr, this could mean that just a description of an adverse experience is coded as negative sentiment, even if the reporting is neutral. 
