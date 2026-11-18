@@ -7,26 +7,26 @@ format:
     theme: cosmo
 ---
 
-
-
 ```{r include: false}
 library(tidyverse)
 library(janitor)
 ```
 
 ```{r}
+#| include: false
 #import df created from sequence below
 
 long_covid <- rio::import("articles_df.xlsx") 
 ```
+
 ```{r}
 view(long_covid)
 ```
 
-#Research question #1: What percentage of the coverage discusses the most commonly reported long COVID symptoms: fatigue, brain fog, and post-exertional malaise (PEM)? (according to CDC.gov source: https://www.cdc.gov/long-covid/signs-symptoms/index.html)
-#Codebook (most commonly reported Long COVID symptoms) I identified sentences mentioning at least one long COVID symptom from a predefined list of the top 3 most commonly reported symptoms by CDC.GOV. Sentences were coded as containing the most commonly-reported symptoms if they matched at least one of the symptom-related keywords or phrases in the code. 
+#Research question #1: What percentage of the coverage discusses the most commonly reported long COVID symptoms: fatigue, brain fog, and post-exertional malaise (PEM)? (according to CDC.gov source: https://www.cdc.gov/long-covid/signs-symptoms/index.html) #Codebook (most commonly reported Long COVID symptoms) I identified sentences mentioning at least one long COVID symptom from a predefined list of the top 3 most commonly reported symptoms by CDC.GOV. Sentences were coded as containing the most commonly-reported symptoms if they matched at least one of the symptom-related keywords or phrases in the code.
 
 #% of coverage that discusses the most commonly reported long COVID symptoms (fatigue, brain fog, post-exertional malaise):
+
 ```{r}
 covid_symptoms <- long_covid |>
   mutate(
@@ -47,14 +47,10 @@ covid_symptoms |>
 head(covid_symptoms)
 ```
 
+#Interpretation #7798 sentences contain neither "long covid" nor any of the listed symptoms. 182 sentences contain "long covid' but none of the listed symptoms. 8 sentences contain both "long covid" and at least one listed symptom. 41 sentences contain at least one listed symptom, but not "long covid." #Of 8031 total sentences, the total number of sentences mentioning at least one symptom is 49 (8+41). Therefore, 0.61% of sentences mention at least one of the symptoms detected by my code.
 
-#Interpretation
-#7798 sentences contain neither "long covid" nor any of the listed symptoms. 182 sentences contain "long covid' but none of the listed symptoms. 8 sentences contain both "long covid" and at least one listed symptom. 41 sentences contain at least one listed symptom, but not "long covid." 
-#Of 8031 total sentences, the total number of sentences mentioning at least one symptom is 49 (8+41). Therefore, 0.61% of sentences mention at least one of the symptoms detected by my code. 
+#Research question 2 #What percentage of the coverage discusses other commonly reported symptoms of long COVID? #Other reported long covid symptoms: I identified sentences mentioning at least one long COVID symptom other than the three most commonly reported symptomsfrom a predefined list by CDC.GOV. Sentences were coded as containing symptoms if they matched at least one of the symptom-related keywords or phrases in the code.
 
-#Research question 2
-#What percentage of the coverage discusses other commonly reported symptoms of long COVID?
-#Other reported long covid symptoms: I identified sentences mentioning at least one long COVID symptom other than the three most commonly reported symptomsfrom a predefined list by CDC.GOV. Sentences were coded as containing symptoms if they matched at least one of the symptom-related keywords or phrases in the code. 
 ```{r}
 other_covid_symptoms <- long_covid |>
   mutate(
@@ -70,10 +66,10 @@ other_covid_symptoms <- long_covid |>
 other_covid_symptoms |> 
   count(category)
 ```
+
 ```{r}
 head(other_covid_symptoms)
 ```
-
 
 # Hosting a GitHub Page - R Cheat Sheet
 
@@ -99,17 +95,17 @@ We can **bold** or *italic* text.
 
 We can create bulleted lists.
 
--   bullet one
--   bullet two
--   bullet three
+- bullet one
+- bullet two
+- bullet three
 
 ## Code blocks
 
 We can also add special code inside of code blocks -- the gray sections where we write code -- that control how they render in our html document. These output options let us do things like:
 
--   Show or hide the code when we render our html document (echo: true or false)
--   Prevent the code from actually running when we render our html document (eval: true or false)
--   Hide warnings from outputing when we render our html document (warning: true or false)
+- Show or hide the code when we render our html document (echo: true or false)
+- Prevent the code from actually running when we render our html document (eval: true or false)
+- Hide warnings from outputing when we render our html document (warning: true or false)
 
 There's a [full guide here](https://quarto.org/docs/computations/execution-options.html#output-options).
 
@@ -149,41 +145,41 @@ income_vacancy %>%
 
 ## Set up for hosting
 
--   Create a new folder in your repository called "docs" (if one isn't there already)
--   Rename this document as "index.qmd"
--   Move "index.qmd" into the "docs" folder
+- Create a new folder in your repository called "docs" (if one isn't there already)
+- Rename this document as "index.qmd"
+- Move "index.qmd" into the "docs" folder
 
 ## Render this document as an html page
 
--   Make sure this document is named "index.qmd" and is in the "docs" folder
--   Click Render button. It will create an html version of this page, called "index.html"
--   Use GitHub Desktop to push your files to your your github repository on the web.
--   Access the URL from your Github repository.
+- Make sure this document is named "index.qmd" and is in the "docs" folder
+- Click Render button. It will create an html version of this page, called "index.html"
+- Use GitHub Desktop to push your files to your your github repository on the web.
+- Access the URL from your Github repository.
 
 ## Host html on GitHub
 
--   Go to your github repository on the web, such as https://github.com/djnf-data-2026/casey-mann
--   Click on Settings on the top right.
--   Scroll down to the Pages section of Settings.
--   Change the Branch to /docs and click save.
+- Go to your github repository on the web, such as https://github.com/djnf-data-2026/casey-mann
+- Click on Settings on the top right.
+- Scroll down to the Pages section of Settings.
+- Change the Branch to /docs and click save.
 
 #### To see your file hosted:
 
--   Back to your GitHub repo on the web: such as https://github.com/djnf-data-2026/casey-mann
--   Click on Settings, then Pages
--   Under GitHub Pages, you should see "Your site is live at https://djnf-data-2026.github.io/casey-mann/"
--   Click that URL
--   If it works, email it to robwells\@umd.edu
+- Back to your GitHub repo on the web: such as https://github.com/djnf-data-2026/casey-mann
+- Click on Settings, then Pages
+- Under GitHub Pages, you should see "Your site is live at https://djnf-data-2026.github.io/casey-mann/"
+- Click that URL
+- If it works, email it to robwells\@umd.edu
 
 ## REVEL IN YOUR NERD POWERS
 
 # Part 2: Embedding Images
 
--   create a folder in your repository's main branch, call it images
+- create a folder in your repository's main branch, call it images
 
--   find any .jpeg, .jpg or .png file and insert it into that folder.
+- find any .jpeg, .jpg or .png file and insert it into that folder.
 
--   In a QMD file, display the image as follows:
+- In a QMD file, display the image as follows:
 
 \#![CAPTION FOR YOUR PHOTO](images/your_link_here.png)
 
