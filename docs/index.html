@@ -116,47 +116,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'janitor'
-
-The following objects are masked from 'package:stats':
-
-    chisq.test, fisher.test</code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">view</span>(long_covid)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">view</span>(long_covid)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>#Research question #1: What percentage of the coverage discusses the most commonly reported long COVID symptoms: fatigue, brain fog, and post-exertional malaise (PEM)? (according to CDC.gov source: https://www.cdc.gov/long-covid/signs-symptoms/index.html) #Codebook (most commonly reported Long COVID symptoms) I identified sentences mentioning at least one long COVID symptom from a predefined list of the top 3 most commonly reported symptoms by CDC.GOV. Sentences were coded as containing the most commonly-reported symptoms if they matched at least one of the symptom-related keywords or phrases in the code.</p>
 <p>#% of coverage that discusses the most commonly reported long COVID symptoms (fatigue, brain fog, post-exertional malaise):</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>covid_symptoms <span class="ot">&lt;-</span> long_covid <span class="sc">|&gt;</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Check each condition independently</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>   <span class="at">drawer1 =</span> <span class="fu">if_else</span>(<span class="fu">str_detect</span>(sentence, <span class="fu">regex</span>(<span class="st">"Long Covid"</span>, <span class="at">ignore_case =</span> <span class="cn">TRUE</span>)), <span class="st">"LongCovid"</span>, <span class="cn">NA_character_</span>),</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">drawer2 =</span> <span class="fu">if_else</span>(<span class="fu">str_detect</span>(sentence, <span class="fu">regex</span>(<span class="st">"brain fog|fatigue|post-exertional malaise"</span>, <span class="at">ignore_case =</span> <span class="cn">TRUE</span>)), <span class="st">"Symptoms"</span>, <span class="cn">NA_character_</span>)</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Combine non-NA terms into a single string separated by commas</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unite</span>(<span class="st">"category"</span>, drawer1, drawer2, <span class="at">sep =</span> <span class="st">", "</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>covid_symptoms <span class="ot">&lt;-</span> long_covid <span class="sc">|&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Check each condition independently</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>   <span class="at">drawer1 =</span> <span class="fu">if_else</span>(<span class="fu">str_detect</span>(sentence, <span class="fu">regex</span>(<span class="st">"Long Covid"</span>, <span class="at">ignore_case =</span> <span class="cn">TRUE</span>)), <span class="st">"LongCovid"</span>, <span class="cn">NA_character_</span>),</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">drawer2 =</span> <span class="fu">if_else</span>(<span class="fu">str_detect</span>(sentence, <span class="fu">regex</span>(<span class="st">"brain fog|fatigue|post-exertional malaise"</span>, <span class="at">ignore_case =</span> <span class="cn">TRUE</span>)), <span class="st">"Symptoms"</span>, <span class="cn">NA_character_</span>)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Combine non-NA terms into a single string separated by commas</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unite</span>(<span class="st">"category"</span>, drawer1, drawer2, <span class="at">sep =</span> <span class="st">", "</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>covid_symptoms <span class="sc">|&gt;</span> </span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(category)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>covid_symptoms <span class="sc">|&gt;</span> </span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(category)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>             category    n
 1                     7800
@@ -165,233 +141,27 @@ The following objects are masked from 'package:stats':
 4            Symptoms   41</code></pre>
 </div>
 </div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(covid_symptoms)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>                                                                     filename
-1 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85.txt
-2 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85.txt
-3 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85.txt
-4 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85.txt
-5 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85.txt
-6 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85.txt
-                             sentence
-1                                &lt;NA&gt;
-2                                &lt;NA&gt;
-3                                &lt;NA&gt;
-4                  The New York Times
-5 September 13, 2026 Sunday 16:51 EST
-6                                &lt;NA&gt;
-                                                                    title
-1 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85
-2 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85
-3 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85
-4 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85
-5 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85
-6 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85
-  published_date publication_location      publication_4 publication_type_5
-1     2026-09-13             New York The New York Times               News
-2     2026-09-13             New York The New York Times               News
-3     2026-09-13             New York The New York Times               News
-4     2026-09-13             New York The New York Times               News
-5     2026-09-13             New York The New York Times               News
-6     2026-09-13             New York The New York Times               News
-  length section word_count countries
-1   1299  HEALTH       1299        NA
-2   1299  HEALTH       1299        NA
-3   1299  HEALTH       1299        NA
-4   1299  HEALTH       1299        NA
-5   1299  HEALTH       1299        NA
-6   1299  HEALTH       1299        NA
-                                                                                                                     byline
-1 Jeré Longman Jer&amp;#233; Longman is a Times reporter on the Obituaries desk who writes the occasional sports-related story.
-2 Jeré Longman Jer&amp;#233; Longman is a Times reporter on the Obituaries desk who writes the occasional sports-related story.
-3 Jeré Longman Jer&amp;#233; Longman is a Times reporter on the Obituaries desk who writes the occasional sports-related story.
-4 Jeré Longman Jer&amp;#233; Longman is a Times reporter on the Obituaries desk who writes the occasional sports-related story.
-5 Jeré Longman Jer&amp;#233; Longman is a Times reporter on the Obituaries desk who writes the occasional sports-related story.
-6 Jeré Longman Jer&amp;#233; Longman is a Times reporter on the Obituaries desk who writes the occasional sports-related story.
-  agg_copyright                                                cite
-1            NA NATIONAL INSTITUTE FOR OCCUPATIONAL SAFETY &amp; HEALTH
-2            NA NATIONAL INSTITUTE FOR OCCUPATIONAL SAFETY &amp; HEALTH
-3            NA NATIONAL INSTITUTE FOR OCCUPATIONAL SAFETY &amp; HEALTH
-4            NA NATIONAL INSTITUTE FOR OCCUPATIONAL SAFETY &amp; HEALTH
-5            NA NATIONAL INSTITUTE FOR OCCUPATIONAL SAFETY &amp; HEALTH
-6            NA NATIONAL INSTITUTE FOR OCCUPATIONAL SAFETY &amp; HEALTH
-                                              company
-1 NATIONAL INSTITUTE FOR OCCUPATIONAL SAFETY &amp; HEALTH
-2 NATIONAL INSTITUTE FOR OCCUPATIONAL SAFETY &amp; HEALTH
-3 NATIONAL INSTITUTE FOR OCCUPATIONAL SAFETY &amp; HEALTH
-4 NATIONAL INSTITUTE FOR OCCUPATIONAL SAFETY &amp; HEALTH
-5 NATIONAL INSTITUTE FOR OCCUPATIONAL SAFETY &amp; HEALTH
-6 NATIONAL INSTITUTE FOR OCCUPATIONAL SAFETY &amp; HEALTH
-                                                                 headline
-1 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85
-2 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85
-3 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85
-4 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85
-5 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85
-6 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      hlead
-1 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85 As Vermont’s health commissioner, he helped create a model for providing food and dental care. Later, he directed the first national vaccine program. As Vermont’s health commissioner, he helped create a model for providing food and dental care. Later, he directed the first national vaccine program. The milk truck would pull up to the house, and out would come the groceries — not just milk, but also eggs, cheese, juice, cereal and baby formula. It might have stopped at a rich family’s house, or a poor one. No one could tell the difference, which was precisely the point. Vermont’s supplemental food program for low-income women, infants and children, the first in the nation to be implemented statewide, began in 1974. It was the brainchild in part of Dr. Anthony Robbins, then one of the country’s youngest state health commissioners, at 33; he had secured a federal grant to made the program possible. Not only did the program provide much-needed supplies, but it also shielded families from the stigma of receiving public assistance.
-2 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85 As Vermont’s health commissioner, he helped create a model for providing food and dental care. Later, he directed the first national vaccine program. As Vermont’s health commissioner, he helped create a model for providing food and dental care. Later, he directed the first national vaccine program. The milk truck would pull up to the house, and out would come the groceries — not just milk, but also eggs, cheese, juice, cereal and baby formula. It might have stopped at a rich family’s house, or a poor one. No one could tell the difference, which was precisely the point. Vermont’s supplemental food program for low-income women, infants and children, the first in the nation to be implemented statewide, began in 1974. It was the brainchild in part of Dr. Anthony Robbins, then one of the country’s youngest state health commissioners, at 33; he had secured a federal grant to made the program possible. Not only did the program provide much-needed supplies, but it also shielded families from the stigma of receiving public assistance.
-3 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85 As Vermont’s health commissioner, he helped create a model for providing food and dental care. Later, he directed the first national vaccine program. As Vermont’s health commissioner, he helped create a model for providing food and dental care. Later, he directed the first national vaccine program. The milk truck would pull up to the house, and out would come the groceries — not just milk, but also eggs, cheese, juice, cereal and baby formula. It might have stopped at a rich family’s house, or a poor one. No one could tell the difference, which was precisely the point. Vermont’s supplemental food program for low-income women, infants and children, the first in the nation to be implemented statewide, began in 1974. It was the brainchild in part of Dr. Anthony Robbins, then one of the country’s youngest state health commissioners, at 33; he had secured a federal grant to made the program possible. Not only did the program provide much-needed supplies, but it also shielded families from the stigma of receiving public assistance.
-4 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85 As Vermont’s health commissioner, he helped create a model for providing food and dental care. Later, he directed the first national vaccine program. As Vermont’s health commissioner, he helped create a model for providing food and dental care. Later, he directed the first national vaccine program. The milk truck would pull up to the house, and out would come the groceries — not just milk, but also eggs, cheese, juice, cereal and baby formula. It might have stopped at a rich family’s house, or a poor one. No one could tell the difference, which was precisely the point. Vermont’s supplemental food program for low-income women, infants and children, the first in the nation to be implemented statewide, began in 1974. It was the brainchild in part of Dr. Anthony Robbins, then one of the country’s youngest state health commissioners, at 33; he had secured a federal grant to made the program possible. Not only did the program provide much-needed supplies, but it also shielded families from the stigma of receiving public assistance.
-5 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85 As Vermont’s health commissioner, he helped create a model for providing food and dental care. Later, he directed the first national vaccine program. As Vermont’s health commissioner, he helped create a model for providing food and dental care. Later, he directed the first national vaccine program. The milk truck would pull up to the house, and out would come the groceries — not just milk, but also eggs, cheese, juice, cereal and baby formula. It might have stopped at a rich family’s house, or a poor one. No one could tell the difference, which was precisely the point. Vermont’s supplemental food program for low-income women, infants and children, the first in the nation to be implemented statewide, began in 1974. It was the brainchild in part of Dr. Anthony Robbins, then one of the country’s youngest state health commissioners, at 33; he had secured a federal grant to made the program possible. Not only did the program provide much-needed supplies, but it also shielded families from the stigma of receiving public assistance.
-6 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85 As Vermont’s health commissioner, he helped create a model for providing food and dental care. Later, he directed the first national vaccine program. As Vermont’s health commissioner, he helped create a model for providing food and dental care. Later, he directed the first national vaccine program. The milk truck would pull up to the house, and out would come the groceries — not just milk, but also eggs, cheese, juice, cereal and baby formula. It might have stopped at a rich family’s house, or a poor one. No one could tell the difference, which was precisely the point. Vermont’s supplemental food program for low-income women, infants and children, the first in the nation to be implemented statewide, began in 1974. It was the brainchild in part of Dr. Anthony Robbins, then one of the country’s youngest state health commissioners, at 33; he had secured a federal grant to made the program possible. Not only did the program provide much-needed supplies, but it also shielded families from the stigma of receiving public assistance.
-      publication_16 publication_type_17 pub_copyright show term ticker
-1 The New York Times     Web Publication            NA   NA   NA     NA
-2 The New York Times     Web Publication            NA   NA   NA     NA
-3 The New York Times     Web Publication            NA   NA   NA     NA
-4 The New York Times     Web Publication            NA   NA   NA     NA
-5 The New York Times     Web Publication            NA   NA   NA     NA
-6 The New York Times     Web Publication            NA   NA   NA     NA
-                      index
-1 dranthonyrobbinswhoexpand
-2 dranthonyrobbinswhoexpand
-3 dranthonyrobbinswhoexpand
-4 dranthonyrobbinswhoexpand
-5 dranthonyrobbinswhoexpand
-6 dranthonyrobbinswhoexpand
-                                                                                           filepath
-1 ./long_covid_raw_text/Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85.txt
-2 ./long_covid_raw_text/Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85.txt
-3 ./long_covid_raw_text/Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85.txt
-4 ./long_covid_raw_text/Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85.txt
-5 ./long_covid_raw_text/Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85.txt
-6 ./long_covid_raw_text/Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85.txt
-  category
-1         
-2         
-3         
-4         
-5         
-6         </code></pre>
-</div>
-</div>
 <p>#Interpretation #7798 sentences contain neither “long covid” nor any of the listed symptoms. 182 sentences contain “long covid’ but none of the listed symptoms. 8 sentences contain both”long covid” and at least one listed symptom. 41 sentences contain at least one listed symptom, but not “long covid.” #Of 8031 total sentences, the total number of sentences mentioning at least one symptom is 49 (8+41). Therefore, 0.61% of sentences mention at least one of the symptoms detected by my code.</p>
 <p>#Research question 2 #What percentage of the coverage discusses other commonly reported symptoms of long COVID? #Other reported long covid symptoms: I identified sentences mentioning at least one long COVID symptom other than the three most commonly reported symptomsfrom a predefined list by CDC.GOV. Sentences were coded as containing symptoms if they matched at least one of the symptom-related keywords or phrases in the code.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>other_covid_symptoms <span class="ot">&lt;-</span> long_covid <span class="sc">|&gt;</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Check each condition independently</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>   <span class="at">drawer1 =</span> <span class="fu">if_else</span>(<span class="fu">str_detect</span>(sentence, <span class="fu">regex</span>(<span class="st">"Long Covid"</span>, <span class="at">ignore_case =</span> <span class="cn">TRUE</span>)), <span class="st">"LongCovid"</span>, <span class="cn">NA_character_</span>),</span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">drawer2 =</span> <span class="fu">if_else</span>(<span class="fu">str_detect</span>(sentence, <span class="fu">regex</span>(<span class="st">"difficulty breathing|shortness of breath|coughing|chest pain|palpitations|headaches|sleep problems|dizziness|lightheadedness|pins-and-needs|change in smell| depression| anxiety|diarrhea|stomach pain|constipation|joint pain|rash|menstrual cycles"</span>, <span class="at">ignore_case =</span> <span class="cn">TRUE</span>)), <span class="st">"Symptoms"</span>, <span class="cn">NA_character_</span>)</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Combine non-NA terms into a single string separated by commas</span></span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unite</span>(<span class="st">"category"</span>, drawer1, drawer2, <span class="at">sep =</span> <span class="st">", "</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>other_covid_symptoms <span class="ot">&lt;-</span> long_covid <span class="sc">|&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Check each condition independently</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>   <span class="at">drawer1 =</span> <span class="fu">if_else</span>(<span class="fu">str_detect</span>(sentence, <span class="fu">regex</span>(<span class="st">"Long Covid"</span>, <span class="at">ignore_case =</span> <span class="cn">TRUE</span>)), <span class="st">"LongCovid"</span>, <span class="cn">NA_character_</span>),</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">drawer2 =</span> <span class="fu">if_else</span>(<span class="fu">str_detect</span>(sentence, <span class="fu">regex</span>(<span class="st">"difficulty breathing|shortness of breath|coughing|chest pain|palpitations|headaches|sleep problems|dizziness|lightheadedness|pins-and-needs|change in smell| depression| anxiety|diarrhea|stomach pain|constipation|joint pain|rash|menstrual cycles"</span>, <span class="at">ignore_case =</span> <span class="cn">TRUE</span>)), <span class="st">"Symptoms"</span>, <span class="cn">NA_character_</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Combine non-NA terms into a single string separated by commas</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unite</span>(<span class="st">"category"</span>, drawer1, drawer2, <span class="at">sep =</span> <span class="st">", "</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>other_covid_symptoms <span class="sc">|&gt;</span> </span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(category)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>other_covid_symptoms <span class="sc">|&gt;</span> </span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(category)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>             category    n
 1                     7756
 2           LongCovid  182
 3 LongCovid, Symptoms    8
 4            Symptoms   85</code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(other_covid_symptoms)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>                                                                     filename
-1 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85.txt
-2 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85.txt
-3 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85.txt
-4 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85.txt
-5 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85.txt
-6 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85.txt
-                             sentence
-1                                &lt;NA&gt;
-2                                &lt;NA&gt;
-3                                &lt;NA&gt;
-4                  The New York Times
-5 September 13, 2026 Sunday 16:51 EST
-6                                &lt;NA&gt;
-                                                                    title
-1 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85
-2 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85
-3 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85
-4 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85
-5 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85
-6 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85
-  published_date publication_location      publication_4 publication_type_5
-1     2026-09-13             New York The New York Times               News
-2     2026-09-13             New York The New York Times               News
-3     2026-09-13             New York The New York Times               News
-4     2026-09-13             New York The New York Times               News
-5     2026-09-13             New York The New York Times               News
-6     2026-09-13             New York The New York Times               News
-  length section word_count countries
-1   1299  HEALTH       1299        NA
-2   1299  HEALTH       1299        NA
-3   1299  HEALTH       1299        NA
-4   1299  HEALTH       1299        NA
-5   1299  HEALTH       1299        NA
-6   1299  HEALTH       1299        NA
-                                                                                                                     byline
-1 Jeré Longman Jer&amp;#233; Longman is a Times reporter on the Obituaries desk who writes the occasional sports-related story.
-2 Jeré Longman Jer&amp;#233; Longman is a Times reporter on the Obituaries desk who writes the occasional sports-related story.
-3 Jeré Longman Jer&amp;#233; Longman is a Times reporter on the Obituaries desk who writes the occasional sports-related story.
-4 Jeré Longman Jer&amp;#233; Longman is a Times reporter on the Obituaries desk who writes the occasional sports-related story.
-5 Jeré Longman Jer&amp;#233; Longman is a Times reporter on the Obituaries desk who writes the occasional sports-related story.
-6 Jeré Longman Jer&amp;#233; Longman is a Times reporter on the Obituaries desk who writes the occasional sports-related story.
-  agg_copyright                                                cite
-1            NA NATIONAL INSTITUTE FOR OCCUPATIONAL SAFETY &amp; HEALTH
-2            NA NATIONAL INSTITUTE FOR OCCUPATIONAL SAFETY &amp; HEALTH
-3            NA NATIONAL INSTITUTE FOR OCCUPATIONAL SAFETY &amp; HEALTH
-4            NA NATIONAL INSTITUTE FOR OCCUPATIONAL SAFETY &amp; HEALTH
-5            NA NATIONAL INSTITUTE FOR OCCUPATIONAL SAFETY &amp; HEALTH
-6            NA NATIONAL INSTITUTE FOR OCCUPATIONAL SAFETY &amp; HEALTH
-                                              company
-1 NATIONAL INSTITUTE FOR OCCUPATIONAL SAFETY &amp; HEALTH
-2 NATIONAL INSTITUTE FOR OCCUPATIONAL SAFETY &amp; HEALTH
-3 NATIONAL INSTITUTE FOR OCCUPATIONAL SAFETY &amp; HEALTH
-4 NATIONAL INSTITUTE FOR OCCUPATIONAL SAFETY &amp; HEALTH
-5 NATIONAL INSTITUTE FOR OCCUPATIONAL SAFETY &amp; HEALTH
-6 NATIONAL INSTITUTE FOR OCCUPATIONAL SAFETY &amp; HEALTH
-                                                                 headline
-1 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85
-2 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85
-3 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85
-4 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85
-5 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85
-6 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      hlead
-1 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85 As Vermont’s health commissioner, he helped create a model for providing food and dental care. Later, he directed the first national vaccine program. As Vermont’s health commissioner, he helped create a model for providing food and dental care. Later, he directed the first national vaccine program. The milk truck would pull up to the house, and out would come the groceries — not just milk, but also eggs, cheese, juice, cereal and baby formula. It might have stopped at a rich family’s house, or a poor one. No one could tell the difference, which was precisely the point. Vermont’s supplemental food program for low-income women, infants and children, the first in the nation to be implemented statewide, began in 1974. It was the brainchild in part of Dr. Anthony Robbins, then one of the country’s youngest state health commissioners, at 33; he had secured a federal grant to made the program possible. Not only did the program provide much-needed supplies, but it also shielded families from the stigma of receiving public assistance.
-2 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85 As Vermont’s health commissioner, he helped create a model for providing food and dental care. Later, he directed the first national vaccine program. As Vermont’s health commissioner, he helped create a model for providing food and dental care. Later, he directed the first national vaccine program. The milk truck would pull up to the house, and out would come the groceries — not just milk, but also eggs, cheese, juice, cereal and baby formula. It might have stopped at a rich family’s house, or a poor one. No one could tell the difference, which was precisely the point. Vermont’s supplemental food program for low-income women, infants and children, the first in the nation to be implemented statewide, began in 1974. It was the brainchild in part of Dr. Anthony Robbins, then one of the country’s youngest state health commissioners, at 33; he had secured a federal grant to made the program possible. Not only did the program provide much-needed supplies, but it also shielded families from the stigma of receiving public assistance.
-3 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85 As Vermont’s health commissioner, he helped create a model for providing food and dental care. Later, he directed the first national vaccine program. As Vermont’s health commissioner, he helped create a model for providing food and dental care. Later, he directed the first national vaccine program. The milk truck would pull up to the house, and out would come the groceries — not just milk, but also eggs, cheese, juice, cereal and baby formula. It might have stopped at a rich family’s house, or a poor one. No one could tell the difference, which was precisely the point. Vermont’s supplemental food program for low-income women, infants and children, the first in the nation to be implemented statewide, began in 1974. It was the brainchild in part of Dr. Anthony Robbins, then one of the country’s youngest state health commissioners, at 33; he had secured a federal grant to made the program possible. Not only did the program provide much-needed supplies, but it also shielded families from the stigma of receiving public assistance.
-4 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85 As Vermont’s health commissioner, he helped create a model for providing food and dental care. Later, he directed the first national vaccine program. As Vermont’s health commissioner, he helped create a model for providing food and dental care. Later, he directed the first national vaccine program. The milk truck would pull up to the house, and out would come the groceries — not just milk, but also eggs, cheese, juice, cereal and baby formula. It might have stopped at a rich family’s house, or a poor one. No one could tell the difference, which was precisely the point. Vermont’s supplemental food program for low-income women, infants and children, the first in the nation to be implemented statewide, began in 1974. It was the brainchild in part of Dr. Anthony Robbins, then one of the country’s youngest state health commissioners, at 33; he had secured a federal grant to made the program possible. Not only did the program provide much-needed supplies, but it also shielded families from the stigma of receiving public assistance.
-5 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85 As Vermont’s health commissioner, he helped create a model for providing food and dental care. Later, he directed the first national vaccine program. As Vermont’s health commissioner, he helped create a model for providing food and dental care. Later, he directed the first national vaccine program. The milk truck would pull up to the house, and out would come the groceries — not just milk, but also eggs, cheese, juice, cereal and baby formula. It might have stopped at a rich family’s house, or a poor one. No one could tell the difference, which was precisely the point. Vermont’s supplemental food program for low-income women, infants and children, the first in the nation to be implemented statewide, began in 1974. It was the brainchild in part of Dr. Anthony Robbins, then one of the country’s youngest state health commissioners, at 33; he had secured a federal grant to made the program possible. Not only did the program provide much-needed supplies, but it also shielded families from the stigma of receiving public assistance.
-6 Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85 As Vermont’s health commissioner, he helped create a model for providing food and dental care. Later, he directed the first national vaccine program. As Vermont’s health commissioner, he helped create a model for providing food and dental care. Later, he directed the first national vaccine program. The milk truck would pull up to the house, and out would come the groceries — not just milk, but also eggs, cheese, juice, cereal and baby formula. It might have stopped at a rich family’s house, or a poor one. No one could tell the difference, which was precisely the point. Vermont’s supplemental food program for low-income women, infants and children, the first in the nation to be implemented statewide, began in 1974. It was the brainchild in part of Dr. Anthony Robbins, then one of the country’s youngest state health commissioners, at 33; he had secured a federal grant to made the program possible. Not only did the program provide much-needed supplies, but it also shielded families from the stigma of receiving public assistance.
-      publication_16 publication_type_17 pub_copyright show term ticker
-1 The New York Times     Web Publication            NA   NA   NA     NA
-2 The New York Times     Web Publication            NA   NA   NA     NA
-3 The New York Times     Web Publication            NA   NA   NA     NA
-4 The New York Times     Web Publication            NA   NA   NA     NA
-5 The New York Times     Web Publication            NA   NA   NA     NA
-6 The New York Times     Web Publication            NA   NA   NA     NA
-                      index
-1 dranthonyrobbinswhoexpand
-2 dranthonyrobbinswhoexpand
-3 dranthonyrobbinswhoexpand
-4 dranthonyrobbinswhoexpand
-5 dranthonyrobbinswhoexpand
-6 dranthonyrobbinswhoexpand
-                                                                                           filepath
-1 ./long_covid_raw_text/Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85.txt
-2 ./long_covid_raw_text/Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85.txt
-3 ./long_covid_raw_text/Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85.txt
-4 ./long_covid_raw_text/Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85.txt
-5 ./long_covid_raw_text/Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85.txt
-6 ./long_covid_raw_text/Dr. Anthony Robbins , Who Expanded Health Care for the Poor, Dies at 85.txt
-  category
-1         
-2         
-3         
-4         
-5         
-6         </code></pre>
 </div>
 </div>
 <section id="hosting-a-github-page---r-cheat-sheet" class="level1">
@@ -440,20 +210,20 @@ The following objects are masked from 'package:stats':
 <section id="looking-at-wealth-inequality-in-charm-city" class="level2">
 <h2 class="anchored" data-anchor-id="looking-at-wealth-inequality-in-charm-city">Looking at wealth inequality in Charm City</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># You will write your code in chunks but not execute the data. Use {r eval=FALSE, include=TRUE} in the header so the page will render without running the actual code.</span></span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>income_vacancy <span class="sc">%&gt;%</span> </span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> community)) <span class="sc">+</span></span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">y=</span>income_2020), <span class="at">color =</span> <span class="st">"#64D197"</span>, <span class="at">stroke=</span><span class="dv">5</span>) <span class="sc">+</span></span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">y=</span>vacant_2020<span class="sc">*</span><span class="dv">1000</span>), <span class="at">stroke=</span><span class="dv">5</span>, <span class="at">color =</span> <span class="st">"#FB8AE3"</span>) <span class="sc">+</span></span>
-<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(</span>
-<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">name =</span> <span class="st">"2020 Income (Green)"</span>, <span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">62000</span>), <span class="at">labels=</span>scales<span class="sc">::</span><span class="fu">dollar_format</span>(),</span>
-<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">sec.axis =</span> <span class="fu">sec_axis</span>(<span class="sc">~</span>.<span class="sc">/</span><span class="dv">60000</span>, <span class="at">name=</span><span class="st">"2020 Percent Vacancies (Red)"</span>, <span class="at">labels =</span> scales<span class="sc">::</span>percent))<span class="sc">+</span></span>
-<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>  <span class="co">#scale_y_continuous(labels = scales::percent) +</span></span>
-<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Income and Vacancies of Baltimore Neighborhoods 2020"</span>,</span>
-<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Community"</span>,</span>
-<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"source: BNIA Data - By: Parker Leipzig and Rob Wells"</span></span>
-<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># You will write your code in chunks but not execute the data. Use {r eval=FALSE, include=TRUE} in the header so the page will render without running the actual code.</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>income_vacancy <span class="sc">%&gt;%</span> </span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> community)) <span class="sc">+</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">y=</span>income_2020), <span class="at">color =</span> <span class="st">"#64D197"</span>, <span class="at">stroke=</span><span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">y=</span>vacant_2020<span class="sc">*</span><span class="dv">1000</span>), <span class="at">stroke=</span><span class="dv">5</span>, <span class="at">color =</span> <span class="st">"#FB8AE3"</span>) <span class="sc">+</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">name =</span> <span class="st">"2020 Income (Green)"</span>, <span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">62000</span>), <span class="at">labels=</span>scales<span class="sc">::</span><span class="fu">dollar_format</span>(),</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">sec.axis =</span> <span class="fu">sec_axis</span>(<span class="sc">~</span>.<span class="sc">/</span><span class="dv">60000</span>, <span class="at">name=</span><span class="st">"2020 Percent Vacancies (Red)"</span>, <span class="at">labels =</span> scales<span class="sc">::</span>percent))<span class="sc">+</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="co">#scale_y_continuous(labels = scales::percent) +</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Income and Vacancies of Baltimore Neighborhoods 2020"</span>,</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Community"</span>,</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"source: BNIA Data - By: Parker Leipzig and Rob Wells"</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="set-up-for-hosting" class="level2">

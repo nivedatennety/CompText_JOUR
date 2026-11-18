@@ -7,7 +7,8 @@ format:
     theme: cosmo
 ---
 
-```{r include: false}
+```{r}
+#| include: false
 library(tidyverse)
 library(janitor)
 ```
@@ -43,10 +44,6 @@ covid_symptoms |>
   count(category)
 ```
 
-```{r}
-head(covid_symptoms)
-```
-
 #Interpretation #7798 sentences contain neither "long covid" nor any of the listed symptoms. 182 sentences contain "long covid' but none of the listed symptoms. 8 sentences contain both "long covid" and at least one listed symptom. 41 sentences contain at least one listed symptom, but not "long covid." #Of 8031 total sentences, the total number of sentences mentioning at least one symptom is 49 (8+41). Therefore, 0.61% of sentences mention at least one of the symptoms detected by my code.
 
 #Research question 2 #What percentage of the coverage discusses other commonly reported symptoms of long COVID? #Other reported long covid symptoms: I identified sentences mentioning at least one long COVID symptom other than the three most commonly reported symptomsfrom a predefined list by CDC.GOV. Sentences were coded as containing symptoms if they matched at least one of the symptom-related keywords or phrases in the code.
@@ -67,9 +64,7 @@ other_covid_symptoms |>
   count(category)
 ```
 
-```{r}
-head(other_covid_symptoms)
-```
+
 
 # Hosting a GitHub Page - R Cheat Sheet
 
